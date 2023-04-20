@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(meanfun >= 0.142132) and (IQR <= 0.062626) => label=female (1170.0/5.0)
+(meanfun >= 0.149574) => label=female (305.0/14.0)
+(meanfun >= 0.137394) and (IQR <= 0.094235) => label=female (72.0/14.0)
+(meanfun >= 0.130561) and (IQR <= 0.068142) => label=female (19.0/2.0)
+(meanfun >= 0.132471) and (IQR >= 0.128656) => label=female (17.0/6.0)
+ => label=male (1585.0/42.0)
+
+Number of Rules : 6
+
+
+Time taken to build model: 0.04 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3073               97.0013 %
+Incorrectly Classified Instances        95                2.9987 %
+Kappa statistic                          0.94  
+Mean absolute error                      0.0511
+Root mean squared error                  0.1654
+Relative absolute error                 10.2173 %
+Root relative squared error             33.0866 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.030    0.970      0.970    0.970      0.940    0.982     0.977     male
+                 0.970    0.030    0.970      0.970    0.970      0.940    0.982     0.975     female
+Weighted Avg.    0.970    0.030    0.970      0.970    0.970      0.940    0.982     0.976     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1536   48 |    a = male
+   47 1537 |    b = female
+

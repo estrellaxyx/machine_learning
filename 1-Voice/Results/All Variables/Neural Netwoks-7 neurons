@@ -1,0 +1,247 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 7 -R
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    6.452193192539129
+    Node 2    7.490807592810304
+    Node 3    -12.667162980279834
+    Node 4    8.318265326127559
+    Node 5    -13.381392946158016
+    Node 6    9.238491527695835
+    Node 7    -10.887402996992103
+    Node 8    -3.3452603620175694
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -6.4523253934232585
+    Node 2    -7.490723659196712
+    Node 3    12.667215230389536
+    Node 4    -8.318204776856858
+    Node 5    13.38130918338843
+    Node 6    -9.238425051422272
+    Node 7    10.887462383890082
+    Node 8    3.345365950583548
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    3.2194809331145864
+    Attrib meanfreq    -0.8734888325403766
+    Attrib sd    -3.810137204473227
+    Attrib median    -0.4966928897687006
+    Attrib Q25    -0.8695234850387846
+    Attrib Q75    -1.9937502494639696
+    Attrib IQR    -3.63589535944135
+    Attrib skew    -1.7525520386202884
+    Attrib kurt    -3.193269942234061
+    Attrib sp.ent    -1.5166911465437205
+    Attrib sfm    -5.226288974987751
+    Attrib mode    -3.7458744104744115
+    Attrib centroid    -0.8891699493535686
+    Attrib meanfun    -1.6240079740571325
+    Attrib minfun    2.1016755671711667
+    Attrib maxfun    -1.8953904243641313
+    Attrib meandom    4.6432622823455505
+    Attrib mindom    1.2782808726204589
+    Attrib maxdom    2.8036616688468508
+    Attrib dfrange    2.75695301537019
+    Attrib modindx    -1.2126876630877872
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    1.742288889552971
+    Attrib meanfreq    -4.248981573788879
+    Attrib sd    11.980385672015615
+    Attrib median    9.470048705450898
+    Attrib Q25    -1.1930946403016711
+    Attrib Q75    -8.935480598776202
+    Attrib IQR    -8.846852670082093
+    Attrib skew    0.525856125409441
+    Attrib kurt    -0.23751766449271366
+    Attrib sp.ent    -1.9305752371953186
+    Attrib sfm    3.7802140557466135
+    Attrib mode    0.7969747493112723
+    Attrib centroid    -4.329384008582854
+    Attrib meanfun    12.804157872463238
+    Attrib minfun    -3.1801869461080714
+    Attrib maxfun    -3.1752622615296158
+    Attrib meandom    1.3626070637222858
+    Attrib mindom    2.3299209272078976
+    Attrib maxdom    -1.3926850965159014
+    Attrib dfrange    -1.5368641287239444
+    Attrib modindx    -1.2549599574627737
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    1.3262484111404338
+    Attrib meanfreq    -1.4992500584745678
+    Attrib sd    -4.441311133007223
+    Attrib median    -1.6541446535513833
+    Attrib Q25    -0.042882426079227945
+    Attrib Q75    -3.3743329045135413
+    Attrib IQR    -4.281795225806492
+    Attrib skew    4.161826800221967
+    Attrib kurt    0.6511812866845392
+    Attrib sp.ent    5.294907065388287
+    Attrib sfm    -1.9920331844213721
+    Attrib mode    -14.210313874227555
+    Attrib centroid    -1.477577969821382
+    Attrib meanfun    -3.61238475126597
+    Attrib minfun    2.884090530163989
+    Attrib maxfun    0.0520121141340703
+    Attrib meandom    2.299604798050475
+    Attrib mindom    3.021221652856961
+    Attrib maxdom    6.422614549694962
+    Attrib dfrange    6.416884334215167
+    Attrib modindx    -0.209800822189274
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.349201917966464
+    Attrib meanfreq    1.6286827169581024
+    Attrib sd    -10.69447115252885
+    Attrib median    -0.4833234368173274
+    Attrib Q25    4.686153762425236
+    Attrib Q75    -3.0742246300409053
+    Attrib IQR    -5.131430184885706
+    Attrib skew    -0.163451362166683
+    Attrib kurt    3.0914631627608626
+    Attrib sp.ent    -3.547438706069094
+    Attrib sfm    -1.4905640165493044
+    Attrib mode    -0.34156312236417574
+    Attrib centroid    1.684774117279083
+    Attrib meanfun    10.80932581040295
+    Attrib minfun    5.466143342344156
+    Attrib maxfun    0.6971769915521934
+    Attrib meandom    1.0574155875340223
+    Attrib mindom    -4.30441837289816
+    Attrib maxdom    4.362849285622239
+    Attrib dfrange    4.533397973794938
+    Attrib modindx    -5.432315096614643
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -0.04235930120802019
+    Attrib meanfreq    -0.44668644567251653
+    Attrib sd    4.644612340433736
+    Attrib median    -5.035343582575835
+    Attrib Q25    -2.3096443664395383
+    Attrib Q75    -2.858444474370955
+    Attrib IQR    -0.40035296420422917
+    Attrib skew    3.6122485606947468
+    Attrib kurt    -3.6872226822480796
+    Attrib sp.ent    3.0045627172243377
+    Attrib sfm    -4.248529204207177
+    Attrib mode    6.193186657355558
+    Attrib centroid    -0.42979277773924335
+    Attrib meanfun    -28.122825449398672
+    Attrib minfun    8.386312361827112
+    Attrib maxfun    1.0654035540661537
+    Attrib meandom    -0.46474794478303605
+    Attrib mindom    -0.6376280253510954
+    Attrib maxdom    -0.5494368099659461
+    Attrib dfrange    -0.5176368164731983
+    Attrib modindx    -2.2979732666701262
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.3902613479751298
+    Attrib meanfreq    0.14665645794885493
+    Attrib sd    2.557160669088743
+    Attrib median    -4.635340289484767
+    Attrib Q25    13.92862659708546
+    Attrib Q75    0.1996101723392754
+    Attrib IQR    -13.107128009763596
+    Attrib skew    -0.08762612225621279
+    Attrib kurt    0.5185289697643003
+    Attrib sp.ent    -4.217458669796743
+    Attrib sfm    4.187414583144751
+    Attrib mode    -0.5727351856974379
+    Attrib centroid    0.1530723271989611
+    Attrib meanfun    4.975132909353735
+    Attrib minfun    -6.4230068841777115
+    Attrib maxfun    2.8942964826983095
+    Attrib meandom    2.2262996908671804
+    Attrib mindom    2.0673256677627605
+    Attrib maxdom    1.5659017368421841
+    Attrib dfrange    1.530652571592383
+    Attrib modindx    3.606159034286223
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -1.3465083674167015
+    Attrib meanfreq    1.1940596092634057
+    Attrib sd    1.6843751575476926
+    Attrib median    -0.5753018037660034
+    Attrib Q25    0.36573250800306545
+    Attrib Q75    3.0795322349345624
+    Attrib IQR    3.6449665628485945
+    Attrib skew    -0.06285006305405318
+    Attrib kurt    1.606402603379741
+    Attrib sp.ent    -0.0608045811171369
+    Attrib sfm    1.594832981767222
+    Attrib mode    1.8352540395281767
+    Attrib centroid    1.201031224806624
+    Attrib meanfun    7.348082857804711
+    Attrib minfun    -1.1237540377160289
+    Attrib maxfun    0.40313652280213225
+    Attrib meandom    2.5975057556870342
+    Attrib mindom    -0.648916751017154
+    Attrib maxdom    -2.3364810157919496
+    Attrib dfrange    -2.29861515992204
+    Attrib modindx    3.4434149808571477
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 4.3 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3089               97.5063 %
+Incorrectly Classified Instances        79                2.4937 %
+Kappa statistic                          0.9501
+Mean absolute error                      0.0268
+Root mean squared error                  0.1486
+Relative absolute error                  5.3689 %
+Root relative squared error             29.7195 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.973    0.023    0.977      0.973    0.975      0.950    0.994     0.995     male
+                 0.977    0.027    0.973      0.977    0.975      0.950    0.994     0.992     female
+Weighted Avg.    0.975    0.025    0.975      0.975    0.975      0.950    0.994     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1541   43 |    a = male
+   36 1548 |    b = female
+

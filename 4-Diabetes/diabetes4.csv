@@ -1,0 +1,391 @@
+cholesterol,glucose,hdl_chol,age,gender,bmi,systolic_bp,diastolic_bp,waist_hip_ratio,diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,healthy,risk,normal,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,healthy,risk,risk,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,normal,risk,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,normal,normal,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,normal,hypertension,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,overweight,risk,risk,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,overweight,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,overweight,risk,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,normal,risk,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,obese,hypertension,hypertension,s3_1_up,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,risk,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,risk,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,hypertension,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,risk,risk,s1_below_0,No diabetes
+high,normal,protective_heart_disease,s1_below_46,male,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,risk,risk,s2_0_1,Diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,healthy,risk,risk,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,obese,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,obese,hypertension,risk,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,overweight,normal,hypertension,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,risk,normal,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,healthy,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,normal,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,healthy,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,risk,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,underweight,risk,normal,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,risk,normal,s2_0_1,No diabetes
+desirable,diabetes,risk_heart_disease,s1_below_46,female,healthy,risk,normal,s1_below_0,Diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,healthy,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,obese,hypertension,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,risk,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,female,obese,normal,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,male,overweight,normal,normal,s2_0_1,No diabetes
+desirable,prediabetes,ordinary,s1_below_46,female,obese,hypertension,risk,s2_0_1,Diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,risk,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,normal,normal,s1_below_0,No diabetes
+high,normal,risk_heart_disease,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,overweight,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,obese,normal,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,hypertension,normal,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,risk,risk,s1_below_0,No diabetes
+high,normal,ordinary,s1_below_46,female,overweight,risk,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,male,overweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,overweight,risk,risk,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,healthy,risk,hypertension,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,male,overweight,risk,risk,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,healthy,risk,normal,s1_below_0,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,overweight,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,obese,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,normal,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,overweight,normal,normal,s2_0_1,No diabetes
+desirable,prediabetes,protective_heart_disease,s1_below_46,female,obese,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,risk,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,male,healthy,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+high,prediabetes,ordinary,s1_below_46,male,obese,hypertension,risk,s3_1_up,No diabetes
+high,normal,risk_heart_disease,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s1_below_46,male,obese,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,overweight,risk,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,normal,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,overweight,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,healthy,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,healthy,risk,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,obese,risk,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,obese,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,risk,normal,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,risk_heart_disease,s1_below_46,female,obese,normal,risk,s1_below_0,No diabetes
+borderline_high,prediabetes,risk_heart_disease,s1_below_46,male,healthy,normal,normal,s2_0_1,No diabetes
+borderline_high,diabetes,ordinary,s1_below_46,female,obese,risk,risk,s2_0_1,Diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,risk,normal,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,hypertension,risk,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,healthy,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,overweight,normal,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,obese,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,risk,hypertension,s3_1_up,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,overweight,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,normal,risk,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s1_below_46,female,obese,normal,normal,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s1_below_46,male,overweight,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,obese,normal,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,healthy,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,underweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,hypertension,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,normal,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,male,overweight,risk,normal,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s1_below_46,female,overweight,risk,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,risk,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,overweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,overweight,normal,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,healthy,risk,risk,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,obese,normal,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s1_below_46,female,overweight,risk,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s1_below_46,female,overweight,risk,normal,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,female,healthy,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,obese,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,obese,normal,hypertension,s1_below_0,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+desirable,diabetes,ordinary,s1_below_46,female,obese,normal,normal,s1_below_0,Diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,male,healthy,risk,risk,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s1_below_46,male,healthy,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+high,normal,ordinary,s1_below_46,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,obese,hypertension,normal,s2_0_1,No diabetes
+borderline_high,prediabetes,ordinary,s1_below_46,female,obese,hypertension,normal,s2_0_1,Diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,male,healthy,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,overweight,hypertension,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s1_below_46,female,healthy,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,risk_heart_disease,s1_below_46,female,overweight,risk,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s1_below_46,male,healthy,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s1_below_46,female,healthy,risk,hypertension,s2_0_1,No diabetes
+desirable,prediabetes,risk_heart_disease,s1_below_46,male,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,male,obese,hypertension,hypertension,s2_0_1,Diabetes
+desirable,normal,risk_heart_disease,s1_below_46,male,overweight,hypertension,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,healthy,normal,normal,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s1_below_46,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s1_below_46,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,obese,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,female,healthy,hypertension,normal,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,male,healthy,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,risk,risk,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s2_46_68,female,overweight,hypertension,hypertension,s2_0_1,Diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,hypertension,s2_0_1,Diabetes
+desirable,normal,ordinary,s2_46_68,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s2_46_68,male,underweight,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s2_46_68,male,underweight,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,female,healthy,normal,normal,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,healthy,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s2_46_68,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s2_46_68,male,overweight,risk,risk,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,hypertension,s3_1_up,Diabetes
+borderline_high,diabetes,ordinary,s2_46_68,female,obese,risk,hypertension,s2_0_1,Diabetes
+desirable,normal,ordinary,s2_46_68,male,overweight,risk,hypertension,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s2_46_68,female,obese,risk,hypertension,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,overweight,hypertension,normal,s1_below_0,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,obese,risk,risk,s2_0_1,No diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,risk,s3_1_up,Diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,male,overweight,risk,normal,s2_0_1,Diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,risk,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s2_46_68,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,underweight,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,risk_heart_disease,s2_46_68,female,obese,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,healthy,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,female,obese,hypertension,normal,s2_0_1,Diabetes
+borderline_high,prediabetes,ordinary,s2_46_68,female,obese,risk,normal,s1_below_0,Diabetes
+high,prediabetes,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,male,underweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,risk,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,healthy,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,underweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,female,overweight,hypertension,hypertension,s1_below_0,Diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,obese,risk,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,female,overweight,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,female,obese,risk,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s2_46_68,female,overweight,hypertension,normal,s2_0_1,No diabetes
+high,diabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,hypertension,s2_0_1,Diabetes
+high,diabetes,ordinary,s2_46_68,male,overweight,risk,hypertension,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s2_46_68,male,overweight,risk,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,healthy,risk,risk,s2_0_1,No diabetes
+high,normal,ordinary,s2_46_68,female,overweight,hypertension,hypertension,s2_0_1,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,female,overweight,hypertension,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,female,healthy,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,normal,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,obese,hypertension,risk,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,female,obese,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,obese,risk,risk,s2_0_1,No diabetes
+desirable,diabetes,protective_heart_disease,s2_46_68,male,healthy,risk,normal,s2_0_1,Diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,male,overweight,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,hypertension,normal,s2_0_1,No diabetes
+borderline_high,prediabetes,risk_heart_disease,s2_46_68,female,obese,normal,normal,s1_below_0,Diabetes
+high,diabetes,risk_heart_disease,s2_46_68,male,healthy,hypertension,risk,s2_0_1,Diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,hypertension,risk,s1_below_0,No diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+borderline_high,prediabetes,ordinary,s2_46_68,female,overweight,normal,normal,s2_0_1,Diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,male,obese,hypertension,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,male,obese,hypertension,hypertension,s3_1_up,No diabetes
+high,normal,risk_heart_disease,s2_46_68,female,overweight,hypertension,normal,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,male,overweight,hypertension,normal,s2_0_1,No diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,male,overweight,risk,normal,s1_below_0,Diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,male,healthy,hypertension,normal,s3_1_up,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,normal,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,healthy,risk,risk,s1_below_0,No diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,Diabetes
+desirable,normal,ordinary,s2_46_68,female,overweight,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,overweight,hypertension,hypertension,s2_0_1,Diabetes
+high,diabetes,risk_heart_disease,s2_46_68,male,overweight,hypertension,normal,s2_0_1,Diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,healthy,risk,normal,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,female,overweight,risk,hypertension,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,male,overweight,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,female,healthy,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,female,healthy,normal,normal,s2_0_1,No diabetes
+high,diabetes,protective_heart_disease,s2_46_68,female,overweight,risk,normal,s2_0_1,No diabetes
+high,diabetes,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+desirable,diabetes,risk_heart_disease,s2_46_68,male,obese,normal,normal,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s2_46_68,female,healthy,risk,normal,s2_0_1,Diabetes
+desirable,normal,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,female,overweight,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,female,overweight,hypertension,risk,s3_1_up,No diabetes
+desirable,normal,protective_heart_disease,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+borderline_high,diabetes,risk_heart_disease,s2_46_68,female,overweight,hypertension,hypertension,s2_0_1,Diabetes
+high,diabetes,risk_heart_disease,s2_46_68,male,healthy,hypertension,risk,s2_0_1,Diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,overweight,hypertension,risk,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,obese,normal,normal,s3_1_up,No diabetes
+borderline_high,normal,risk_heart_disease,s2_46_68,male,healthy,hypertension,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,risk,s2_0_1,Diabetes
+desirable,diabetes,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,overweight,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,male,overweight,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,healthy,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,male,healthy,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,female,obese,hypertension,risk,s3_1_up,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,healthy,normal,risk,s3_1_up,No diabetes
+high,prediabetes,risk_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s2_46_68,female,overweight,hypertension,normal,s1_below_0,Diabetes
+high,diabetes,ordinary,s2_46_68,female,obese,hypertension,risk,s2_0_1,Diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s2_46_68,male,obese,risk,normal,s2_0_1,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,male,obese,risk,normal,s2_0_1,Diabetes
+high,normal,risk_heart_disease,s2_46_68,male,overweight,risk,risk,s3_1_up,Diabetes
+high,prediabetes,ordinary,s2_46_68,female,overweight,hypertension,risk,s1_below_0,Diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,overweight,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,overweight,hypertension,normal,s3_1_up,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,male,overweight,hypertension,risk,s2_0_1,Diabetes
+borderline_high,diabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,risk,s2_0_1,Diabetes
+high,normal,protective_heart_disease,s2_46_68,female,healthy,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,male,healthy,risk,normal,s2_0_1,No diabetes
+high,normal,ordinary,s2_46_68,female,obese,hypertension,risk,s3_1_up,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,healthy,normal,normal,s1_below_0,No diabetes
+desirable,prediabetes,risk_heart_disease,s2_46_68,male,obese,hypertension,normal,s2_0_1,No diabetes
+high,normal,protective_heart_disease,s2_46_68,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,prediabetes,risk_heart_disease,s2_46_68,male,healthy,risk,normal,s1_below_0,Diabetes
+desirable,normal,risk_heart_disease,s2_46_68,male,healthy,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,male,overweight,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s2_46_68,male,obese,normal,normal,s1_below_0,No diabetes
+high,normal,risk_heart_disease,s2_46_68,male,overweight,hypertension,hypertension,s2_0_1,Diabetes
+desirable,normal,ordinary,s2_46_68,female,healthy,risk,normal,s1_below_0,No diabetes
+desirable,diabetes,ordinary,s2_46_68,male,healthy,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s2_46_68,male,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s2_46_68,female,healthy,hypertension,hypertension,s1_below_0,No diabetes
+high,normal,protective_heart_disease,s3_68_up,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+high,normal,ordinary,s3_68_up,female,obese,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s3_68_up,male,overweight,hypertension,risk,s3_1_up,No diabetes
+desirable,diabetes,ordinary,s3_68_up,male,obese,hypertension,hypertension,s2_0_1,Diabetes
+high,normal,ordinary,s3_68_up,female,obese,risk,risk,s2_0_1,Diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,female,overweight,hypertension,normal,s1_below_0,No diabetes
+desirable,normal,ordinary,s3_68_up,male,overweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,diabetes,protective_heart_disease,s3_68_up,female,overweight,hypertension,risk,s1_below_0,Diabetes
+borderline_high,normal,ordinary,s3_68_up,male,overweight,hypertension,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,obese,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,overweight,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,male,overweight,risk,risk,s2_0_1,Diabetes
+borderline_high,normal,risk_heart_disease,s3_68_up,male,obese,risk,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,overweight,hypertension,normal,s2_0_1,Diabetes
+high,normal,ordinary,s3_68_up,male,overweight,hypertension,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,obese,hypertension,hypertension,s2_0_1,No diabetes
+high,diabetes,protective_heart_disease,s3_68_up,female,obese,hypertension,hypertension,s2_0_1,Diabetes
+borderline_high,normal,risk_heart_disease,s3_68_up,male,obese,risk,hypertension,s3_1_up,No diabetes
+high,diabetes,risk_heart_disease,s3_68_up,male,obese,hypertension,risk,s2_0_1,Diabetes
+desirable,normal,ordinary,s3_68_up,male,obese,normal,normal,s2_0_1,No diabetes
+desirable,normal,ordinary,s3_68_up,male,overweight,hypertension,normal,s2_0_1,No diabetes
+desirable,normal,protective_heart_disease,s3_68_up,female,healthy,hypertension,normal,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,male,underweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,female,overweight,hypertension,normal,s2_0_1,Diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,male,underweight,hypertension,risk,s2_0_1,No diabetes
+borderline_high,normal,protective_heart_disease,s3_68_up,male,healthy,normal,normal,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,overweight,hypertension,risk,s1_below_0,No diabetes
+desirable,prediabetes,risk_heart_disease,s3_68_up,male,overweight,risk,risk,s2_0_1,No diabetes
+borderline_high,normal,risk_heart_disease,s3_68_up,female,healthy,hypertension,normal,s2_0_1,No diabetes
+high,diabetes,ordinary,s3_68_up,male,healthy,hypertension,hypertension,s2_0_1,Diabetes
+desirable,normal,ordinary,s3_68_up,male,overweight,hypertension,risk,s2_0_1,No diabetes
+high,prediabetes,protective_heart_disease,s3_68_up,female,overweight,hypertension,hypertension,s3_1_up,Diabetes
+high,normal,ordinary,s3_68_up,female,overweight,hypertension,normal,s1_below_0,No diabetes
+high,normal,ordinary,s3_68_up,female,obese,hypertension,risk,s2_0_1,No diabetes
+high,normal,risk_heart_disease,s3_68_up,male,overweight,hypertension,risk,s2_0_1,No diabetes
+borderline_high,normal,ordinary,s3_68_up,female,overweight,hypertension,hypertension,s2_0_1,No diabetes
+borderline_high,diabetes,ordinary,s3_68_up,female,obese,hypertension,risk,s2_0_1,Diabetes
+high,normal,protective_heart_disease,s3_68_up,female,healthy,hypertension,hypertension,s1_below_0,No diabetes
+borderline_high,prediabetes,protective_heart_disease,s3_68_up,female,healthy,hypertension,risk,s2_0_1,Diabetes
+desirable,normal,protective_heart_disease,s3_68_up,female,obese,hypertension,risk,s2_0_1,No diabetes

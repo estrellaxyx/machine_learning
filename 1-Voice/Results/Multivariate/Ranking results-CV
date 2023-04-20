@@ -1,0 +1,56 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.CfsSubsetEval -P 1 -E 1
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    10-fold cross-validation
+
+
+
+=== Attribute selection 10 fold cross-validation (stratified), seed: 1 ===
+
+number of folds (%)  attribute
+           0(  0 %)     1 meanfreq
+           0(  0 %)     2 sd
+           0(  0 %)     3 median
+           0(  0 %)     4 Q25
+           0(  0 %)     5 Q75
+          10(100 %)     6 IQR
+           0(  0 %)     7 skew
+           0(  0 %)     8 kurt
+           0(  0 %)     9 sp.ent
+           0(  0 %)    10 sfm
+           0(  0 %)    11 mode
+           0(  0 %)    12 centroid
+          10(100 %)    13 meanfun
+           0(  0 %)    14 minfun
+           0(  0 %)    15 maxfun
+           0(  0 %)    16 meandom
+           0(  0 %)    17 mindom
+           0(  0 %)    18 maxdom
+           0(  0 %)    19 dfrange
+           0(  0 %)    20 modindx
+

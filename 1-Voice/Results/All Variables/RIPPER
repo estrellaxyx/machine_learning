@@ -1,0 +1,76 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice_norm
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(meanfun >= 0.47934) and (IQR <= 0.202248) => label=female (1166.0/5.0)
+(meanfun >= 0.516329) => label=female (305.0/14.0)
+(IQR <= 0.269447) and (meanfun >= 0.422864) and (sd >= 0.393844) and (minfun <= 0.193554) => label=female (31.0/1.0)
+(meanfun >= 0.506426) and (maxdom <= 0.215868) => label=female (7.0/1.0)
+(meanfun >= 0.408169) and (IQR <= 0.217353) => label=female (39.0/5.0)
+(meanfun >= 0.431413) and (minfun <= 0.150728) and (Q75 <= 0.819902) and (skew >= 0.05376) => label=female (20.0/0.0)
+(IQR <= 0.335247) and (meanfun >= 0.438235) and (skew <= 0.038144) => label=female (12.0/2.0)
+(IQR <= 0.237015) and (sfm >= 0.595625) => label=female (9.0/1.0)
+(minfun <= 0.038617) and (Q25 >= 0.53095) and (sfm >= 0.507615) and (median <= 0.731576) => label=female (11.0/1.0)
+(meanfun >= 0.46165) and (sd >= 0.579576) and (median >= 0.572126) => label=female (6.0/0.0)
+ => label=male (1562.0/8.0)
+
+Number of Rules : 11
+
+
+Time taken to build model: 0.37 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3069               96.875  %
+Incorrectly Classified Instances        99                3.125  %
+Kappa statistic                          0.9375
+Mean absolute error                      0.044 
+Root mean squared error                  0.1712
+Relative absolute error                  8.8034 %
+Root relative squared error             34.2353 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.965    0.027    0.973      0.965    0.969      0.938    0.978     0.973     male
+                 0.973    0.035    0.965      0.973    0.969      0.938    0.978     0.968     female
+Weighted Avg.    0.969    0.031    0.969      0.969    0.969      0.938    0.978     0.971     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1528   56 |    a = male
+   43 1541 |    b = female
+

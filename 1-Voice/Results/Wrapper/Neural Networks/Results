@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R2-6,10,13,19,21
+Instances:    3168
+Attributes:   9
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              sfm
+              meanfun
+              dfrange
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -5.756752658704739
+    Node 2    8.623422630890323
+    Node 3    -12.977726851214129
+    Node 4    -14.839748898805318
+    Node 5    9.633669688920307
+    Node 6    6.159740665166727
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    5.756797633309962
+    Node 2    -8.623531558218898
+    Node 3    12.97789714985368
+    Node 4    14.839932463909458
+    Node 5    -9.63377821367065
+    Node 6    -6.159798333662839
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.9716216193988162
+    Attrib sd    14.042093520962329
+    Attrib median    -4.722531079061033
+    Attrib Q25    3.1625727181653422
+    Attrib Q75    -0.473605537555203
+    Attrib IQR    -4.626300205384223
+    Attrib sfm    -0.5254219289104123
+    Attrib meanfun    -9.045958806106187
+    Attrib dfrange    -14.0949551023004
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.44916704789935824
+    Attrib sd    19.207526474331935
+    Attrib median    4.118392246123016
+    Attrib Q25    -1.3924768258779214
+    Attrib Q75    -12.794169737939988
+    Attrib IQR    -10.508905290810764
+    Attrib sfm    6.263237768034469
+    Attrib meanfun    5.013330534817657
+    Attrib dfrange    -4.790949249139178
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -6.996180960798547
+    Attrib sd    6.08119949304897
+    Attrib median    -7.909145238335899
+    Attrib Q25    21.590187656461755
+    Attrib Q75    5.940577487630205
+    Attrib IQR    -10.887484526946128
+    Attrib sfm    -0.2567931232252574
+    Attrib meanfun    2.68366437634597
+    Attrib dfrange    0.07721918395148157
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    5.702222731521811
+    Attrib sd    1.9842748210014254
+    Attrib median    -7.39830356326212
+    Attrib Q25    3.3484598859756094
+    Attrib Q75    -0.6208936884056854
+    Attrib IQR    -8.801453054214935
+    Attrib sfm    -0.6199786173711399
+    Attrib meanfun    -10.691842827319311
+    Attrib dfrange    3.99248318635579
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    2.2308178043614615
+    Attrib sd    13.758894893563289
+    Attrib median    -0.1289659513922371
+    Attrib Q25    0.8609996178375132
+    Attrib Q75    2.5031994163086306
+    Attrib IQR    -0.3127391033470235
+    Attrib sfm    -4.952529017101621
+    Attrib meanfun    -13.611881573560975
+    Attrib dfrange    5.0747116976488105
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 1.96 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3103               97.9482 %
+Incorrectly Classified Instances        65                2.0518 %
+Kappa statistic                          0.959 
+Mean absolute error                      0.0232
+Root mean squared error                  0.1295
+Relative absolute error                  4.6425 %
+Root relative squared error             25.8902 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.016    0.983      0.975    0.979      0.959    0.994     0.995     male
+                 0.984    0.025    0.976      0.984    0.980      0.959    0.994     0.991     female
+Weighted Avg.    0.979    0.021    0.980      0.979    0.979      0.959    0.994     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1545   39 |    a = male
+   26 1558 |    b = female
+

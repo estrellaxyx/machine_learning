@@ -1,0 +1,60 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(meanfun >= 0.47934) and (IQR <= 0.261589) => label=female (1247.0/8.0)
+(meanfun >= 0.516592) => label=female (240.0/13.0)
+(meanfun >= 0.43804) and (IQR <= 0.200718) => label=female (30.0/2.0)
+(meanfun >= 0.461009) and (sfm >= 0.591663) => label=female (38.0/10.0)
+(meanfun >= 0.400081) and (IQR <= 0.199324) => label=female (12.0/0.0)
+(IQR <= 0.331192) and (sfm >= 0.590483) and (sp.ent <= 0.811575) and (Q25 >= 0.488762) => label=female (20.0/1.0)
+(IQR <= 0.347642) and (meanfun >= 0.432178) and (mode <= 0.567244) => label=female (17.0/6.0)
+ => label=male (1564.0/20.0)
+
+Number of Rules : 8
+
+
+Time taken to build model: 0.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3076               97.096  %
+Incorrectly Classified Instances        92                2.904  %
+Kappa statistic                          0.9419
+Mean absolute error                      0.0451
+Root mean squared error                  0.1657
+Relative absolute error                  9.0192 %
+Root relative squared error             33.1477 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.965    0.023    0.976      0.965    0.971      0.942    0.979     0.975     male
+                 0.977    0.035    0.966      0.977    0.971      0.942    0.979     0.971     female
+Weighted Avg.    0.971    0.029    0.971      0.971    0.971      0.942    0.979     0.973     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1529   55 |    a = male
+   37 1547 |    b = female
+

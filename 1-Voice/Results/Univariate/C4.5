@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+meanfun <= 0.473689
+|   IQR <= 0.285682
+|   |   sfm <= 0.592978
+|   |   |   IQR <= 0.230417
+|   |   |   |   meanfun <= 0.398519: male (23.0/2.0)
+|   |   |   |   meanfun > 0.398519: female (42.0/6.0)
+|   |   |   IQR > 0.230417: male (53.0/2.0)
+|   |   sfm > 0.592978
+|   |   |   Q25 <= 0.479721: male (3.0/1.0)
+|   |   |   Q25 > 0.479721: female (26.0/1.0)
+|   IQR > 0.285682
+|   |   meanfun <= 0.422343: male (1282.0/4.0)
+|   |   meanfun > 0.422343
+|   |   |   sfm <= 0.621065: male (147.0/3.0)
+|   |   |   sfm > 0.621065
+|   |   |   |   sfm <= 0.868032
+|   |   |   |   |   Q25 <= 0.551504
+|   |   |   |   |   |   sp.ent <= 0.790873: female (3.0/1.0)
+|   |   |   |   |   |   sp.ent > 0.790873: male (23.0)
+|   |   |   |   |   Q25 > 0.551504: female (8.0/1.0)
+|   |   |   |   sfm > 0.868032: female (6.0)
+meanfun > 0.473689
+|   meanfun <= 0.515406
+|   |   IQR <= 0.244951: female (94.0/3.0)
+|   |   IQR > 0.244951
+|   |   |   sfm <= 0.638426
+|   |   |   |   IQR <= 0.33217
+|   |   |   |   |   meanfun <= 0.502411: male (5.0/1.0)
+|   |   |   |   |   meanfun > 0.502411: female (3.0)
+|   |   |   |   IQR > 0.33217: male (28.0)
+|   |   |   sfm > 0.638426
+|   |   |   |   Q25 <= 0.299251
+|   |   |   |   |   Q25 <= 0.274076: female (6.0/1.0)
+|   |   |   |   |   Q25 > 0.274076: male (2.0)
+|   |   |   |   Q25 > 0.299251: female (17.0)
+|   meanfun > 0.515406: female (1397.0/18.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3079               97.1907 %
+Incorrectly Classified Instances        89                2.8093 %
+Kappa statistic                          0.9438
+Mean absolute error                      0.0389
+Root mean squared error                  0.1636
+Relative absolute error                  7.7896 %
+Root relative squared error             32.7181 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.965    0.021    0.979      0.965    0.972      0.944    0.972     0.960     male
+                 0.979    0.035    0.965      0.979    0.972      0.944    0.972     0.949     female
+Weighted Avg.    0.972    0.028    0.972      0.972    0.972      0.944    0.972     0.955     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1528   56 |    a = male
+   33 1551 |    b = female
+

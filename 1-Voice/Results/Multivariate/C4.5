@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+meanfun <= 0.142062
+|   IQR <= 0.07209
+|   |   meanfun <= 0.129766: male (39.0/12.0)
+|   |   meanfun > 0.129766: female (54.0/8.0)
+|   IQR > 0.07209: male (1526.0/32.0)
+meanfun > 0.142062
+|   meanfun <= 0.149406
+|   |   IQR <= 0.072775: female (92.0/3.0)
+|   |   IQR > 0.072775: male (60.0/26.0)
+|   meanfun > 0.149406: female (1397.0/18.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3067               96.8119 %
+Incorrectly Classified Instances       101                3.1881 %
+Kappa statistic                          0.9362
+Mean absolute error                      0.0508
+Root mean squared error                  0.1688
+Relative absolute error                 10.1515 %
+Root relative squared error             33.7558 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.039    0.962      0.975    0.968      0.936    0.980     0.974     male
+                 0.961    0.025    0.974      0.961    0.968      0.936    0.980     0.972     female
+Weighted Avg.    0.968    0.032    0.968      0.968    0.968      0.936    0.980     0.973     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1544   40 |    a = male
+   61 1523 |    b = female
+

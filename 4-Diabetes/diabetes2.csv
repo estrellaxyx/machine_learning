@@ -1,0 +1,391 @@
+cholesterol,glucose,hdl_chol,age,gender,bmi,systolic_bp,diastolic_bp,waist_hip_ratio,diabetes
+193,77,49,19,female,22.5,118,70,0.84,No diabetes
+146,79,41,19,female,26.4,108,58,0.83,No diabetes
+217,75,54,20,female,29.3,110,72,0.89,No diabetes
+226,97,70,20,female,19.6,122,64,0.79,No diabetes
+164,91,67,20,female,20.2,122,86,0.82,No diabetes
+170,69,64,20,female,27.6,108,70,0.93,No diabetes
+149,77,49,20,female,21.0,105,82,0.84,No diabetes
+164,71,63,20,male,19.7,108,78,0.81,No diabetes
+230,112,64,20,male,24.9,100,90,0.79,No diabetes
+179,105,60,20,female,35.5,140,100,0.74,No diabetes
+174,105,117,20,male,26.8,132,86,0.9,No diabetes
+193,106,63,20,female,41.7,165,110,0.84,No diabetes
+132,99,34,21,female,28.1,112,62,0.91,No diabetes
+203,84,75,21,female,25.2,125,85,0.72,No diabetes
+135,88,47,21,male,22.9,110,68,0.79,No diabetes
+187,84,64,21,female,28.0,138,88,0.91,No diabetes
+244,89,92,21,male,22.7,116,76,0.87,No diabetes
+193,75,49,21,female,41.6,130,82,0.77,No diabetes
+165,76,46,22,female,20.2,112,78,0.8,No diabetes
+172,70,36,22,female,25.4,90,48,0.92,No diabetes
+217,81,60,22,female,31.1,120,75,0.92,No diabetes
+223,75,85,22,female,25.1,120,70,0.8,No diabetes
+136,81,51,22,female,25.8,105,85,0.88,No diabetes
+175,91,42,23,female,39.1,110,80,0.88,No diabetes
+230,86,37,23,male,38.6,150,99,1.02,No diabetes
+147,78,42,23,female,35.0,127,71,0.91,No diabetes
+229,91,43,23,male,24.4,110,78,0.83,No diabetes
+179,75,36,23,female,30.4,120,80,0.96,No diabetes
+185,76,58,23,male,20.0,124,78,0.8,No diabetes
+164,86,40,23,female,36.2,126,75,0.94,No diabetes
+228,66,45,24,female,21.3,100,70,0.87,No diabetes
+199,87,63,25,male,19.0,120,78,0.94,No diabetes
+134,101,36,25,female,43.4,142,78,0.81,No diabetes
+169,104,58,25,female,30.1,140,95,0.95,No diabetes
+227,98,66,25,male,22.6,123,82,0.9,No diabetes
+149,138,50,26,female,31.8,148,92,0.83,No diabetes
+155,58,69,26,male,23.0,110,76,0.86,No diabetes
+179,90,60,26,female,25.4,138,84,0.8,No diabetes
+283,83,74,26,male,30.8,158,104,0.93,No diabetes
+228,79,37,26,male,35.1,122,90,0.98,No diabetes
+220,60,66,26,male,21.5,136,88,0.85,Diabetes
+170,76,60,27,female,21.1,122,86,0.76,No diabetes
+201,100,46,27,female,24.1,121,75,0.91,No diabetes
+238,75,36,27,female,33.2,130,80,0.85,No diabetes
+190,92,44,27,female,34.9,150,106,0.83,No diabetes
+203,94,62,27,female,32.7,140,80,0.79,No diabetes
+226,100,65,27,male,42.7,130,100,0.94,No diabetes
+204,62,70,27,female,29.0,110,90,0.8,No diabetes
+166,77,68,27,male,19.1,110,58,0.87,No diabetes
+241,92,40,27,female,31.7,120,75,0.95,No diabetes
+164,94,58,28,female,28.2,128,94,0.91,No diabetes
+214,111,59,28,male,31.0,130,90,0.98,No diabetes
+151,74,47,28,male,19.2,135,75,0.83,No diabetes
+184,99,36,28,male,24.1,124,94,0.92,No diabetes
+168,69,45,28,female,35.4,111,65,0.91,No diabetes
+146,77,60,28,female,21.6,120,90,0.88,No diabetes
+189,96,47,28,female,34.3,136,52,0.84,No diabetes
+132,83,40,28,female,34.2,136,86,0.79,No diabetes
+179,77,50,29,male,25.8,122,68,0.97,No diabetes
+135,88,34,29,female,20.5,118,61,0.7,No diabetes
+163,69,48,29,female,18.1,125,60,0.83,No diabetes
+204,71,55,29,female,20.6,110,70,0.87,No diabetes
+165,97,24,29,female,37.4,112,68,0.96,No diabetes
+181,101,44,29,male,27.4,130,78,0.9,No diabetes
+194,269,38,29,female,24.7,120,70,0.83,Diabetes
+158,74,64,30,female,26.0,108,68,0.94,No diabetes
+160,82,41,30,female,25.3,172,124,0.83,No diabetes
+181,77,46,30,female,41.5,162,108,0.85,No diabetes
+144,81,28,30,male,22.4,118,78,0.82,No diabetes
+182,74,44,30,female,22.9,132,80,0.79,No diabetes
+145,84,54,30,female,27.5,102,56,0.79,No diabetes
+195,92,41,30,male,28.2,161,112,0.94,No diabetes
+207,75,44,30,male,24.4,118,62,0.85,No diabetes
+192,124,31,30,male,33.9,142,79,0.84,No diabetes
+183,69,51,31,female,30.7,125,70,0.87,No diabetes
+176,92,55,31,female,26.5,110,72,0.86,No diabetes
+163,83,57,31,female,20.0,136,86,0.73,No diabetes
+188,77,45,31,female,35.5,122,70,0.89,No diabetes
+209,89,43,31,female,25.1,108,58,0.68,No diabetes
+179,77,72,31,male,23.4,131,79,0.87,No diabetes
+293,85,94,31,female,31.3,110,90,0.98,No diabetes
+305,91,44,31,male,29.4,100,60,0.89,No diabetes
+191,155,58,31,female,43.3,140,87,0.95,Diabetes
+155,81,70,32,female,25.1,120,68,0.83,No diabetes
+179,85,52,32,female,32.7,140,96,0.79,No diabetes
+176,90,34,32,female,44.6,100,72,0.78,No diabetes
+244,101,36,32,male,30.4,132,90,0.89,No diabetes
+213,83,47,33,female,26.1,130,90,0.9,No diabetes
+217,87,40,33,female,34.0,140,90,0.91,No diabetes
+151,85,48,33,male,45.5,110,90,0.9,No diabetes
+168,82,44,33,female,19.0,98,66,0.83,No diabetes
+231,84,91,33,male,24.1,140,70,0.92,No diabetes
+262,93,43,33,female,30.1,110,68,0.72,No diabetes
+179,70,52,34,male,23.1,138,82,0.79,No diabetes
+300,65,59,34,female,26.6,120,60,0.85,No diabetes
+248,94,69,34,male,26.5,132,86,0.86,No diabetes
+217,88,40,34,male,28.9,145,100,0.98,No diabetes
+224,71,42,34,female,32.2,135,80,0.74,No diabetes
+171,85,61,34,female,29.0,120,80,0.79,No diabetes
+174,90,36,34,male,29.3,142,92,0.86,No diabetes
+194,86,67,35,male,25.7,115,64,0.89,No diabetes
+150,80,38,35,male,23.6,138,92,0.86,No diabetes
+337,85,62,35,male,25.6,124,84,0.82,No diabetes
+239,97,55,35,male,21.8,122,62,0.84,No diabetes
+218,126,32,35,male,25.0,139,90,0.95,No diabetes
+122,82,43,36,female,25.5,110,80,0.91,No diabetes
+225,83,42,36,male,30.1,149,89,0.95,No diabetes
+160,71,44,36,female,31.8,110,80,0.87,No diabetes
+191,76,30,36,male,27.0,100,66,0.9,No diabetes
+199,153,77,36,female,41.2,118,66,0.9,No diabetes
+197,92,46,36,female,23.3,128,80,0.86,No diabetes
+179,81,35,36,female,22.1,110,76,0.92,No diabetes
+186,74,76,36,male,22.1,138,82,0.82,No diabetes
+178,78,59,36,male,23.1,130,79,0.85,No diabetes
+224,85,30,36,male,30.3,150,99,0.9,No diabetes
+194,81,36,36,male,21.6,110,76,0.88,No diabetes
+347,197,42,36,male,39.7,140,86,1.04,No diabetes
+245,119,26,36,male,28.9,150,92,0.88,Diabetes
+227,75,44,37,male,34.3,140,84,0.87,No diabetes
+192,89,30,37,male,27.2,136,96,0.84,No diabetes
+215,64,84,37,female,29.9,140,100,0.76,No diabetes
+214,67,47,37,female,24.9,108,76,0.81,No diabetes
+243,52,59,37,female,40.0,110,82,0.86,No diabetes
+156,86,34,37,female,33.2,122,74,0.94,No diabetes
+179,85,50,37,male,21.9,190,94,0.85,No diabetes
+209,91,36,37,male,37.6,130,94,0.88,No diabetes
+232,87,30,37,male,38.3,140,95,0.91,No diabetes
+212,88,36,37,female,27.5,124,82,0.82,No diabetes
+199,130,48,37,female,38.4,136,84,0.82,No diabetes
+145,85,29,38,female,24.4,132,82,0.89,No diabetes
+206,90,38,38,female,24.7,138,90,0.77,No diabetes
+147,86,34,38,male,30.3,130,96,0.95,No diabetes
+302,81,57,38,female,34.8,128,82,0.8,No diabetes
+138,95,40,38,female,26.9,140,90,0.79,No diabetes
+215,128,34,38,female,40.8,102,68,0.84,No diabetes
+159,88,43,38,male,25.7,138,79,0.85,No diabetes
+268,90,48,38,female,32.1,142,100,0.83,No diabetes
+251,118,38,38,female,42.6,110,80,0.84,No diabetes
+216,155,30,38,male,22.0,110,60,0.92,No diabetes
+203,299,43,38,female,42.5,136,83,0.87,Diabetes
+181,83,44,39,female,41.2,140,98,0.85,No diabetes
+239,85,63,39,male,28.1,162,90,0.79,No diabetes
+200,56,51,40,female,19.2,125,64,0.79,No diabetes
+211,98,40,40,female,27.2,110,76,0.86,No diabetes
+152,103,32,40,female,48.6,148,82,0.78,No diabetes
+173,83,37,40,female,23.8,122,76,0.97,No diabetes
+215,72,42,40,male,27.1,180,122,0.95,No diabetes
+219,105,63,40,female,28.0,106,82,0.82,No diabetes
+180,76,46,40,female,25.1,128,82,0.86,No diabetes
+214,77,48,40,male,30.1,120,84,0.91,No diabetes
+171,92,54,40,male,29.8,138,94,1.05,No diabetes
+183,79,46,40,female,33.3,135,84,0.86,No diabetes
+184,92,36,40,female,50.5,142,98,0.83,No diabetes
+180,84,69,40,female,40.1,142,98,0.8,No diabetes
+191,74,33,40,male,36.6,136,70,0.92,No diabetes
+218,87,38,40,male,26.4,120,76,0.93,No diabetes
+169,85,51,40,female,30.0,106,82,0.91,No diabetes
+267,133,34,40,female,41.2,118,69,0.85,Diabetes
+234,78,54,41,male,28.7,122,96,0.95,No diabetes
+206,112,33,41,female,33.7,104,80,0.89,No diabetes
+184,79,39,41,male,22.7,136,96,0.87,No diabetes
+178,64,52,41,female,31.3,130,76,0.76,No diabetes
+179,80,92,41,female,16.0,144,112,0.78,No diabetes
+225,84,82,41,male,21.8,150,80,0.78,No diabetes
+189,84,46,41,female,27.1,130,80,0.8,No diabetes
+199,76,52,41,female,34.9,120,78,0.85,No diabetes
+241,86,63,41,female,28.1,112,72,0.74,No diabetes
+170,106,42,41,female,20.8,103,64,0.97,No diabetes
+269,59,66,41,male,29.9,130,73,0.93,No diabetes
+269,73,34,41,female,29.3,126,90,0.95,No diabetes
+270,73,40,42,male,29.9,146,94,0.95,No diabetes
+172,101,46,42,female,27.5,118,68,0.73,No diabetes
+193,77,45,42,female,23.2,125,90,0.8,No diabetes
+199,81,36,42,female,36.8,178,100,0.9,No diabetes
+177,101,36,42,female,29.0,146,94,0.93,No diabetes
+191,81,53,42,female,29.5,138,84,0.86,No diabetes
+208,122,51,42,female,25.8,118,78,0.83,No diabetes
+188,84,46,43,female,24.5,122,80,0.9,No diabetes
+243,74,42,43,female,41.0,128,90,0.91,No diabetes
+173,85,58,43,female,31.0,130,75,0.94,No diabetes
+162,76,40,43,male,33.8,100,70,0.93,No diabetes
+322,87,92,43,female,26.9,120,98,0.78,No diabetes
+254,84,52,43,female,26.5,125,70,0.82,No diabetes
+160,100,36,43,female,24.0,180,110,0.93,No diabetes
+192,109,44,43,female,55.8,141,79,0.85,No diabetes
+197,120,37,43,male,25.0,146,98,0.84,No diabetes
+237,87,41,43,female,31.1,104,90,0.78,No diabetes
+190,84,44,43,female,29.8,135,88,0.89,No diabetes
+190,228,57,43,female,32.9,110,64,0.82,Diabetes
+202,84,33,44,male,23.9,125,80,0.89,No diabetes
+244,101,39,44,male,23.4,140,89,0.92,No diabetes
+168,101,59,44,female,27.5,130,88,0.93,No diabetes
+260,67,46,44,female,29.1,140,94,0.84,No diabetes
+214,87,35,44,female,32.6,140,75,0.86,No diabetes
+207,187,46,44,female,31.5,150,74,0.94,Diabetes
+203,71,78,45,male,18.6,135,88,0.88,No diabetes
+189,80,40,45,male,28.1,140,75,0.89,No diabetes
+216,109,86,45,female,23.0,140,102,0.84,No diabetes
+233,92,39,45,female,28.7,124,86,0.89,No diabetes
+177,87,49,45,male,24.5,160,80,0.85,No diabetes
+191,83,88,45,female,23.6,130,90,0.87,No diabetes
+142,155,25,45,male,30.1,165,115,0.93,No diabetes
+219,130,44,45,male,34.1,172,110,0.91,Diabetes
+190,107,32,46,male,27.8,145,88,0.94,No diabetes
+203,82,56,46,female,22.1,118,59,0.76,No diabetes
+207,102,43,46,female,31.7,212,114,0.83,No diabetes
+242,108,53,46,female,33.5,130,86,0.82,No diabetes
+183,81,60,47,female,30.0,140,97,0.89,No diabetes
+234,65,76,47,male,36.0,137,100,0.98,No diabetes
+118,95,39,47,female,21.1,140,76,0.83,No diabetes
+266,82,54,47,male,21.6,118,78,0.9,No diabetes
+223,90,48,47,female,38.6,120,86,0.85,No diabetes
+245,120,39,47,female,27.6,142,102,0.9,Diabetes
+173,225,31,47,male,34.3,150,98,0.89,Diabetes
+172,117,56,48,female,30.1,130,82,0.83,No diabetes
+190,74,50,48,male,15.2,120,85,0.82,No diabetes
+134,105,42,48,male,24.8,178,120,0.9,No diabetes
+268,85,51,48,male,17.2,150,105,0.91,No diabetes
+209,87,34,48,female,21.4,111,62,0.84,No diabetes
+201,81,87,48,female,22.2,145,95,0.78,No diabetes
+204,89,56,48,male,29.8,170,96,0.9,No diabetes
+307,87,58,49,male,28.3,120,80,0.98,No diabetes
+189,75,72,49,female,37.5,120,80,0.82,No diabetes
+160,196,33,49,male,37.1,150,98,1.09,Diabetes
+237,233,58,49,female,34.6,130,90,0.91,Diabetes
+158,91,48,50,male,25.1,136,90,0.9,No diabetes
+255,78,38,50,female,30.4,130,100,0.86,No diabetes
+196,115,62,50,male,21.9,176,110,0.95,No diabetes
+185,67,59,50,female,39.1,142,90,0.78,No diabetes
+293,115,54,50,male,23.7,131,75,0.87,No diabetes
+188,88,51,50,female,27.8,160,66,0.83,No diabetes
+174,173,34,50,male,37.7,159,99,0.8,No diabetes
+158,91,31,50,male,30.8,138,89,0.89,No diabetes
+181,255,26,50,male,44.6,140,86,1.14,Diabetes
+140,385,31,50,male,25.4,138,66,0.9,Diabetes
+192,85,69,51,male,24.3,130,110,0.92,No diabetes
+284,89,54,51,female,27.3,140,100,0.74,No diabetes
+222,82,87,51,female,17.8,150,110,0.76,No diabetes
+249,81,28,51,female,33.3,122,90,0.93,No diabetes
+212,79,49,51,female,24.1,230,120,0.9,No diabetes
+215,110,36,51,female,44.2,142,78,0.88,Diabetes
+218,182,54,51,female,34.7,139,69,0.79,Diabetes
+443,185,23,51,female,33.7,158,98,0.9,Diabetes
+218,68,46,52,female,31.1,142,79,0.93,No diabetes
+171,97,69,52,male,22.2,125,72,0.85,No diabetes
+255,83,90,52,male,17.2,170,110,0.91,No diabetes
+182,85,43,52,male,21.1,130,90,0.83,No diabetes
+206,83,68,52,male,22.6,140,98,0.9,No diabetes
+261,101,83,52,female,34.0,152,92,0.86,No diabetes
+204,57,74,52,male,17.7,140,90,0.89,No diabetes
+196,120,67,52,female,26.9,144,94,0.81,Diabetes
+219,78,67,53,female,30.7,135,100,0.83,No diabetes
+273,94,49,53,female,29.9,160,96,0.79,No diabetes
+225,74,36,53,female,32.2,126,80,0.83,No diabetes
+185,84,52,53,female,27.4,147,72,0.93,No diabetes
+242,297,34,53,male,31.9,142,96,0.96,Diabetes
+296,369,46,53,male,25.5,138,94,0.9,Diabetes
+228,76,53,54,male,27.4,121,62,0.88,No diabetes
+194,87,65,54,male,19.0,170,96,0.81,No diabetes
+216,79,46,54,female,23.0,132,80,0.85,No diabetes
+240,96,57,54,female,29.1,152,100,0.86,No diabetes
+148,193,14,54,female,25.8,140,65,1.0,No diabetes
+271,103,90,55,female,20.2,180,105,0.81,No diabetes
+204,94,54,55,female,32.6,140,90,0.91,No diabetes
+174,93,77,55,male,20.1,118,86,0.97,No diabetes
+157,74,47,55,female,35.3,150,82,0.83,No diabetes
+263,89,40,55,female,35.8,108,72,0.9,No diabetes
+160,122,41,55,female,34.9,136,83,0.9,No diabetes
+179,236,63,55,male,23.2,122,74,1.0,Diabetes
+208,95,32,56,male,27.8,131,75,0.92,No diabetes
+129,110,42,56,male,19.4,140,75,0.89,No diabetes
+219,173,31,56,female,32.8,100,50,0.82,Diabetes
+404,206,33,56,male,23.5,162,88,0.97,Diabetes
+138,81,45,57,male,21.6,148,81,0.84,No diabetes
+173,80,57,57,male,20.2,124,64,0.86,No diabetes
+209,176,55,57,female,28.3,115,68,0.92,Diabetes
+228,92,37,58,female,48.4,190,92,0.86,No diabetes
+227,85,26,58,male,30.3,144,82,0.88,No diabetes
+201,106,53,58,male,34.7,186,102,1.05,No diabetes
+251,94,36,58,female,27.3,174,75,0.93,No diabetes
+211,48,34,58,male,27.7,162,78,0.88,No diabetes
+115,239,36,58,male,29.5,125,69,0.81,Diabetes
+204,113,35,59,male,24.7,148,76,1.03,No diabetes
+215,97,46,59,female,31.2,140,70,0.77,No diabetes
+221,126,48,59,female,32.4,130,78,0.87,No diabetes
+220,95,58,59,female,22.3,138,80,0.84,No diabetes
+193,248,24,59,female,30.5,140,90,0.84,Diabetes
+195,108,46,59,female,26.9,150,102,0.88,Diabetes
+219,112,73,59,male,27.4,146,92,0.93,Diabetes
+289,267,38,59,male,25.7,142,79,0.95,Diabetes
+198,92,62,60,male,23.4,126,78,0.9,No diabetes
+192,56,42,60,female,24.5,130,70,0.78,No diabetes
+242,82,54,60,female,26.0,130,90,0.87,No diabetes
+235,102,42,60,male,27.5,148,98,0.95,No diabetes
+277,119,62,60,female,24.2,140,86,0.85,No diabetes
+162,90,46,60,female,21.4,110,64,0.94,No diabetes
+318,270,108,60,female,27.8,132,72,0.86,No diabetes
+279,270,40,60,female,34.1,174,90,0.96,Diabetes
+128,223,24,60,male,30.7,110,68,0.98,Diabetes
+203,90,51,60,female,24.8,130,72,0.88,Diabetes
+143,91,37,61,female,36.6,160,92,0.8,No diabetes
+300,103,44,61,female,26.5,138,78,0.91,No diabetes
+206,94,44,61,female,35.2,180,96,0.87,No diabetes
+182,85,37,61,female,25.7,176,86,1.14,No diabetes
+198,86,66,61,male,19.5,138,76,0.87,No diabetes
+211,225,29,61,female,25.5,190,100,0.95,Diabetes
+265,330,34,61,male,24.5,170,88,0.95,Diabetes
+204,128,61,62,male,27.4,141,81,0.93,No diabetes
+169,95,29,62,male,40.5,118,72,1.06,No diabetes
+236,102,36,62,male,19.5,150,80,0.9,No diabetes
+235,109,59,62,female,51.4,175,80,0.89,Diabetes
+196,206,41,62,female,32.6,178,90,0.9,Diabetes
+180,92,34,63,male,25.0,145,72,0.9,No diabetes
+194,54,57,63,male,26.0,184,76,0.88,No diabetes
+194,80,34,63,male,23.1,131,88,0.87,No diabetes
+212,82,68,63,male,23.1,180,110,0.93,No diabetes
+293,87,120,63,female,30.7,142,80,1.04,No diabetes
+194,95,36,63,female,43.9,140,100,0.83,No diabetes
+277,88,45,63,female,38.3,220,100,0.83,No diabetes
+157,91,34,63,male,24.5,106,82,1.03,No diabetes
+283,145,39,63,female,37.8,190,110,0.92,Diabetes
+215,119,44,63,female,28.0,160,68,0.81,Diabetes
+342,251,48,63,female,33.4,178,88,0.98,Diabetes
+202,81,55,64,female,30.5,190,118,0.94,No diabetes
+255,100,34,64,male,34.5,134,74,0.94,No diabetes
+181,177,24,64,male,31.4,130,66,0.94,Diabetes
+249,90,28,64,male,27.8,138,80,1.07,Diabetes
+249,197,44,64,female,28.2,151,85,0.8,Diabetes
+219,106,50,65,female,41.3,140,90,0.75,No diabetes
+229,95,74,65,female,27.6,125,64,0.88,No diabetes
+212,97,45,65,female,35.3,158,94,0.91,No diabetes
+170,67,33,65,male,26.9,140,65,1.08,No diabetes
+159,172,28,65,male,26.0,142,81,0.88,Diabetes
+224,341,33,65,male,30.9,160,80,0.98,Diabetes
+263,82,92,66,female,19.5,104,64,0.94,No diabetes
+184,76,42,66,male,23.8,130,75,0.98,No diabetes
+281,92,41,66,female,33.8,158,88,1.09,No diabetes
+221,120,83,66,female,22.3,110,64,0.82,No diabetes
+188,174,24,66,male,31.9,160,78,0.94,No diabetes
+246,104,62,66,female,30.5,200,94,0.98,Diabetes
+204,173,37,66,male,22.9,138,78,0.75,Diabetes
+78,93,12,67,male,18.6,110,50,0.87,No diabetes
+206,85,46,67,male,27.9,119,68,0.9,No diabetes
+174,125,44,67,male,30.1,119,72,0.84,No diabetes
+254,121,39,67,male,25.4,161,118,0.92,Diabetes
+198,118,46,68,female,22.0,130,70,0.84,No diabetes
+143,371,46,68,male,24.7,138,82,0.86,No diabetes
+207,77,46,68,male,30.2,199,115,0.88,No diabetes
+236,111,82,68,female,22.5,142,96,0.78,No diabetes
+260,68,60,69,female,36.1,158,98,0.94,No diabetes
+242,74,55,70,female,32.3,140,65,0.87,No diabetes
+186,97,50,70,male,27.9,148,88,1.02,No diabetes
+182,206,43,70,male,31.6,158,90,0.94,Diabetes
+289,111,50,70,female,43.0,126,80,0.94,Diabetes
+231,70,110,71,female,27.5,150,78,0.8,No diabetes
+199,85,59,71,male,25.2,136,86,0.95,No diabetes
+228,115,61,71,female,43.2,170,92,0.94,No diabetes
+213,203,75,71,female,29.2,150,80,0.81,Diabetes
+204,120,44,72,male,27.8,140,72,0.98,No diabetes
+205,83,42,72,female,34.0,170,90,0.83,No diabetes
+213,76,40,72,female,27.7,130,60,1.0,No diabetes
+207,71,41,72,male,25.8,138,88,0.98,Diabetes
+235,106,37,73,male,30.4,134,78,0.93,No diabetes
+237,118,45,73,female,29.9,162,75,0.86,Diabetes
+306,92,56,74,male,27.2,140,72,0.95,No diabetes
+223,88,42,74,female,30.2,250,100,0.89,No diabetes
+296,262,60,74,female,32.4,159,99,0.88,Diabetes
+205,79,32,75,male,30.1,136,90,1.05,No diabetes
+254,342,37,75,male,31.9,151,87,0.98,Diabetes
+159,100,54,76,male,30.3,116,53,0.98,No diabetes
+196,82,58,76,male,25.6,158,78,0.9,No diabetes
+173,131,69,76,female,19.3,160,60,0.94,No diabetes
+219,112,73,76,male,18.0,125,82,0.88,No diabetes
+209,113,65,76,female,27.9,156,78,0.88,Diabetes
+215,80,100,78,male,18.1,170,88,0.97,No diabetes
+210,81,81,78,male,23.4,110,70,0.97,No diabetes
+224,98,44,78,female,28.3,150,81,0.8,No diabetes
+195,171,29,78,male,27.8,130,82,1.0,No diabetes
+235,91,37,79,female,22.3,142,70,0.89,No diabetes
+292,235,55,79,male,23.7,170,90,0.95,Diabetes
+157,92,47,80,male,29.6,156,88,0.98,No diabetes
+252,161,87,80,female,29.6,160,100,1.07,Diabetes
+271,121,40,81,female,27.1,146,76,0.84,No diabetes
+240,88,49,82,female,30.1,180,86,0.89,No diabetes
+255,112,34,82,male,26.3,179,89,0.86,No diabetes
+227,105,44,83,female,25.2,150,90,0.88,No diabetes
+226,279,52,84,female,37.5,144,88,0.85,Diabetes
+301,90,118,89,female,21.7,218,90,0.76,No diabetes
+232,184,114,91,female,24.0,170,82,0.92,Diabetes
+165,94,69,92,female,39.7,160,82,1.0,No diabetes

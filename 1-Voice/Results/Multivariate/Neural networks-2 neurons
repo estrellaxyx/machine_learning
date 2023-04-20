@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 2 -R
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -8.06217473140714
+    Node 2    5.14297736423773
+    Node 3    8.28608488597267
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    8.062174731169623
+    Node 2    -5.142977364076295
+    Node 3    -8.28608488572189
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    7.991914951768321
+    Attrib IQR    19.736640287458208
+    Attrib meanfun    -5.780625422869731
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.7928853481759852
+    Attrib IQR    -1.0274629161733047
+    Attrib meanfun    -11.761469249796608
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 0.83 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3067               96.8119 %
+Incorrectly Classified Instances       101                3.1881 %
+Kappa statistic                          0.9362
+Mean absolute error                      0.0484
+Root mean squared error                  0.1598
+Relative absolute error                  9.6736 %
+Root relative squared error             31.9662 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.968    0.032    0.968      0.968    0.968      0.936    0.991     0.992     male
+                 0.968    0.032    0.968      0.968    0.968      0.936    0.991     0.989     female
+Weighted Avg.    0.968    0.032    0.968      0.968    0.968      0.936    0.991     0.991     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1533   51 |    a = male
+   50 1534 |    b = female
+

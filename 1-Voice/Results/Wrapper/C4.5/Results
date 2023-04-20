@@ -1,0 +1,96 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,9-10,13,17,21
+Instances:    3168
+Attributes:   6
+              IQR
+              sp.ent
+              sfm
+              meanfun
+              mindom
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+meanfun <= 0.142062
+|   IQR <= 0.07209
+|   |   meanfun <= 0.129766
+|   |   |   sfm <= 0.437833: male (26.0/2.0)
+|   |   |   sfm > 0.437833
+|   |   |   |   mindom <= 0.015625: female (7.0)
+|   |   |   |   mindom > 0.015625
+|   |   |   |   |   sp.ent <= 0.932576: male (2.0)
+|   |   |   |   |   sp.ent > 0.932576: female (4.0/1.0)
+|   |   meanfun > 0.129766
+|   |   |   sfm <= 0.397582
+|   |   |   |   sp.ent <= 0.897517: female (22.0/2.0)
+|   |   |   |   sp.ent > 0.897517: male (7.0/1.0)
+|   |   |   sfm > 0.397582: female (25.0)
+|   IQR > 0.07209
+|   |   meanfun <= 0.134082: male (1372.0/9.0)
+|   |   meanfun > 0.134082
+|   |   |   sfm <= 0.52608
+|   |   |   |   IQR <= 0.094357
+|   |   |   |   |   meanfun <= 0.139569: male (14.0/1.0)
+|   |   |   |   |   meanfun > 0.139569: female (4.0/1.0)
+|   |   |   |   IQR > 0.094357: male (98.0)
+|   |   |   sfm > 0.52608
+|   |   |   |   mindom <= 0.03418
+|   |   |   |   |   IQR <= 0.104935
+|   |   |   |   |   |   mindom <= 0.019531: female (8.0)
+|   |   |   |   |   |   mindom > 0.019531: male (7.0/1.0)
+|   |   |   |   |   IQR > 0.104935: male (15.0/2.0)
+|   |   |   |   mindom > 0.03418: female (8.0)
+meanfun > 0.142062
+|   meanfun <= 0.149406
+|   |   IQR <= 0.072775: female (92.0/3.0)
+|   |   IQR > 0.072775
+|   |   |   sfm <= 0.551486
+|   |   |   |   IQR <= 0.093504
+|   |   |   |   |   mindom <= 0.015625: male (2.0)
+|   |   |   |   |   mindom > 0.015625
+|   |   |   |   |   |   sp.ent <= 0.898033: male (2.0)
+|   |   |   |   |   |   sp.ent > 0.898033: female (4.0)
+|   |   |   |   IQR > 0.093504: male (28.0)
+|   |   |   sfm > 0.551486
+|   |   |   |   IQR <= 0.149608: female (21.0)
+|   |   |   |   IQR > 0.149608: male (3.0/1.0)
+|   meanfun > 0.149406: female (1397.0/18.0)
+
+Number of Leaves  : 	23
+
+Size of the tree : 	45
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3091               97.5694 %
+Incorrectly Classified Instances        77                2.4306 %
+Kappa statistic                          0.9514
+Mean absolute error                      0.0366
+Root mean squared error                  0.1513
+Relative absolute error                  7.3262 %
+Root relative squared error             30.2568 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.972    0.021    0.979      0.972    0.976      0.951    0.980     0.974     male
+                 0.979    0.028    0.972      0.979    0.976      0.951    0.980     0.967     female
+Weighted Avg.    0.976    0.024    0.976      0.976    0.976      0.951    0.980     0.970     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1540   44 |    a = male
+   33 1551 |    b = female
+

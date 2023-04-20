@@ -1,0 +1,52 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.GainRatioAttributeEval 
+Search:       weka.attributeSelection.Ranker -T 0.1 -N -1
+Relation:     voice_norm
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+	Threshold for discarding attributes:   0.1   
+
+Attribute Evaluator (supervised, Class (nominal): 21 label):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.517   13 meanfun
+ 0.322    6 IQR
+ 0.274    4 Q25
+ 0.196    9 sp.ent
+ 0.173    2 sd
+ 0.152   10 sfm
+ 0.122   11 mode
+
+Selected attributes: 13,6,4,9,2,10,11 : 7
+

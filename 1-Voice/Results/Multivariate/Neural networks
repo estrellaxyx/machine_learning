@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 1
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    3.6791386918789177
+    Node 2    -7.600871967041757
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -3.6791386918789186
+    Node 2    7.60087196704176
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.45476358391454397
+    Attrib IQR    -4.605155401654939
+    Attrib meanfun    17.167799906273302
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 0.62 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3053               96.3699 %
+Incorrectly Classified Instances       115                3.6301 %
+Kappa statistic                          0.9274
+Mean absolute error                      0.0644
+Root mean squared error                  0.1719
+Relative absolute error                 12.8733 %
+Root relative squared error             34.3817 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.968    0.041    0.959      0.968    0.964      0.927    0.987     0.985     male
+                 0.959    0.032    0.968      0.959    0.964      0.927    0.987     0.986     female
+Weighted Avg.    0.964    0.036    0.964      0.964    0.964      0.927    0.987     0.986     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1534   50 |    a = male
+   65 1519 |    b = female
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="diabetes4" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="cholesterol">
+			<state id="desirable" />
+			<state id="borderline_high" />
+			<state id="high" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="glucose">
+			<state id="normal" />
+			<state id="prediabetes" />
+			<state id="diabetes" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="bmi">
+			<state id="underweight" />
+			<state id="healthy" />
+			<state id="overweight" />
+			<state id="obese" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="hdl_chol">
+			<state id="risk_heart_disease" />
+			<state id="ordinary" />
+			<state id="protective_heart_disease" />
+			<parents>bmi</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="waist_hip_ratio">
+			<state id="s1_below_0" />
+			<state id="s2_0_1" />
+			<state id="s3_1_up" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="age">
+			<state id="s1_below_46" />
+			<state id="s2_46_68" />
+			<state id="s3_68_up" />
+			<parents>cholesterol waist_hip_ratio</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="gender">
+			<state id="female" />
+			<state id="male" />
+			<parents>hdl_chol bmi waist_hip_ratio</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="diastolic_bp">
+			<state id="normal" />
+			<state id="risk" />
+			<state id="hypertension" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="systolic_bp">
+			<state id="normal" />
+			<state id="risk" />
+			<state id="hypertension" />
+			<parents>age diastolic_bp</parents>
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="diabetes">
+			<state id="State0" />
+			<state id="State1" />
+			<parents>glucose age</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.0.2423.0 ACADEMIC" name="diabetes4">
+			<node id="cholesterol">
+				<name>cholesterol</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>136 33 208 81</position>
+			</node>
+			<node id="glucose">
+				<name>glucose</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>80 185 152 233</position>
+			</node>
+			<node id="hdl_chol">
+				<name>hdl_chol</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>337 52 409 100</position>
+			</node>
+			<node id="age">
+				<name>age</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>177 139 249 187</position>
+			</node>
+			<node id="gender">
+				<name>gender</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>323 129 395 177</position>
+			</node>
+			<node id="bmi">
+				<name>bmi</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>487 0 559 48</position>
+			</node>
+			<node id="systolic_bp">
+				<name>systolic_bp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>344 231 416 279</position>
+			</node>
+			<node id="diastolic_bp">
+				<name>diastolic_bp</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>445 142 517 190</position>
+			</node>
+			<node id="waist_hip_ratio">
+				<name>waist_hip_ratio</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>239 75 311 123</position>
+			</node>
+			<node id="diabetes">
+				<name>diabetes</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial Black" size="8" />
+				<position>149 235 221 283</position>
+			</node>
+			<textbox>
+				<caption>Input file: diabetes4.csv\nData rows: 390\nElapsed time: 0.038s\n\nLearning algorithm: PC\nAlgorithm parameters:\nMax adjacency: 8\nSignificance: 0.05\nMax search time: 0\nBackground knowledge was provided:\n  nodes assigned to tiers: 1</caption>
+				<font color="000000" name="Arial Black" size="8" />
+				<position>23 405 247 570</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

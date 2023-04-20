@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -3.1491506246878354
+    Node 2    11.395571078214275
+    Node 3    -8.87551667809252
+    Node 4    6.0969164022826945
+    Node 5    6.380786774919524
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    3.1491489859537114
+    Node 2    -11.395547504189919
+    Node 3    8.87550622130222
+    Node 4    -6.096911937133411
+    Node 5    -6.380783132126103
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -11.104678136530048
+    Attrib meanfun    -1.9286222111517495
+    Attrib IQR    -7.915340943377755
+    Attrib Q25    1.2934713234348032
+    Attrib sp.ent    1.5292802771243137
+    Attrib sd    9.756789397131051
+    Attrib sfm    -13.401701081892169
+    Attrib mode    -1.2308231300271135
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.08722756177260985
+    Attrib meanfun    14.738894242439153
+    Attrib IQR    3.754131197986017
+    Attrib Q25    4.126928288204124
+    Attrib sp.ent    -8.366585568074493
+    Attrib sd    -10.823574906113606
+    Attrib sfm    -4.630300942610141
+    Attrib mode    -2.3600548409187057
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    2.171212429620812
+    Attrib meanfun    -6.736241979709203
+    Attrib IQR    14.838547558442732
+    Attrib Q25    1.7283334279530949
+    Attrib sp.ent    3.5081246871361
+    Attrib sd    -14.795908498097663
+    Attrib sfm    -7.340585250581419
+    Attrib mode    2.4895643052157914
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.814613819079106
+    Attrib meanfun    -23.965778185457623
+    Attrib IQR    8.831344320477243
+    Attrib Q25    -1.5705201670731188
+    Attrib sp.ent    7.474953484305519
+    Attrib sd    3.566043110354573
+    Attrib sfm    -9.148650470441046
+    Attrib mode    -7.808850488521044E-4
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 1.67 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3094               97.6641 %
+Incorrectly Classified Instances        74                2.3359 %
+Kappa statistic                          0.9533
+Mean absolute error                      0.029 
+Root mean squared error                  0.1416
+Relative absolute error                  5.7961 %
+Root relative squared error             28.3167 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.016    0.983      0.970    0.976      0.953    0.992     0.994     male
+                 0.984    0.030    0.970      0.984    0.977      0.953    0.992     0.984     female
+Weighted Avg.    0.977    0.023    0.977      0.977    0.977      0.953    0.992     0.989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1536   48 |    a = male
+   26 1558 |    b = female
+

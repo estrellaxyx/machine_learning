@@ -1,0 +1,59 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.functions.MultilayerPerceptron -F 5 -T 0.01 -R 1 -E DEFAULT -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 188
+	Merit of best subset found:    0.98 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 21 label):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.functions.MultilayerPerceptron
+	Scheme options: -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 2,3,4,5,6,10,13,19 : 8
+                     sd
+                     median
+                     Q25
+                     Q75
+                     IQR
+                     sfm
+                     meanfun
+                     dfrange
+

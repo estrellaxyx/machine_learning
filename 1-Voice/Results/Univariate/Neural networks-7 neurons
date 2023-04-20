@@ -1,0 +1,143 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 7 -R
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.241961334985581
+    Node 2    9.04321513460512
+    Node 3    -11.689394533519648
+    Node 4    -7.780237468499119
+    Node 5    -10.511676034377434
+    Node 6    -12.235383036616264
+    Node 7    13.305133169959632
+    Node 8    8.841837288480127
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.2418847597427143
+    Node 2    -9.043028704861312
+    Node 3    11.689070141410737
+    Node 4    7.779977670511532
+    Node 5    10.511442127030726
+    Node 6    12.235099478251419
+    Node 7    -13.304806173104305
+    Node 8    -8.841610832695437
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -2.800990598335823
+    Attrib meanfun    -5.212801049514535
+    Attrib IQR    -10.330436451579533
+    Attrib Q25    0.6050445308905087
+    Attrib sp.ent    3.0137294720889587
+    Attrib sd    7.704954079209779
+    Attrib sfm    0.9798890763238772
+    Attrib mode    -2.1001598402137436
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -5.088510331544183
+    Attrib meanfun    -7.963277379721107
+    Attrib IQR    -3.8904428379454346
+    Attrib Q25    20.105007475083866
+    Attrib sp.ent    -1.9742029171076256
+    Attrib sd    5.8416387371935965
+    Attrib sfm    4.662624873697004
+    Attrib mode    2.6682689307750684
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.399991647185462
+    Attrib meanfun    -0.44559957280693646
+    Attrib IQR    1.1313857925147086
+    Attrib Q25    -2.8271551164985818
+    Attrib sp.ent    -3.613742072846149
+    Attrib sd    -1.7053638211570394
+    Attrib sfm    -2.259306624591455
+    Attrib mode    -0.9911592270813038
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.9122470844236115
+    Attrib meanfun    7.841781910077729
+    Attrib IQR    -12.911119477547079
+    Attrib Q25    10.173318998607126
+    Attrib sp.ent    -4.4502224166639754
+    Attrib sd    5.245671610159853
+    Attrib sfm    1.7514292433361556
+    Attrib mode    -1.7199482803882735
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -3.231182014901724
+    Attrib meanfun    -0.2930147101493312
+    Attrib IQR    -6.4948178411069275
+    Attrib Q25    -3.4093664474122636
+    Attrib sp.ent    1.894217317078867
+    Attrib sd    11.422965798807626
+    Attrib sfm    8.388693673593371
+    Attrib mode    -3.23277063009399
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -1.7820190686512762
+    Attrib meanfun    -22.276412048229062
+    Attrib IQR    0.0709085287124314
+    Attrib Q25    -4.386805906254952
+    Attrib sp.ent    -1.3332022680422262
+    Attrib sd    8.230269964836019
+    Attrib sfm    -6.404624543564485
+    Attrib mode    4.187639888005421
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -5.951488573168508
+    Attrib meanfun    -6.732065700858475
+    Attrib IQR    -0.398913601147272
+    Attrib Q25    6.865755872090098
+    Attrib sp.ent    3.8901139281216888
+    Attrib sd    6.73622343617369
+    Attrib sfm    -5.791840334417128
+    Attrib mode    -5.980372463378219
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Time taken to build model: 2.52 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3093               97.6326 %
+Incorrectly Classified Instances        75                2.3674 %
+Kappa statistic                          0.9527
+Mean absolute error                      0.0258
+Root mean squared error                  0.1363
+Relative absolute error                  5.1595 %
+Root relative squared error             27.2614 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.970    0.017    0.983      0.970    0.976      0.953    0.993     0.995     male
+                 0.983    0.030    0.970      0.983    0.976      0.953    0.993     0.990     female
+Weighted Avg.    0.976    0.024    0.976      0.976    0.976      0.953    0.993     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1536   48 |    a = male
+   27 1557 |    b = female
+

@@ -1,0 +1,59 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.lazy.IBk -F 5 -T 0.01 -R 1 -E DEFAULT -- -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 176
+	Merit of best subset found:    0.984
+
+Attribute Subset Evaluator (supervised, Class (nominal): 21 label):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.lazy.IBk
+	Scheme options: -K 20 -W 0 -X -A weka.core.neighboursearch.LinearNNSearch -A "weka.core.EuclideanDistance -R first-last" 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 1,2,6,7,10,11,13,20 : 8
+                     meanfreq
+                     sd
+                     IQR
+                     skew
+                     sfm
+                     mode
+                     meanfun
+                     modindx
+
