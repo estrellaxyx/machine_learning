@@ -1,0 +1,90 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(4): label dfrange 
+sd(8): label IQR 
+median(6): label meanfreq 
+Q25(6): label meanfreq 
+Q75(2): label meanfreq 
+IQR(8): label Q25 
+skew(5): label kurt 
+kurt(4): label maxdom 
+sp.ent(3): label sd 
+sfm(3): label sd 
+mode(7): label meanfreq 
+centroid(4): label meanfreq 
+meanfun(4): label Q25 
+minfun(3): label maxdom 
+maxfun(3): label meanfreq 
+meandom(6): label maxdom 
+mindom(7): label mode 
+maxdom(5): label dfrange 
+dfrange(7): label 
+modindx(1): label meanfreq 
+label(2): 
+LogScore Bayes: -44682.9190051431
+LogScore BDeu: -47813.18932017535
+LogScore MDL: -47852.743391728094
+LogScore ENTROPY: -44632.43151843084
+LogScore AIC: -45431.43151843084
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3080               97.2222 %
+Incorrectly Classified Instances        88                2.7778 %
+Kappa statistic                          0.9444
+Mean absolute error                      0.034 
+Root mean squared error                  0.1506
+Relative absolute error                  6.7942 %
+Root relative squared error             30.1253 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.035    0.965      0.980    0.972      0.945    0.995     0.996     male
+                 0.965    0.020    0.979      0.965    0.972      0.945    0.995     0.995     female
+Weighted Avg.    0.972    0.028    0.972      0.972    0.972      0.945    0.995     0.995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1552   32 |    a = male
+   56 1528 |    b = female
+

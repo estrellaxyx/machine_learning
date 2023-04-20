@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                            Class
+Variable                     male
+=================================
+IQR                       36.4373
+meanfun                 -169.5078
+Intercept                 20.7174
+
+
+Odds Ratios...
+                            Class
+Variable                     male
+=================================
+IQR          6.676217771881675E15
+meanfun                         0
+
+
+Weight: 3.34
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                 Class
+Variable          male
+======================
+IQR             7.0774
+meanfun       -30.9982
+Intercept       3.3886
+
+
+Odds Ratios...
+                 Class
+Variable          male
+======================
+IQR          1184.9203
+meanfun              0
+
+
+Weight: 0.87
+
+Number of performed Iterations: 2
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3059               96.5593 %
+Incorrectly Classified Instances       109                3.4407 %
+Kappa statistic                          0.9312
+Mean absolute error                      0.0511
+Root mean squared error                  0.1795
+Relative absolute error                 10.2252 %
+Root relative squared error             35.8957 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.045    0.956      0.977    0.966      0.931    0.976     0.972     male
+                 0.955    0.023    0.976      0.955    0.965      0.931    0.976     0.961     female
+Weighted Avg.    0.966    0.034    0.966      0.966    0.966      0.931    0.976     0.967     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1547   37 |    a = male
+   72 1512 |    b = female
+

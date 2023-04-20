@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-R8,12,19
+Instances:    3168
+Attributes:   18
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              sp.ent
+              sfm
+              mode
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                      male
+==================================
+meanfreq                   11.0659
+sd                         36.4529
+median                     -9.0799
+Q25                       -20.6678
+Q75                        16.2128
+IQR                        31.6966
+skew                       -0.1304
+sp.ent                     35.9921
+sfm                       -11.4029
+mode                        2.6652
+meanfun                   -165.529
+minfun                     36.5214
+maxfun                     -0.1875
+meandom                    -0.0211
+mindom                     -0.0418
+maxdom                     -0.0015
+modindx                    -3.0592
+Intercept                 -11.5077
+
+
+Odds Ratios...
+                             Class
+Variable                      male
+==================================
+meanfreq                 63951.075
+sd            6.780882335233398E15
+median                      0.0001
+Q25                              0
+Q75                   10992835.396
+IQR           5.830050508348518E13
+skew                        0.8777
+sp.ent       4.2772554995718565E15
+sfm                              0
+mode                       14.3714
+meanfun                          0
+minfun         7.26199224153793E15
+maxfun                       0.829
+meandom                     0.9791
+mindom                      0.9591
+maxdom                      0.9985
+modindx                     0.0469
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3077               97.1275 %
+Incorrectly Classified Instances        91                2.8725 %
+Kappa statistic                          0.9426
+Mean absolute error                      0.046 
+Root mean squared error                  0.1482
+Relative absolute error                  9.1934 %
+Root relative squared error             29.6372 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.033    0.967      0.975    0.971      0.943    0.993     0.994     male
+                 0.967    0.025    0.975      0.967    0.971      0.943    0.993     0.992     female
+Weighted Avg.    0.971    0.029    0.971      0.971    0.971      0.943    0.993     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1545   39 |    a = male
+   52 1532 |    b = female
+

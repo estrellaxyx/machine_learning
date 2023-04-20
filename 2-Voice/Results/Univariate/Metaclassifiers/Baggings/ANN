@@ -1,0 +1,671 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -store-out-of-bag-predictions -output-out-of-bag-complexity-statistics -represent-copies-using-weights -print -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H aAll the base classifiers: 
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    4.167811423875811
+    Node 2    14.578065305743559
+    Node 3    -8.562922448017998
+    Node 4    -14.510128151227176
+    Node 5    -15.638137626600646
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -4.16780722371894
+    Node 2    -14.578049792158769
+    Node 3    8.562914338658498
+    Node 4    14.510112311795067
+    Node 5    15.638120856153819
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.9899579215261938
+    Attrib meanfun    -8.906521488745776
+    Attrib IQR    12.311186064281815
+    Attrib Q25    2.6381138723846504
+    Attrib sp.ent    5.09233194224906
+    Attrib sd    -8.759392840675092
+    Attrib sfm    -10.47805008743709
+    Attrib mode    3.290711121416778
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    3.569630898224214
+    Attrib meanfun    16.247288099612305
+    Attrib IQR    8.852862448471097
+    Attrib Q25    5.402483428122321
+    Attrib sp.ent    -5.991515224064942
+    Attrib sd    -10.449242907914382
+    Attrib sfm    9.047363842577804
+    Attrib mode    0.8121828623883676
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.025551747859223
+    Attrib meanfun    10.802273731469036
+    Attrib IQR    6.886014414280803
+    Attrib Q25    -5.95441986874354
+    Attrib sp.ent    1.3888419940443786
+    Attrib sd    -17.309573388543324
+    Attrib sfm    -6.185249321372275
+    Attrib mode    -1.3083888056706294
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -7.150200486845941
+    Attrib meanfun    -0.04562929810052318
+    Attrib IQR    -17.28324187324236
+    Attrib Q25    23.483344937649253
+    Attrib sp.ent    -7.216248231512293
+    Attrib sd    6.006942835173369
+    Attrib sfm    12.20206278462748
+    Attrib mode    1.3571876309655284
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    9.314952065067326
+    Node 2    -12.616642932562286
+    Node 3    -13.136629566532998
+    Node 4    13.700092742819137
+    Node 5    -9.622755377962795
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -9.314952394381752
+    Node 2    12.616643314859239
+    Node 3    13.136629974365064
+    Node 4    -13.700093097624988
+    Node 5    9.62275570475666
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.265096173733475
+    Attrib meanfun    17.522156401699466
+    Attrib IQR    0.06304541736822411
+    Attrib Q25    13.934178229675915
+    Attrib sp.ent    -7.948251043711678
+    Attrib sd    17.907921562505287
+    Attrib sfm    13.723358587044734
+    Attrib mode    -0.23231016624282402
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.175243475596798
+    Attrib meanfun    9.980302805083598
+    Attrib IQR    -5.478086663283618
+    Attrib Q25    32.09347847370854
+    Attrib sp.ent    -5.881731848107304
+    Attrib sd    4.522886551718624
+    Attrib sfm    9.119406306391397
+    Attrib mode    -0.7765588950877309
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -3.394579570861124
+    Attrib meanfun    -22.527551637190026
+    Attrib IQR    12.867068235431173
+    Attrib Q25    8.482268784200416
+    Attrib sp.ent    6.667584231062749
+    Attrib sd    12.471540396933092
+    Attrib sfm    -7.650129353351495
+    Attrib mode    1.3412728028882457
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -4.879519577913062
+    Attrib meanfun    -14.3131048891597
+    Attrib IQR    -5.847349792979556
+    Attrib Q25    -11.112243052447438
+    Attrib sp.ent    -1.6790858546271181
+    Attrib sd    9.450100892432644
+    Attrib sfm    11.911198719812319
+    Attrib mode    -3.257951458240153
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -18.930074004291136
+    Node 2    10.177265090729895
+    Node 3    6.986412809759805
+    Node 4    13.466040587733193
+    Node 5    7.3629212706193625
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    18.930268080760843
+    Node 2    -10.17737558870742
+    Node 3    -6.986473950666238
+    Node 4    -13.466178826028637
+    Node 5    -7.362997768773918
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.8461844988998128
+    Attrib meanfun    -22.030706537709296
+    Attrib IQR    10.154921536694367
+    Attrib Q25    -5.89044733296153
+    Attrib sp.ent    3.8439243387603597
+    Attrib sd    -1.4470375905853643
+    Attrib sfm    -16.035970177956777
+    Attrib mode    -1.3324253521557547
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.4958763283603549
+    Attrib meanfun    -22.861742798749095
+    Attrib IQR    4.533531410160187
+    Attrib Q25    1.8035696847793798
+    Attrib sp.ent    -1.277010951748108
+    Attrib sd    -9.207100248653349
+    Attrib sfm    5.123120898181369
+    Attrib mode    5.356073941569949
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.3205464143974264
+    Attrib meanfun    -20.303288078456056
+    Attrib IQR    12.892342578849128
+    Attrib Q25    -3.634405206664144
+    Attrib sp.ent    13.780436489549613
+    Attrib sd    -0.22645004157110157
+    Attrib sfm    -2.6029675249835442
+    Attrib mode    0.7217840727495436
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -5.200400986221647
+    Attrib meanfun    -4.20447768617642
+    Attrib IQR    -4.964645633301855
+    Attrib Q25    -0.581935680871651
+    Attrib sp.ent    -6.396080929275216
+    Attrib sd    5.951239606189289
+    Attrib sfm    -3.3961406532111242
+    Attrib mode    2.280353831631983
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -4.744198132378186
+    Node 2    12.1791040099745
+    Node 3    -16.753377179095715
+    Node 4    10.231825287288501
+    Node 5    9.152038899804086
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    4.744208084511669
+    Node 2    -12.179131650685804
+    Node 3    16.753416273429792
+    Node 4    -10.231847789807619
+    Node 5    -9.152060464045496
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -10.620356455367956
+    Attrib meanfun    -11.717144506832126
+    Attrib IQR    -5.79101880617807
+    Attrib Q25    -10.789824899633434
+    Attrib sp.ent    4.283508632196317
+    Attrib sd    0.428558185525172
+    Attrib sfm    -1.4925940458125624
+    Attrib mode    -5.477611120652787
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    0.4961738851015575
+    Attrib meanfun    29.820462704569387
+    Attrib IQR    -8.033787582610145
+    Attrib Q25    -3.041137920622629
+    Attrib sp.ent    -8.785508993313142
+    Attrib sd    9.80805689040337
+    Attrib sfm    9.076447950143866
+    Attrib mode    -8.599006645243216
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -5.55703071500953
+    Attrib meanfun    -20.33304427150181
+    Attrib IQR    3.7204464143227822
+    Attrib Q25    6.168737354704186
+    Attrib sp.ent    5.758435840611199
+    Attrib sd    14.47658501781321
+    Attrib sfm    -12.010521922609414
+    Attrib mode    -3.6234548868141956
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    6.041575265121476
+    Attrib meanfun    -15.232768362488233
+    Attrib IQR    5.380416162080922
+    Attrib Q25    -14.841865513597122
+    Attrib sp.ent    -0.3576420876605858
+    Attrib sd    4.390208858507922
+    Attrib sfm    -2.923728242764685
+    Attrib mode    0.1926667772410797
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    6.391137771758566
+    Node 2    9.174685540745275
+    Node 3    -11.325211246922578
+    Node 4    -11.700712733835188
+    Node 5    -8.60761960012499
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -6.391139138277383
+    Node 2    -9.174686283114543
+    Node 3    11.325213163731563
+    Node 4    11.700714071106669
+    Node 5    8.60762110641801
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.020947261287875
+    Attrib meanfun    -33.12399818923952
+    Attrib IQR    7.450508760815775
+    Attrib Q25    -7.584401060012778
+    Attrib sp.ent    7.857888655013828
+    Attrib sd    8.563496455168602
+    Attrib sfm    -15.165513628631551
+    Attrib mode    1.593436533350069
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.767944922420809
+    Attrib meanfun    9.273009067094934
+    Attrib IQR    2.152853494066248
+    Attrib Q25    14.922984507189257
+    Attrib sp.ent    0.1673088839561858
+    Attrib sd    -10.014978853151014
+    Attrib sfm    1.03893635125105
+    Attrib mode    0.3931902151810577
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -5.698111069749578
+    Attrib meanfun    3.526608406147807
+    Attrib IQR    10.420034023206208
+    Attrib Q25    2.950193889955108
+    Attrib sp.ent    -4.496112604101543
+    Attrib sd    5.6719511016470765
+    Attrib sfm    8.30890256539519
+    Attrib mode    0.9242458544568408
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.474999816032163
+    Attrib meanfun    6.199098646900154
+    Attrib IQR    -13.399084011552015
+    Attrib Q25    -2.3749808343975927
+    Attrib sp.ent    3.4034649617379045
+    Attrib sd    14.967367820237198
+    Attrib sfm    7.269730343723104
+    Attrib mode    -6.4926693038871415
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -6.274877216679442
+    Node 2    12.580062221892323
+    Node 3    -10.755841438817969
+    Node 4    -7.976160687654811
+    Node 5    7.853137164812295
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    6.273984946513291
+    Node 2    -12.579024159481722
+    Node 3    10.755586406505527
+    Node 4    7.976210930297782
+    Node 5    -7.853012221167709
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.9634163326323677
+    Attrib meanfun    -24.654148254561118
+    Attrib IQR    1.3087250786973337
+    Attrib Q25    7.328067259786362
+    Attrib sp.ent    5.349418909625226
+    Attrib sd    -1.1111040557951872
+    Attrib sfm    -5.354906229369696
+    Attrib mode    3.297584965682423
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.154210180769354
+    Attrib meanfun    5.743703180304472
+    Attrib IQR    -14.315769039511524
+    Attrib Q25    21.961286094777243
+    Attrib sp.ent    -4.656829338432115
+    Attrib sd    8.013994129593772
+    Attrib sfm    2.8213131787030385
+    Attrib mode    0.46899209415794135
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.059908675720931
+    Attrib meanfun    -3.2350344424965365
+    Attrib IQR    -4.386235479603682
+    Attrib Q25    -8.800813908764773
+    Attrib sp.ent    -1.0012620913821466
+    Attrib sd    5.688456945501772
+    Attrib sfm    1.9942022268401254
+    Attrib mode    2.1764463081358993
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.7020379359100535
+    Attrib meanfun    -21.002842966791338
+    Attrib IQR    -2.643078106273308
+    Attrib Q25    -12.969059761512675
+    Attrib sp.ent    2.4789541617756545
+    Attrib sd    11.229836325395052
+    Attrib sfm    -12.776714720737266
+    Attrib mode    4.492869421924705
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    20.075885992749328
+    Node 2    -10.384183927866234
+    Node 3    -15.896708243486977
+    Node 4    -8.878865288463455
+    Node 5    -15.198063342000202
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -20.075843352150955
+    Node 2    10.384161177175981
+    Node 3    15.896673876055418
+    Node 4    8.878846674045983
+    Node 5    15.198031403805931
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.643706493988165
+    Attrib meanfun    -2.5863079042654373
+    Attrib IQR    -11.86861694707551
+    Attrib Q25    21.216366740482968
+    Attrib sp.ent    -2.3055589612221428
+    Attrib sd    8.867026341678038
+    Attrib sfm    8.800881920423297
+    Attrib mode    4.71943004439936
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.2705474577912836
+    Attrib meanfun    33.83628556082067
+    Attrib IQR    -8.576087672737115
+    Attrib Q25    -5.882616611631199
+    Attrib sp.ent    -0.6658771576615465
+    Attrib sd    9.898323725338532
+    Attrib sfm    4.680399014980737
+    Attrib mode    0.9890281849230735
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -4.62671517827535
+    Attrib meanfun    16.350948152384166
+    Attrib IQR    -1.0358185276979262
+    Attrib Q25    14.000638886927415
+    Attrib sp.ent    -3.9811104559095427
+    Attrib sd    -6.0141215801616585
+    Attrib sfm    -2.670060222012501
+    Attrib mode    3.6481933525519166
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    5.663518583639259
+    Attrib meanfun    20.721779669844665
+    Attrib IQR    5.3301320145224675
+    Attrib Q25    11.33646864277599
+    Attrib sp.ent    -2.7053493203257344
+    Attrib sd    -5.1924691167778985
+    Attrib sfm    7.95789962673639
+    Attrib mode    -8.306427622963739
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    7.1652545847376015
+    Node 2    -12.50839031115892
+    Node 3    -11.521002796727059
+    Node 4    5.930934620028174
+    Node 5    7.190043976616771
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -7.165318660205791
+    Node 2    12.508489325652288
+    Node 3    11.521094007600576
+    Node 4    -5.930965729054068
+    Node 5    -7.190075546873234
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -5.741310162420967
+    Attrib meanfun    3.5417693428974095
+    Attrib IQR    2.2512620098292992
+    Attrib Q25    13.650600890435884
+    Attrib sp.ent    3.4554039126024847
+    Attrib sd    -12.458809882570666
+    Attrib sfm    2.7767596679570574
+    Attrib mode    0.44947662142738215
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -4.035173211708009
+    Attrib meanfun    4.504608677758923
+    Attrib IQR    -10.7380764750867
+    Attrib Q25    -0.6497533805036444
+    Attrib sp.ent    -1.9728212489467165
+    Attrib sd    18.145991432914933
+    Attrib sfm    18.666872125397695
+    Attrib mode    -4.344651926653936
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.872526886561929
+    Attrib meanfun    -15.602043231236383
+    Attrib IQR    3.5844943366228175
+    Attrib Q25    0.022721721391232852
+    Attrib sp.ent    -2.605595623910604
+    Attrib sd    5.10611093397753
+    Attrib sfm    -0.7241247205996664
+    Attrib mode    5.773174494180217
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -6.4554584211537795
+    Attrib meanfun    -25.75131397660585
+    Attrib IQR    7.850268708708271
+    Attrib Q25    1.1304865356129694
+    Attrib sp.ent    10.058277864213675
+    Attrib sd    1.3042233520705038
+    Attrib sfm    -8.879896498833787
+    Attrib mode    -3.0913626624489443
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -5.027021506814822
+    Node 2    11.64501198812812
+    Node 3    -12.683210615326988
+    Node 4    8.824860121629733
+    Node 5    9.562835259541362
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    5.026908417428031
+    Node 2    -11.644757546471403
+    Node 3    12.683003164922
+    Node 4    -8.824652435271675
+    Node 5    -9.562650615303184
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -8.252236086299133
+    Attrib meanfun    -23.521309216440972
+    Attrib IQR    7.09134868673234
+    Attrib Q25    -1.8552155703034319
+    Attrib sp.ent    14.13973157333252
+    Attrib sd    3.8686005570434485
+    Attrib sfm    -9.443417684239785
+    Attrib mode    -0.009512456526314541
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -8.336065843538007
+    Attrib meanfun    21.152474601224498
+    Attrib IQR    5.670520251522038
+    Attrib Q25    15.120265202428866
+    Attrib sp.ent    0.9611044029685425
+    Attrib sd    -24.08354386642156
+    Attrib sfm    6.886612244013099
+    Attrib mode    -2.903686480653887
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -13.292949386690742
+    Attrib meanfun    -4.513681519903351
+    Attrib IQR    -2.3582192526016947
+    Attrib Q25    -2.2053223457849467
+    Attrib sp.ent    2.4284415706476357
+    Attrib sd    -4.018943394610626
+    Attrib sfm    3.7692953886825524
+    Attrib mode    -8.843281359660834
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    3.049798524242094
+    Attrib meanfun    -3.065279860022581
+    Attrib IQR    21.904414262403787
+    Attrib Q25    6.269632793660921
+    Attrib sp.ent    7.854638742179241
+    Attrib sd    -20.750808540845696
+    Attrib sfm    -10.915763905307156
+    Attrib mode    0.6030222228066787
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -12.657863481339831
+    Node 2    -13.09604604669493
+    Node 3    9.54062896141974
+    Node 4    9.500528433442383
+    Node 5    12.958140435488739
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    12.657730836107357
+    Node 2    13.095925750192867
+    Node 3    -9.540537045077373
+    Node 4    -9.500426723261967
+    Node 5    -12.958013004656127
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    0.4810007247054532
+    Attrib meanfun    17.01117170778976
+    Attrib IQR    7.683352329216
+    Attrib Q25    -2.3744462230351346
+    Attrib sp.ent    -3.947342043537312
+    Attrib sd    -3.108912070226562
+    Attrib sfm    -1.4649792787416338
+    Attrib mode    0.41891703346119585
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.15428172801094986
+    Attrib meanfun    -30.50824787799525
+    Attrib IQR    5.203013141286444
+    Attrib Q25    -3.3723706044572257
+    Attrib sp.ent    1.4335628154043902
+    Attrib sd    11.456229624018974
+    Attrib sfm    -11.497956686056046
+    Attrib mode    3.385029109618784
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    0.6671968811068852
+    Attrib meanfun    6.242611517385876
+    Attrib IQR    1.2429148841860904
+    Attrib Q25    8.89028146400465
+    Attrib sp.ent    0.4939409572823115
+    Attrib sd    -7.4060070650298115
+    Attrib sfm    -3.617999169931271
+    Attrib mode    2.028428674575044
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    5.622371690135976
+    Attrib meanfun    -1.3801299488099283
+    Attrib IQR    9.327302361536272
+    Attrib Q25    -30.373968998709003
+    Attrib sp.ent    2.0619189391124095
+    Attrib sd    -12.108421045879643
+    Attrib sfm    -3.481723440017613
+    Attrib mode    -0.42234149304046065
+Class male
+    Input
+    Node 0
+Class female
+    Input
+    Node 1
+
+
+
+
+Time taken to build model: 9.57 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3100               97.8535 %
+Incorrectly Classified Instances        68                2.1465 %
+Kappa statistic                          0.9571
+Mean absolute error                      0.0307
+Root mean squared error                  0.1346
+Relative absolute error                  6.1312 %
+Root relative squared error             26.926  %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.018    0.982      0.975    0.978      0.957    0.996     0.997     male
+                 0.982    0.025    0.976      0.982    0.979      0.957    0.996     0.995     female
+Weighted Avg.    0.979    0.021    0.979      0.979    0.979      0.957    0.996     0.996     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1545   39 |    a = male
+   29 1555 |    b = female
+

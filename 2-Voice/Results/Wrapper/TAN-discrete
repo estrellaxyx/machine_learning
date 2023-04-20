@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Remove-V-R2,6,10,13,15,17,19,21
+Instances:    3168
+Attributes:   8
+              sd
+              IQR
+              sfm
+              meanfun
+              maxfun
+              mindom
+              dfrange
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+sd(8): label sfm 
+IQR(8): label sd 
+sfm(3): label 
+meanfun(4): label dfrange 
+maxfun(3): label dfrange 
+mindom(7): label sd 
+dfrange(7): label sd 
+label(2): 
+LogScore Bayes: -22304.889009905048
+LogScore BDeu: -24129.666312773028
+LogScore MDL: -23957.851416703917
+LogScore ENTROPY: -22261.041280711248
+LogScore AIC: -22682.041280711248
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3106               98.0429 %
+Incorrectly Classified Instances        62                1.9571 %
+Kappa statistic                          0.9609
+Mean absolute error                      0.0285
+Root mean squared error                  0.1305
+Relative absolute error                  5.6903 %
+Root relative squared error             26.093  %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.985    0.024    0.976      0.985    0.981      0.961    0.997     0.997     male
+                 0.976    0.015    0.985      0.976    0.980      0.961    0.997     0.997     female
+Weighted Avg.    0.980    0.020    0.980      0.980    0.980      0.961    0.997     0.997     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1560   24 |    a = male
+   38 1546 |    b = female
+

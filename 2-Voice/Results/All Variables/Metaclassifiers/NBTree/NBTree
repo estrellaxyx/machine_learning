@@ -1,0 +1,1072 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.NBTree 
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+NBTree
+------------------
+
+sfm <= 0.296725
+|   skew <= 2.136688
+|   |   Q75 <= 0.242097
+|   |   |   sfm <= 0.162073: NB 4
+|   |   |   sfm > 0.162073: NB 5
+|   |   Q75 > 0.242097
+|   |   |   meanfun <= 0.14317: NB 7
+|   |   |   meanfun > 0.14317: NB 8
+|   skew > 2.136688
+|   |   meanfun <= 0.141802: NB 10
+|   |   meanfun > 0.141802: NB 11
+sfm > 0.296725
+|   modindx <= 0.232656: NB 13
+|   modindx > 0.232656
+|   |   meanfun <= 0.134499
+|   |   |   Q25 <= 0.136371: NB 16
+|   |   |   Q25 > 0.136371: NB 17
+|   |   meanfun > 0.134499: NB 18
+
+Leaf number: 4 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.53) (0.47)
+====================================
+meanfreq
+  '(-inf-0.210091]'       9.0    3.0
+  '(0.210091-inf)'        1.0    6.0
+  [total]                10.0    9.0
+
+sd
+  '(-inf-0.037618]'       1.0    8.0
+  '(0.037618-inf)'        9.0    1.0
+  [total]                10.0    9.0
+
+median
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+Q25
+  '(-inf-0.158859]'       8.0    1.0
+  '(0.158859-inf)'        2.0    8.0
+  [total]                10.0    9.0
+
+Q75
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+IQR
+  '(-inf-0.044278]'       1.0    8.0
+  '(0.044278-inf)'        9.0    1.0
+  [total]                10.0    9.0
+
+skew
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+kurt
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+sp.ent
+  '(-inf-0.875749]'       1.0    8.0
+  '(0.875749-inf)'        9.0    1.0
+  [total]                10.0    9.0
+
+sfm
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+mode
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+centroid
+  '(-inf-0.210091]'       9.0    3.0
+  '(0.210091-inf)'        1.0    6.0
+  [total]                10.0    9.0
+
+meanfun
+  '(-inf-0.144673]'       8.0    1.0
+  '(0.144673-inf)'        2.0    8.0
+  [total]                10.0    9.0
+
+minfun
+  '(-inf-0.045574]'       9.0    2.0
+  '(0.045574-inf)'        1.0    7.0
+  [total]                10.0    9.0
+
+maxfun
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+meandom
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+mindom
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+maxdom
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+dfrange
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+modindx
+  'All'                   9.0    8.0
+  [total]                 9.0    8.0
+
+
+
+Leaf number: 5 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.14) (0.86)
+========================================
+meanfreq
+  '(-inf-0.187592]'          10.0    5.0
+  '(0.187592-inf)'           11.0  123.0
+  [total]                    21.0  128.0
+
+sd
+  '(-inf-0.04462]'            3.0  122.0
+  '(0.04462-inf)'            18.0    6.0
+  [total]                    21.0  128.0
+
+median
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+Q25
+  '(-inf-0.150616]'          15.0    1.0
+  '(0.150616-0.168188]'       6.0   21.0
+  '(0.168188-inf)'            1.0  107.0
+  [total]                    22.0  129.0
+
+Q75
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+IQR
+  '(-inf-0.062339]'           1.0  116.0
+  '(0.062339-0.0754]'         5.0   11.0
+  '(0.0754-inf)'             16.0    2.0
+  [total]                    22.0  129.0
+
+skew
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+kurt
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+sp.ent
+  '(-inf-0.906564]'           7.0  124.0
+  '(0.906564-inf)'           14.0    4.0
+  [total]                    21.0  128.0
+
+sfm
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+mode
+  '(-inf-0.142842]'           6.0    1.0
+  '(0.142842-inf)'           15.0  127.0
+  [total]                    21.0  128.0
+
+centroid
+  '(-inf-0.187592]'          10.0    5.0
+  '(0.187592-inf)'           11.0  123.0
+  [total]                    21.0  128.0
+
+meanfun
+  '(-inf-0.137429]'          20.0    2.0
+  '(0.137429-inf)'            1.0  126.0
+  [total]                    21.0  128.0
+
+minfun
+  '(-inf-0.025664]'          13.0   20.0
+  '(0.025664-inf)'            8.0  108.0
+  [total]                    21.0  128.0
+
+maxfun
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+meandom
+  '(-inf-0.945406]'          16.0   40.0
+  '(0.945406-inf)'            5.0   88.0
+  [total]                    21.0  128.0
+
+mindom
+  '(-inf-0.014673]'           9.0    5.0
+  '(0.014673-inf)'           12.0  123.0
+  [total]                    21.0  128.0
+
+maxdom
+  '(-inf-6.351563]'          18.0   34.0
+  '(6.351563-inf)'            3.0   94.0
+  [total]                    21.0  128.0
+
+dfrange
+  '(-inf-6.308594]'          18.0   35.0
+  '(6.308594-inf)'            3.0   93.0
+  [total]                    21.0  128.0
+
+modindx
+  'All'                      20.0  127.0
+  [total]                    20.0  127.0
+
+
+
+Leaf number: 7 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.95) (0.05)
+====================================
+meanfreq
+  '(-inf-0.211304]'      94.0    1.0
+  '(0.211304-inf)'        5.0    5.0
+  [total]                99.0    6.0
+
+sd
+  '(-inf-0.047865]'       1.0    5.0
+  '(0.047865-inf)'       98.0    1.0
+  [total]                99.0    6.0
+
+median
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+Q25
+  '(-inf-0.179121]'      97.0    1.0
+  '(0.179121-inf)'        2.0    5.0
+  [total]                99.0    6.0
+
+Q75
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+IQR
+  '(-inf-0.071926]'       2.0    5.0
+  '(0.071926-inf)'       97.0    1.0
+  [total]                99.0    6.0
+
+skew
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+kurt
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+sp.ent
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+sfm
+  '(-inf-0.22696]'       15.0    5.0
+  '(0.22696-inf)'        84.0    1.0
+  [total]                99.0    6.0
+
+mode
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+centroid
+  '(-inf-0.211304]'      94.0    1.0
+  '(0.211304-inf)'        5.0    5.0
+  [total]                99.0    6.0
+
+meanfun
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+minfun
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+maxfun
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+meandom
+  '(-inf-0.251306]'       1.0    4.0
+  '(0.251306-inf)'       98.0    2.0
+  [total]                99.0    6.0
+
+mindom
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+maxdom
+  '(-inf-0.421875]'       1.0    4.0
+  '(0.421875-inf)'       98.0    2.0
+  [total]                99.0    6.0
+
+dfrange
+  '(-inf-0.406251]'       1.0    4.0
+  '(0.406251-inf)'       98.0    2.0
+  [total]                99.0    6.0
+
+modindx
+  'All'                  98.0    5.0
+  [total]                98.0    5.0
+
+
+
+Leaf number: 8 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.02) (0.98)
+========================================
+meanfreq
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+sd
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+median
+  '(-inf-0.200788]'           3.0    2.0
+  '(0.200788-inf)'            1.0  145.0
+  [total]                     4.0  147.0
+
+Q25
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+Q75
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+IQR
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+skew
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+kurt
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+sp.ent
+  '(-inf-0.909045]'           1.0  146.0
+  '(0.909045-inf)'            3.0    1.0
+  [total]                     4.0  147.0
+
+sfm
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+mode
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+centroid
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+meanfun
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+minfun
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+maxfun
+  '(-inf-0.248077]'           1.0    2.0
+  '(0.248077-0.260317]'       3.0    1.0
+  '(0.260317-inf)'            1.0  145.0
+  [total]                     5.0  148.0
+
+meandom
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+mindom
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+maxdom
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+dfrange
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+modindx
+  'All'                       3.0  146.0
+  [total]                     3.0  146.0
+
+
+
+Leaf number: 10 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.87) (0.13)
+========================================
+meanfreq
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+sd
+  '(-inf-0.043957]'           1.0    7.0
+  '(0.043957-inf)'           54.0    2.0
+  [total]                    55.0    9.0
+
+median
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+Q25
+  '(-inf-0.15798]'           38.0    1.0
+  '(0.15798-inf)'            17.0    8.0
+  [total]                    55.0    9.0
+
+Q75
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+IQR
+  '(-inf-0.038699]'          11.0    2.0
+  '(0.038699-0.068309]'       2.0    7.0
+  '(0.068309-inf)'           43.0    1.0
+  [total]                    56.0   10.0
+
+skew
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+kurt
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+sp.ent
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+sfm
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+mode
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+centroid
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+meanfun
+  '(-inf-0.13068]'           37.0    1.0
+  '(0.13068-inf)'            18.0    8.0
+  [total]                    55.0    9.0
+
+minfun
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+maxfun
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+meandom
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+mindom
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+maxdom
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+dfrange
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+modindx
+  'All'                      54.0    8.0
+  [total]                    54.0    8.0
+
+
+
+Leaf number: 11 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+                  (0)    (1)
+=============================
+meanfreq
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+sd
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+median
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+Q25
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+Q75
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+IQR
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+skew
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+kurt
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+sp.ent
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+sfm
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+mode
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+centroid
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+meanfun
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+minfun
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+maxfun
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+meandom
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+mindom
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+maxdom
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+dfrange
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+modindx
+  'All'            1.0  600.0
+  [total]          1.0  600.0
+
+
+
+Leaf number: 13 Naive Bayes Classifier
+
+                              Class
+Attribute                      male female
+                             (0.71) (0.29)
+===========================================
+meanfreq
+  '(-inf-0.206207]'           1083.0  408.0
+  '(0.206207-inf)'               6.0   35.0
+  [total]                     1089.0  443.0
+
+sd
+  '(-inf-0.04705]'               1.0   98.0
+  '(0.04705-0.053465]'          13.0   43.0
+  '(0.053465-0.055723]'         41.0   31.0
+  '(0.055723-0.078137]'        883.0  186.0
+  '(0.078137-0.09528]'         154.0   79.0
+  '(0.09528-inf)'                1.0   10.0
+  [total]                     1093.0  447.0
+
+median
+  '(-inf-0.04392]'              10.0    1.0
+  '(0.04392-0.097707]'          14.0   21.0
+  '(0.097707-0.147102]'        221.0   26.0
+  '(0.147102-inf)'             846.0  397.0
+  [total]                     1091.0  445.0
+
+Q25
+  '(-inf-0.07016]'             109.0   81.0
+  '(0.07016-0.143127]'         890.0   53.0
+  '(0.143127-0.151138]'         56.0   27.0
+  '(0.151138-0.168158]'         32.0  129.0
+  '(0.168158-inf)'               5.0  156.0
+  [total]                     1092.0  446.0
+
+Q75
+  '(-inf-0.159652]'             19.0    3.0
+  '(0.159652-0.20034]'          86.0  102.0
+  '(0.20034-0.23508]'          523.0  252.0
+  '(0.23508-inf)'              463.0   88.0
+  [total]                     1091.0  445.0
+
+IQR
+  '(-inf-0.06188]'               8.0  258.0
+  '(0.06188-0.076799]'          25.0   50.0
+  '(0.076799-0.093302]'        103.0   30.0
+  '(0.093302-0.126194]'        790.0   22.0
+  '(0.126194-0.145305]'         92.0   19.0
+  '(0.145305-inf)'              75.0   68.0
+  [total]                     1093.0  447.0
+
+skew
+  '(-inf-2.053369]'            697.0  144.0
+  '(2.053369-2.939431]'        216.0  146.0
+  '(2.939431-9.52585]'          80.0  142.0
+  '(9.52585-inf)'               98.0   13.0
+  [total]                     1091.0  445.0
+
+kurt
+  '(-inf-6.978254]'            614.0  124.0
+  '(6.978254-11.811933]'       246.0  134.0
+  '(11.811933-178.807609]'     137.0  175.0
+  '(178.807609-inf)'            94.0   12.0
+  [total]                     1091.0  445.0
+
+sp.ent
+  '(-inf-0.883635]'             68.0  137.0
+  '(0.883635-inf)'            1021.0  306.0
+  [total]                     1089.0  443.0
+
+sfm
+  'All'                       1088.0  442.0
+  [total]                     1088.0  442.0
+
+mode
+  '(-inf-0.006701]'            137.0   45.0
+  '(0.006701-0.05947]'          18.0   49.0
+  '(0.05947-0.120186]'         211.0    2.0
+  '(0.120186-0.12063]'           2.0    8.0
+  '(0.12063-0.145218]'         112.0    6.0
+  '(0.145218-0.232641]'        374.0  307.0
+  '(0.232641-inf)'             240.0   31.0
+  [total]                     1094.0  448.0
+
+centroid
+  '(-inf-0.206207]'           1083.0  408.0
+  '(0.206207-inf)'               6.0   35.0
+  [total]                     1089.0  443.0
+
+meanfun
+  '(-inf-0.134169]'            943.0   13.0
+  '(0.134169-0.140817]'         92.0   22.0
+  '(0.140817-0.14949]'          43.0   54.0
+  '(0.14949-inf)'               13.0  356.0
+  [total]                     1091.0  445.0
+
+minfun
+  '(-inf-0.015621]'              2.0   14.0
+  '(0.015621-0.046383]'        526.0  256.0
+  '(0.046383-0.054547]'        552.0  145.0
+  '(0.054547-inf)'              11.0   30.0
+  [total]                     1091.0  445.0
+
+maxfun
+  '(-inf-0.168957]'             41.0    2.0
+  '(0.168957-inf)'            1048.0  441.0
+  [total]                     1089.0  443.0
+
+meandom
+  '(-inf-0.114226]'            119.0   22.0
+  '(0.114226-0.229656]'         44.0   85.0
+  '(0.229656-0.556584]'        212.0  107.0
+  '(0.556584-1.264204]'        584.0  134.0
+  '(1.264204-1.862473]'        123.0   74.0
+  '(1.862473-inf)'              11.0   25.0
+  [total]                     1093.0  447.0
+
+mindom
+  '(-inf-0.019532]'            362.0  188.0
+  '(0.019532-0.152344]'        704.0  206.0
+  '(0.152344-inf)'              24.0   50.0
+  [total]                     1090.0  444.0
+
+maxdom
+  '(-inf-0.175781]'             58.0   10.0
+  '(0.175781-2.089844]'        125.0  116.0
+  '(2.089844-8.121094]'        790.0  225.0
+  '(8.121094-inf)'             118.0   94.0
+  [total]                     1091.0  445.0
+
+dfrange
+  '(-inf-0.02002]'              51.0   10.0
+  '(0.02002-2.074219]'         134.0  116.0
+  '(2.074219-8.097656]'        788.0  225.0
+  '(8.097656-inf)'             118.0   94.0
+  [total]                     1091.0  445.0
+
+modindx
+  'All'                       1088.0  442.0
+  [total]                     1088.0  442.0
+
+
+
+Leaf number: 16 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.98) (0.02)
+=============================
+meanfreq
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+sd
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+median
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+Q25
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+Q75
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+IQR
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+skew
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+kurt
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+sp.ent
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+sfm
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+mode
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+centroid
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+meanfun
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+minfun
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+maxfun
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+meandom
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+mindom
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+maxdom
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+dfrange
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+modindx
+  'All'          301.0    5.0
+  [total]        301.0    5.0
+
+
+
+Leaf number: 17 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.47) (0.53)
+====================================
+meanfreq
+  '(-inf-0.181365]'       1.0   10.0
+  '(0.181365-inf)'        9.0    1.0
+  [total]                10.0   11.0
+
+sd
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+median
+  '(-inf-0.179194]'       1.0    9.0
+  '(0.179194-inf)'        9.0    2.0
+  [total]                10.0   11.0
+
+Q25
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+Q75
+  '(-inf-0.225953]'       1.0    9.0
+  '(0.225953-inf)'        9.0    2.0
+  [total]                10.0   11.0
+
+IQR
+  '(-inf-0.091251]'       2.0   10.0
+  '(0.091251-inf)'        8.0    1.0
+  [total]                10.0   11.0
+
+skew
+  '(-inf-2.006165]'       9.0    3.0
+  '(2.006165-inf)'        1.0    8.0
+  [total]                10.0   11.0
+
+kurt
+  '(-inf-6.441307]'       6.0    1.0
+  '(6.441307-inf)'        4.0   10.0
+  [total]                10.0   11.0
+
+sp.ent
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+sfm
+  '(-inf-0.509419]'       7.0    1.0
+  '(0.509419-inf)'        3.0   10.0
+  [total]                10.0   11.0
+
+mode
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+centroid
+  '(-inf-0.181365]'       1.0   10.0
+  '(0.181365-inf)'        9.0    1.0
+  [total]                10.0   11.0
+
+meanfun
+  '(-inf-0.114923]'       6.0    1.0
+  '(0.114923-inf)'        4.0   10.0
+  [total]                10.0   11.0
+
+minfun
+  '(-inf-0.015512]'       1.0    7.0
+  '(0.015512-inf)'        9.0    4.0
+  [total]                10.0   11.0
+
+maxfun
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+meandom
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+mindom
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+maxdom
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+dfrange
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+modindx
+  'All'                   9.0   10.0
+  [total]                 9.0   10.0
+
+
+
+Leaf number: 18 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.04) (0.96)
+=============================
+meanfreq
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+sd
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+median
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+Q25
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+Q75
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+IQR
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+skew
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+kurt
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+sp.ent
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+sfm
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+mode
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+centroid
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+meanfun
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+minfun
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+maxfun
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+meandom
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+mindom
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+maxdom
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+dfrange
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+modindx
+  'All'           11.0  243.0
+  [total]         11.0  243.0
+
+
+
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 1.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3061               96.6225 %
+Incorrectly Classified Instances       107                3.3775 %
+Kappa statistic                          0.9324
+Mean absolute error                      0.0427
+Root mean squared error                  0.1753
+Relative absolute error                  8.5455 %
+Root relative squared error             35.0553 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.967    0.034    0.966      0.967    0.966      0.932    0.987     0.988     male
+                 0.966    0.033    0.967      0.966    0.966      0.932    0.987     0.984     female
+Weighted Avg.    0.966    0.034    0.966      0.966    0.966      0.932    0.987     0.986     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1531   53 |    a = male
+   54 1530 |    b = female
+

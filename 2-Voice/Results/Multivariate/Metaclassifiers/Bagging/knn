@@ -1,0 +1,44 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.lazy.IBk -- -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.lazy.IBk -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3040               95.9596 %
+Incorrectly Classified Instances       128                4.0404 %
+Kappa statistic                          0.9192
+Mean absolute error                      0.0439
+Root mean squared error                  0.1803
+Relative absolute error                  8.7804 %
+Root relative squared error             36.058  %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.956    0.037    0.963      0.956    0.959      0.919    0.977     0.974     male
+                 0.963    0.044    0.957      0.963    0.960      0.919    0.977     0.971     female
+Weighted Avg.    0.960    0.040    0.960      0.960    0.960      0.919    0.977     0.972     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1515   69 |    a = male
+   59 1525 |    b = female
+

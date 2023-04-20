@@ -1,0 +1,86 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.FLDA -R 1.0E-6
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Fisher's Linear Discriminant Analysis
+
+Threshold: -0.08785505180791896
+
+Weights:
+
+meanfreq: 	-0.0037473995992913876
+sd: 	 0.23910104018631942
+median: 	-0.07368148904683382
+Q25: 	 0.02962482392271831
+Q75: 	 0.1327895256989009
+IQR: 	 0.1996395650583844
+skew: 	-0.0020070645619731774
+kurt: 	 2.8795717451011457E-5
+sp.ent: 	-0.03651594742276666
+sfm: 	-0.024217095295127753
+mode: 	 0.030897229671869076
+centroid: 	-0.003747399547950062
+meanfun: 	-0.7765744572985018
+minfun: 	 0.18528984816988855
+maxfun: 	 0.04521267454759539
+meandom: 	-0.0041544975598889365
+mindom: 	 0.28634701829331305
+maxdom: 	-0.2780398540192442
+dfrange: 	 0.2781433304757384
+modindx: 	 0.0015170606202304468
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3068               96.8434 %
+Incorrectly Classified Instances       100                3.1566 %
+Kappa statistic                          0.9369
+Mean absolute error                      0.4936
+Root mean squared error                  0.4936
+Relative absolute error                 98.7171 %
+Root relative squared error             98.7192 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.979    0.042    0.959      0.979    0.969      0.937    0.991     0.993     male
+                 0.958    0.021    0.979      0.958    0.968      0.937    0.991     0.988     female
+Weighted Avg.    0.968    0.032    0.969      0.968    0.968      0.937    0.991     0.990     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1551   33 |    a = male
+   67 1517 |    b = female
+

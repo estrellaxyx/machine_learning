@@ -1,0 +1,58 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.bayes.BayesNet -F 5 -T 0.01 -R 1 -E DEFAULT -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     voice-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 181
+	Merit of best subset found:    0.98 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 21 label):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.bayes.BayesNet
+	Scheme options: -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 2,6,10,13,15,17,19 : 7
+                     sd
+                     IQR
+                     sfm
+                     meanfun
+                     maxfun
+                     mindom
+                     dfrange
+

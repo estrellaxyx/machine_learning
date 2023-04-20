@@ -1,0 +1,238 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(meanfun >= 0.142839) and (IQR <= 0.062626) => label=female (1166.0/5.0)
+(meanfun >= 0.152192) and (Q75 >= 0.200667) and (mindom <= 0.140625) => label=female (213.0/2.0)
+(meanfun >= 0.135355) and (Q75 <= 0.234366) and (maxdom <= 4.273438) => label=female (94.0/7.0)
+(meanfun >= 0.137394) and (IQR <= 0.076719) and (modindx <= 0.173454) => label=female (34.0/2.0)
+(meanfun >= 0.132557) and (Q75 <= 0.219615) and (maxdom <= 5.328125) and (maxfun <= 0.271186) => label=female (17.0/0.0)
+(IQR <= 0.080309) and (sd >= 0.059611) and (Q25 >= 0.12295) => label=female (23.0/3.0)
+(meanfun >= 0.148659) and (sd >= 0.077849) => label=female (12.0/1.0)
+(meanfun >= 0.135429) and (IQR <= 0.100362) and (maxdom >= 7.710938) => label=female (14.0/1.0)
+(IQR <= 0.070851) and (sd <= 0.043805) and (sp.ent <= 0.895565) => label=female (7.0/0.0)
+ => label=male (1588.0/25.0)
+
+Number of Rules : 10
+
+
+Weight: 4.22
+
+JRIP rules:
+===========
+
+(IQR >= 0.068046) and (meanfun <= 0.135326) and (IQR <= 0.191932) and (minfun >= 0.016277) => label=male (784.0586023452062/70.39166643455981)
+(sp.ent >= 0.880375) and (sd <= 0.063993) and (Q25 <= 0.15407) and (modindx <= 0.214193) and (meanfun <= 0.147472) => label=male (303.44962816477783/6.595771941063421)
+(sp.ent >= 0.890014) and (meanfun >= 0.154437) and (meandom >= 0.472656) and (maxdom <= 5.789063) and (sfm <= 0.630813) and (dfrange >= 5.296875) => label=male (139.7685987243406/2.0294682895579763)
+(Q25 <= 0.137069) and (kurt <= 8.840242) and (IQR <= 0.127467) and (meanfun <= 0.144159) => label=male (133.23900509706723/0.0)
+(meanfun >= 0.171644) and (sp.ent >= 0.890014) and (meanfun <= 0.178503) and (meandom >= 0.472656) and (meandom <= 0.588216) and (maxdom <= 3.84375) => label=male (103.8117148984765/0.5073670723894941)
+(IQR >= 0.100472) and (meanfun <= 0.119752) => label=male (51.24407431133887/0.0)
+(meandom >= 1.620739) and (IQR >= 0.104778) => label=male (36.46425089825363/0.5073670723894941)
+(meanfun <= 0.128543) and (meandom >= 0.211161) and (Q75 >= 0.238815) => label=male (8.117873158231903/0.0)
+ => label=female (1607.8462524023496/36.02306213965411)
+
+Number of Rules : 9
+
+
+Weight: 3.27
+
+JRIP rules:
+===========
+
+(sd <= 0.068428) and (sfm <= 0.534102) and (IQR >= 0.087297) => label=male (449.4443586349858/9.558221469844469)
+(median <= 0.190615) and (meanfun <= 0.132277) and (IQR >= 0.071489) => label=male (332.87768051688107/54.14298414901197)
+(median <= 0.164267) and (sfm <= 0.617675) and (maxdom >= 4.421875) and (IQR >= 0.04525) => label=male (121.80617769312201/18.662098575362556)
+(modindx >= 0.195414) and (kurt <= 10.323426) and (mode <= 0.011166) and (sd <= 0.077646) => label=male (68.78281325865996/0.7899906758895805)
+(mode >= 0.198432) and (maxfun <= 0.271186) and (sfm >= 0.551163) and (sd <= 0.074338) => label=male (68.70447989949048/3.686623154151377)
+(maxfun <= 0.262295) and (IQR >= 0.056886) and (maxdom >= 6.125) => label=male (102.34807116896704/19.188759025955612)
+(dfrange >= 3.234375) and (dfrange <= 6.234375) and (Q75 <= 0.243531) and (meanfun <= 0.138121) and (mindom <= 0.101563) => label=male (73.4504412277308/1.0533209011861073)
+(maxfun <= 0.266667) and (Q75 >= 0.232114) and (mode >= 0.22204) and (mindom >= 0.03125) => label=male (35.93522993797581/0.5266604505930537)
+(IQR >= 0.069812) and (sfm <= 0.482886) and (meanfun <= 0.14704) => label=male (70.29047852417249/25.323687566945228)
+(sp.ent >= 0.909862) and (mode >= 0.198526) and (sfm <= 0.609028) => label=male (50.951070052780736/19.03810958051945)
+(sp.ent >= 0.958994) and (Q75 <= 0.170783) => label=male (25.060357341648704/0.26333022529652683)
+(sfm <= 0.130449) and (meanfun <= 0.138002) => label=male (7.188249442175729/0.0)
+ => label=female (1761.1605923014981/5.266604505930539)
+
+Number of Rules : 13
+
+
+Weight: 2.95
+
+JRIP rules:
+===========
+
+(minfun >= 0.018349) and (meanfun <= 0.137702) => label=male (246.03066996666877/24.64536174634786)
+(IQR >= 0.113911) and (sd <= 0.088072) => label=male (284.7672381972088/84.99490791997414)
+(sfm <= 0.520098) and (modindx >= 0.152976) and (meanfun <= 0.147472) and (sp.ent <= 0.917883) and (IQR >= 0.056886) => label=male (83.2233154787842/2.925450011772746)
+(meanfun <= 0.112151) => label=male (76.45767956364782/19.08423033631621)
+(skew <= 1.848922) and (mode <= 0.175229) and (minfun <= 0.0199) and (maxdom >= 3.609375) and (mindom >= 0.03125) => label=male (26.50999418088577/0.0)
+(Q75 >= 0.221688) and (IQR >= 0.10146) and (meanfun <= 0.151059) => label=male (56.43621441801508/18.945676896374522)
+(meandom >= 0.462358) and (minfun <= 0.031873) and (minfun >= 0.024206) and (mode >= 0.198432) and (meanfun <= 0.177866) => label=male (26.0943338610607/0.0)
+(mindom >= 0.140625) and (IQR >= 0.076879) and (modindx <= 0.139085) and (meanfreq <= 0.200042) => label=male (16.690772132844284/0.0)
+(modindx <= 0.022167) and (sd <= 0.047178) => label=male (18.807123456432834/0.0)
+(sfm >= 0.664616) and (IQR <= 0.091977) => label=male (10.489767296283993/0.2771068798833794)
+(skew <= 1.541186) and (kurt >= 5.170582) and (sd <= 0.069883) => label=male (7.979977604336316/0.1385534399416897)
+(modindx >= 0.277101) and (modindx <= 0.277101) => label=male (3.643605202313933/0.0)
+ => label=female (2310.869308641871/6.968887760914495)
+
+Number of Rules : 13
+
+
+Weight: 2.95
+
+JRIP rules:
+===========
+
+(sd <= 0.067265) and (IQR >= 0.096923) and (meanfun <= 0.149394) => label=male (120.86130924841812/4.948552715081709)
+(mode <= 0.138123) and (sd <= 0.055524) => label=male (53.5514360246306/0.14582538430093445)
+ => label=female (2993.5872547276444/272.1456620041562)
+
+Number of Rules : 3
+
+
+Weight: 2.34
+
+JRIP rules:
+===========
+
+(maxdom >= 6.929688) => label=female (560.0925830964717/142.14871243065403)
+(maxdom <= 4.101563) and (minfun <= 0.018328) and (median >= 0.160159) and (meanfun >= 0.112939) => label=female (439.88076247575054/13.249557241109365)
+(Q75 <= 0.196973) and (modindx >= 0.15957) and (meandom >= 0.161979) and (meanfun >= 0.124927) => label=female (357.57133101860387/39.22846046756186)
+(IQR <= 0.048729) and (sfm >= 0.284067) => label=female (157.74022599906976/28.273360145827507)
+(meanfun >= 0.136662) and (mindom >= 0.039063) and (sfm >= 0.480629) => label=female (80.69181669993232/0.0)
+(meanfun >= 0.17804) => label=female (91.25782149446233/10.955100321734355)
+ => label=male (1480.7654592162305/66.94870497699375)
+
+Number of Rules : 7
+
+
+Weight: 2.25
+
+JRIP rules:
+===========
+
+(dfrange <= 5.421875) and (meanfun >= 0.144865) and (sd >= 0.074355) => label=female (223.07357866534647/12.10442416749931)
+(minfun <= 0.04332) and (mode <= 0.184946) and (mode >= 0.1441) and (sfm >= 0.435705) and (Q25 >= 0.12106) => label=female (203.72194196891917/8.828148600976984)
+(sd >= 0.07031) and (dfrange >= 6.1875) and (modindx <= 0.200732) and (meanfun >= 0.135429) => label=female (219.75539625126277/41.930594513263955)
+(Q25 >= 0.16823) and (sfm >= 0.18899) => label=female (188.83943008943623/28.475577620447673)
+(meandom <= 0.552002) and (meanfun >= 0.132471) => label=female (231.71104833437477/101.77433927672648)
+(sp.ent >= 0.943016) and (sp.ent <= 0.94311) => label=female (74.10216813122176/6.074284204323122)
+(maxfun <= 0.207792) and (Q25 <= 0.085424) and (median >= 0.166725) => label=female (57.26721505178457/0.0)
+(maxdom >= 8.953125) and (Q75 <= 0.216499) => label=female (31.86082054501908/0.0)
+ => label=male (1937.6684009631956/124.32853404284366)
+
+Number of Rules : 9
+
+
+Weight: 2.17
+
+JRIP rules:
+===========
+
+(meanfun >= 0.146641) and (kurt <= 8.77734) and (mode >= 0.011565) => label=female (467.78898015974744/43.1214746817478)
+(sd <= 0.046723) and (Q25 >= 0.158433) and (meanfun >= 0.130561) => label=female (154.03501473177042/6.740557241178315)
+(median >= 0.166577) and (mode <= 0.156532) and (median <= 0.19076) => label=female (265.2028700370466/28.458051082983722)
+(skew >= 2.105751) and (sp.ent >= 0.905599) and (sfm <= 0.551025) and (meanfun >= 0.13769) and (maxfun <= 0.275862) => label=female (100.71015789673635/3.3702786205891573)
+(meandom <= 0.252197) and (mode >= 0.139903) => label=female (77.0368614533799/0.6653814574942388)
+(kurt >= 7.406555) and (meanfreq <= 0.152414) and (meandom <= 0.640299) and (meanfun >= 0.124927) and (minfun <= 0.017297) => label=female (95.9527504494588/28.279115162984002)
+ => label=male (2007.2733652722409/132.85658337130502)
+
+Number of Rules : 7
+
+
+Weight: 2.49
+
+JRIP rules:
+===========
+
+(maxdom >= 8.953125) and (sfm >= 0.512005) and (meanfun >= 0.135782) => label=female (294.7673692804001/0.0)
+(skew >= 2.105535) and (Q25 >= 0.12106) and (sp.ent >= 0.917019) => label=female (416.98358500873906/31.088902642826024)
+(meanfun >= 0.151086) and (sd >= 0.078063) => label=female (217.80338951025337/9.422348169096688)
+(Q25 >= 0.13641) and (sp.ent <= 0.886007) => label=female (173.38489763342068/17.71109843362752)
+ => label=male (2065.0607585675953/388.32393719734654)
+
+Number of Rules : 5
+
+
+Weight: 1.81
+
+JRIP rules:
+===========
+
+(IQR >= 0.069812) and (sd <= 0.078286) and (meandom <= 1.045833) and (modindx <= 0.174646) => label=male (598.9181728360496/143.25314571418255)
+(sp.ent <= 0.907278) and (Q25 <= 0.155332) and (maxdom >= 0.5) and (IQR >= 0.056886) and (modindx >= 0.093438) and (meanfun <= 0.147351) => label=male (188.353485584288/0.0)
+(mode <= 0.011166) and (IQR <= 0.155784) and (sd >= 0.070485) and (median <= 0.163711) => label=male (119.0671500228118/1.3366622732893751)
+(Q25 >= 0.164668) and (maxfun <= 0.271186) and (mode >= 0.22204) and (mindom >= 0.015625) and (sd >= 0.041747) => label=male (97.3221973485674/4.531434499868368)
+(Q75 >= 0.21509) and (mode <= 0.144563) and (meandom >= 0.545117) => label=male (95.56715914814846/13.45440082243217)
+(meanfun <= 0.136883) and (minfun >= 0.016194) and (skew <= 1.863723) and (sd >= 0.042915) => label=male (75.40714785691162/4.2887172029555884)
+(modindx >= 0.195414) and (mode >= 0.185134) and (Q75 <= 0.214654) and (kurt >= 8.017146) and (sd >= 0.056396) => label=male (80.62073128991015/0.07770246833180601)
+(IQR <= 0.04525) and (meanfun <= 0.14181) and (sd >= 0.047178) and (sd <= 0.048547) => label=male (32.612348742290905/0.0)
+ => label=female (1880.131607171338/61.5324530120778)
+
+Number of Rules : 9
+
+
+Weight: 2.55
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 3.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3094               97.6641 %
+Incorrectly Classified Instances        74                2.3359 %
+Kappa statistic                          0.9533
+Mean absolute error                      0.0226
+Root mean squared error                  0.1412
+Relative absolute error                  4.5159 %
+Root relative squared error             28.2315 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.973    0.020    0.980      0.973    0.977      0.953    0.996     0.996     male
+                 0.980    0.027    0.974      0.980    0.977      0.953    0.996     0.995     female
+Weighted Avg.    0.977    0.023    0.977      0.977    0.977      0.953    0.996     0.996     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1542   42 |    a = male
+   32 1552 |    b = female
+

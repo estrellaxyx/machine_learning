@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -6946.0341666977
+LogScore BDeu: -7168.287816230182
+LogScore MDL: -7163.010571392184
+LogScore ENTROPY: -6909.093615174753
+LogScore AIC: -6972.093615174753
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3062               96.654  %
+Incorrectly Classified Instances       106                3.346  %
+Kappa statistic                          0.9331
+Mean absolute error                      0.0469
+Root mean squared error                  0.1523
+Relative absolute error                  9.3788 %
+Root relative squared error             30.4654 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.968    0.035    0.965      0.968    0.967      0.933    0.993     0.990     male
+                 0.965    0.032    0.968      0.965    0.966      0.933    0.993     0.990     female
+Weighted Avg.    0.967    0.033    0.967      0.967    0.967      0.933    0.993     0.990     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1533   51 |    a = male
+   55 1529 |    b = female
+

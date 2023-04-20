@@ -1,0 +1,355 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.6672 * (normalized) IQR='(-inf-0.06188]'
+ +       0.6668 * (normalized) IQR='(0.06188-0.073161]'
+ +       0.6663 * (normalized) IQR='(0.073161-0.082589]'
+ +      -1.3325 * (normalized) IQR='(0.082589-0.092775]'
+ +      -1.3328 * (normalized) IQR='(0.092775-0.127485]'
+ +       0.6651 * (normalized) IQR='(0.127485-0.151633]'
+ +      -1      * (normalized) IQR='(0.151633-0.197719]'
+ +       1      * (normalized) IQR='(0.197719-inf)'
+ +      -1.9992 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.0001 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.0002 * (normalized) meanfun='(0.141815-0.14949]'
+ +       1.9991 * (normalized) meanfun='(0.14949-inf)'
+ +       0.3333
+
+Number of kernel evaluations: 399831 (71.263% cached)
+
+
+
+Weight: 3.48
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         1.5002 * (normalized) IQR='(-inf-0.06188]'
+ +       1.4988 * (normalized) IQR='(0.06188-0.073161]'
+ +      -2.499  * (normalized) IQR='(0.073161-0.082589]'
+ +      -0.4997 * (normalized) IQR='(0.082589-0.092775]'
+ +      -0.5    * (normalized) IQR='(0.092775-0.127485]'
+ +      -2.4989 * (normalized) IQR='(0.127485-0.151633]'
+ +       1.4991 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.4995 * (normalized) IQR='(0.197719-inf)'
+ +      -0.9994 * (normalized) meanfun='(-inf-0.132466]'
+ +       0.9991 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.9994 * (normalized) meanfun='(0.141815-0.14949]'
+ +      -0.9992 * (normalized) meanfun='(0.14949-inf)'
+ +       0.4998
+
+Number of kernel evaluations: 5363191 (61.525% cached)
+
+
+
+Weight: 1.59
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.9987 * (normalized) IQR='(-inf-0.06188]'
+ +      -1.0001 * (normalized) IQR='(0.06188-0.073161]'
+ +       1.0003 * (normalized) IQR='(0.073161-0.082589]'
+ +       0.9987 * (normalized) IQR='(0.082589-0.092775]'
+ +      -0.999  * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.9998 * (normalized) IQR='(0.127485-0.151633]'
+ +      -0.9991 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.0003 * (normalized) IQR='(0.197719-inf)'
+ +       0.4991 * (normalized) meanfun='(-inf-0.132466]'
+ +      -1.4989 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.4999 * (normalized) meanfun='(0.141815-0.14949]'
+ +       0.5    * (normalized) meanfun='(0.14949-inf)'
+ -       0.4994
+
+Number of kernel evaluations: 4068163 (63.753% cached)
+
+
+
+Weight: 0.73
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.5001 * (normalized) IQR='(-inf-0.06188]'
+ +      -1.5    * (normalized) IQR='(0.06188-0.073161]'
+ +       0.4981 * (normalized) IQR='(0.073161-0.082589]'
+ +       0.5005 * (normalized) IQR='(0.082589-0.092775]'
+ +       0.4997 * (normalized) IQR='(0.092775-0.127485]'
+ +       0.5008 * (normalized) IQR='(0.127485-0.151633]'
+ +       0.5003 * (normalized) IQR='(0.151633-0.197719]'
+ +       0.5006 * (normalized) IQR='(0.197719-inf)'
+ +       0.001  * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.0003 * (normalized) meanfun='(0.132466-0.141815]'
+ +      -0.0002 * (normalized) meanfun='(0.141815-0.14949]'
+ +      -0.0006 * (normalized) meanfun='(0.14949-inf)'
+ +       0.4999
+
+Number of kernel evaluations: 1187009 (64.328% cached)
+
+
+
+Weight: 0.28
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.25   * (normalized) IQR='(-inf-0.06188]'
+ +       0.2502 * (normalized) IQR='(0.06188-0.073161]'
+ +       0.25   * (normalized) IQR='(0.073161-0.082589]'
+ +       0.2496 * (normalized) IQR='(0.082589-0.092775]'
+ +       0.2499 * (normalized) IQR='(0.092775-0.127485]'
+ +       0.2495 * (normalized) IQR='(0.127485-0.151633]'
+ +      -1.7491 * (normalized) IQR='(0.151633-0.197719]'
+ +       0.2499 * (normalized) IQR='(0.197719-inf)'
+ +       0.9993 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.9999 * (normalized) meanfun='(0.132466-0.141815]'
+ +      -0.9997 * (normalized) meanfun='(0.141815-0.14949]'
+ +       1.0003 * (normalized) meanfun='(0.14949-inf)'
+ -       0.2499
+
+Number of kernel evaluations: 1709123 (67.525% cached)
+
+
+
+Weight: 0.27
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.2503 * (normalized) IQR='(-inf-0.06188]'
+ +      -0.25   * (normalized) IQR='(0.06188-0.073161]'
+ +      -0.2499 * (normalized) IQR='(0.073161-0.082589]'
+ +      -0.2501 * (normalized) IQR='(0.082589-0.092775]'
+ +      -0.2504 * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.2498 * (normalized) IQR='(0.127485-0.151633]'
+ +      -0.2498 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.7501 * (normalized) IQR='(0.197719-inf)'
+ +      -0.4997 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.5001 * (normalized) meanfun='(0.132466-0.141815]'
+ +       1.5001 * (normalized) meanfun='(0.141815-0.14949]'
+ +      -0.5003 * (normalized) meanfun='(0.14949-inf)'
+ -       0.2499
+
+Number of kernel evaluations: 1559347 (65.644% cached)
+
+
+
+Weight: 0.18
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.5    * (normalized) IQR='(-inf-0.06188]'
+ +      -0.5007 * (normalized) IQR='(0.06188-0.073161]'
+ +      -0.4985 * (normalized) IQR='(0.073161-0.082589]'
+ +       1.4991 * (normalized) IQR='(0.082589-0.092775]'
+ +      -0.4995 * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.5006 * (normalized) IQR='(0.127485-0.151633]'
+ +      -0.4994 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.4995 * (normalized) IQR='(0.197719-inf)'
+ +      -0.5003 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.4996 * (normalized) meanfun='(0.132466-0.141815]'
+ +      -0.4996 * (normalized) meanfun='(0.141815-0.14949]'
+ +       1.4995 * (normalized) meanfun='(0.14949-inf)'
+ +       0.0001
+
+Number of kernel evaluations: 1992356 (68.654% cached)
+
+
+
+Weight: 0.21
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.9995 * (normalized) IQR='(-inf-0.06188]'
+ +      -1      * (normalized) IQR='(0.06188-0.073161]'
+ +       0.9984 * (normalized) IQR='(0.073161-0.082589]'
+ +      -1.0005 * (normalized) IQR='(0.082589-0.092775]'
+ +       0.9998 * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.9991 * (normalized) IQR='(0.127485-0.151633]'
+ +       1.0004 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.0007 * (normalized) IQR='(0.197719-inf)'
+ +       0.0006 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.0002 * (normalized) meanfun='(0.132466-0.141815]'
+ +      -0.0001 * (normalized) meanfun='(0.141815-0.14949]'
+ +      -0.0003 * (normalized) meanfun='(0.14949-inf)'
+ +       0.0001
+
+Number of kernel evaluations: 1271534 (66.329% cached)
+
+
+
+Weight: 0.14
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.0004 * (normalized) IQR='(-inf-0.06188]'
+ +      -0.0012 * (normalized) IQR='(0.06188-0.073161]'
+ +      -0.0012 * (normalized) IQR='(0.073161-0.082589]'
+ +       0.0012 * (normalized) IQR='(0.082589-0.092775]'
+ +       0.0006 * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.0017 * (normalized) IQR='(0.127485-0.151633]'
+ +       0.0007 * (normalized) IQR='(0.151633-0.197719]'
+ +       0.002  * (normalized) IQR='(0.197719-inf)'
+ +       0.5001 * (normalized) meanfun='(-inf-0.132466]'
+ +      -1.4985 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.4997 * (normalized) meanfun='(0.141815-0.14949]'
+ +       0.4988 * (normalized) meanfun='(0.14949-inf)'
+ +       0.5001
+
+Number of kernel evaluations: 1568866 (68.782% cached)
+
+
+
+Weight: 0.08
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3705 * (normalized) IQR='(-inf-0.06188]'
+ +      -0.3709 * (normalized) IQR='(0.06188-0.073161]'
+ +      -0.3715 * (normalized) IQR='(0.073161-0.082589]'
+ +       0.1124 * (normalized) IQR='(0.082589-0.092775]'
+ +      -0.3701 * (normalized) IQR='(0.092775-0.127485]'
+ +      -0.3715 * (normalized) IQR='(0.127485-0.151633]'
+ +       0.1119 * (normalized) IQR='(0.151633-0.197719]'
+ +       1.6303 * (normalized) IQR='(0.197719-inf)'
+ +       0.7411 * (normalized) meanfun='(-inf-0.132466]'
+ +       0.2592 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.2585 * (normalized) meanfun='(0.141815-0.14949]'
+ +      -1.2587 * (normalized) meanfun='(0.14949-inf)'
+ +       0.6294
+
+Number of kernel evaluations: 1264300 (67.21% cached)
+
+
+
+Weight: 0.05
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 1.29 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3062               96.654  %
+Incorrectly Classified Instances       106                3.346  %
+Kappa statistic                          0.9331
+Mean absolute error                      0.045 
+Root mean squared error                  0.1686
+Relative absolute error                  9.0077 %
+Root relative squared error             33.7226 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.973    0.040    0.960      0.973    0.967      0.933    0.991     0.991     male
+                 0.960    0.027    0.973      0.960    0.966      0.933    0.991     0.988     female
+Weighted Avg.    0.967    0.033    0.967      0.967    0.967      0.933    0.991     0.989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1542   42 |    a = male
+   64 1520 |    b = female
+

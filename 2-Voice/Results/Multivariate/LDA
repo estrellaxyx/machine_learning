@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 5.581387781027716
+
+Mean vector:
+
+         2                   2
+         1  8.430937310606e-02
+         2  1.428067256944e-01
+
+Inverse of covariance matrix:
+
+  886.62  70.47
+  70.47  3142.88
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.11
+meanfun: 0.12
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.06
+meanfun: 0.17
+
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3045               96.1174 %
+Incorrectly Classified Instances       123                3.8826 %
+Kappa statistic                          0.9223
+Mean absolute error                      0.0623
+Root mean squared error                  0.1778
+Relative absolute error                 12.4658 %
+Root relative squared error             35.5579 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.058    0.944      0.980    0.962      0.923    0.989     0.988     male
+                 0.942    0.020    0.980      0.942    0.960      0.923    0.989     0.990     female
+Weighted Avg.    0.961    0.039    0.962      0.961    0.961      0.923    0.989     0.989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1553   31 |    a = male
+   92 1492 |    b = female
+

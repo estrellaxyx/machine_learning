@@ -1,0 +1,302 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 9.260384249823739
+
+Mean vector:
+
+         7                   7
+         1  4.791612414773e-01
+         2  2.934841695076e-01
+         3  5.674484592803e-01
+         4  6.430203967803e-01
+         5  3.999867973485e-01
+         6  4.606855410354e-01
+         7  5.902921316288e-01
+
+Inverse of covariance matrix:
+
+  130.00 -41.56 -35.89  19.90 -2.99 -7.57 -10.85
+ -41.56  343.96  185.57 -71.42 -234.45  134.67 -27.05
+ -35.89  185.57  217.70 -53.91 -58.70  102.41 -29.27
+  19.90 -71.42 -53.91  167.05  59.04 -149.20 -4.08
+ -2.99 -234.45 -58.70  59.04  346.95 -168.90  25.56
+ -7.57  134.67  102.41 -149.20 -168.90  225.40 -4.64
+ -10.85 -27.05 -29.27 -4.08  25.56 -4.64  25.33
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+meanfun: 0.33
+IQR: 0.4
+Q25: 0.47
+sp.ent: 0.73
+sd: 0.48
+sfm: 0.54
+mode: 0.54
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+meanfun: 0.63
+IQR: 0.18
+Q25: 0.67
+sp.ent: 0.55
+sd: 0.32
+sfm: 0.38
+mode: 0.64
+
+
+
+Weight: 3.28
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 7.942017082381529
+
+Mean vector:
+
+         7                   7
+         1  4.742708630100e-01
+         2  3.089282257979e-01
+         3  5.366368989490e-01
+         4  6.707460866332e-01
+         5  4.294626678249e-01
+         6  4.903786495222e-01
+         7  5.561934902533e-01
+
+Inverse of covariance matrix:
+
+  66.79 -16.23 -12.63  27.45  23.23 -24.10 -1.32
+ -16.23  153.45  56.42 -49.55 -144.38  74.32 -12.05
+ -12.63  56.42  118.39 -43.02  17.36  49.42 -20.29
+  27.45 -49.55 -43.02  147.03  75.07 -137.54 -5.23
+  23.23 -144.38  17.36  75.07  297.58 -136.55  11.44
+ -24.10  74.32  49.42 -137.54 -136.55  178.60  1.94
+ -1.32 -12.05 -20.29 -5.23  11.44  1.94  21.98
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.91
+Class prior probability: 0.4
+
+Mean vector:
+
+meanfun: 0.4
+IQR: 0.37
+Q25: 0.44
+sp.ent: 0.73
+sd: 0.48
+sfm: 0.56
+mode: 0.48
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.51
+Class prior probability: 0.6
+
+Mean vector:
+
+meanfun: 0.53
+IQR: 0.27
+Q25: 0.6
+sp.ent: 0.63
+sd: 0.39
+sfm: 0.44
+mode: 0.61
+
+
+
+Weight: 1.25
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 7.932373081850901
+
+Mean vector:
+
+         7                   7
+         1  4.708817483181e-01
+         2  3.199181945485e-01
+         3  5.177781994655e-01
+         4  6.974095066515e-01
+         5  4.532336701598e-01
+         6  5.273680122222e-01
+         7  5.356309141063e-01
+
+Inverse of covariance matrix:
+
+  64.80 -24.17 -17.49  24.13  33.95 -26.29  0.33
+ -24.17  142.20  59.17 -51.72 -134.43  74.62 -8.75
+ -17.49  59.17  122.28 -44.33  19.65  55.10 -15.57
+  24.13 -51.72 -44.33  162.16  90.35 -150.33 -0.78
+  33.95 -134.43  19.65  90.35  317.64 -150.86  10.05
+ -26.29  74.62  55.10 -150.33 -150.86  190.91 -1.45
+  0.33 -8.75 -15.57 -0.78  10.05 -1.45  17.32
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.75
+Class prior probability: 0.47
+
+Mean vector:
+
+meanfun: 0.45
+IQR: 0.34
+Q25: 0.5
+sp.ent: 0.72
+sd: 0.46
+sfm: 0.54
+mode: 0.53
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.64
+Class prior probability: 0.53
+
+Mean vector:
+
+meanfun: 0.49
+IQR: 0.31
+Q25: 0.53
+sp.ent: 0.68
+sd: 0.44
+sfm: 0.52
+mode: 0.54
+
+
+
+Weight: 0.35
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 8.010162046726517
+
+Mean vector:
+
+         7                   7
+         1  4.712845543979e-01
+         2  3.179843317564e-01
+         3  5.184801252624e-01
+         4  7.036340154240e-01
+         5  4.551498716994e-01
+         6  5.323778381254e-01
+         7  5.404779242918e-01
+
+Inverse of covariance matrix:
+
+  66.05 -26.79 -17.60  25.38  38.67 -29.91 -0.12
+ -26.79  143.16  62.43 -55.61 -134.29  79.46 -8.57
+ -17.60  62.43  125.17 -44.13  18.37  56.89 -15.01
+  25.38 -55.61 -44.13  168.65  97.42 -154.98 -0.68
+  38.67 -134.29  18.37  97.42  328.16 -162.57  10.18
+ -29.91  79.46  56.89 -154.98 -162.57  198.47 -2.03
+ -0.12 -8.57 -15.01 -0.68  10.18 -2.03  16.93
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.75
+Class prior probability: 0.47
+
+Mean vector:
+
+meanfun: 0.46
+IQR: 0.33
+Q25: 0.51
+sp.ent: 0.72
+sd: 0.46
+sfm: 0.54
+mode: 0.53
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.64
+Class prior probability: 0.53
+
+Mean vector:
+
+meanfun: 0.48
+IQR: 0.31
+Q25: 0.53
+sp.ent: 0.69
+sd: 0.45
+sfm: 0.52
+mode: 0.55
+
+
+
+Weight: 0.0
+
+Number of performed Iterations: 4
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3047               96.1806 %
+Incorrectly Classified Instances       121                3.8194 %
+Kappa statistic                          0.9236
+Mean absolute error                      0.0533
+Root mean squared error                  0.1835
+Relative absolute error                 10.656  %
+Root relative squared error             36.7015 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.978    0.054    0.947      0.978    0.962      0.924    0.982     0.979     male
+                 0.946    0.022    0.977      0.946    0.961      0.924    0.982     0.974     female
+Weighted Avg.    0.962    0.038    0.962      0.962    0.962      0.924    0.982     0.976     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1549   35 |    a = male
+   86 1498 |    b = female
+

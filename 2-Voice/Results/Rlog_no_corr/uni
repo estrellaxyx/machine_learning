@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-R8,12,19-weka.filters.unsupervised.attribute.Remove-V-R11,6,4,8,2,9-10,18
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                            Class
+Variable                     male
+=================================
+meanfun                 -161.0093
+IQR                       59.7376
+Q25                       -2.4732
+sp.ent                    45.6223
+sd                       -11.0066
+sfm                      -12.2216
+mode                       6.3495
+Intercept                -18.9366
+
+
+Odds Ratios...
+                            Class
+Variable                     male
+=================================
+meanfun                         0
+IQR          8.784241250546562E25
+Q25                        0.0843
+sp.ent       6.508796351000707E19
+sd                              0
+sfm                             0
+mode                     572.2076
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3074               97.0328 %
+Incorrectly Classified Instances        94                2.9672 %
+Kappa statistic                          0.9407
+Mean absolute error                      0.0503
+Root mean squared error                  0.1554
+Relative absolute error                 10.052  %
+Root relative squared error             31.0724 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.034    0.966      0.975    0.970      0.941    0.993     0.994     male
+                 0.966    0.025    0.975      0.966    0.970      0.941    0.993     0.992     female
+Weighted Avg.    0.970    0.030    0.970      0.970    0.970      0.941    0.993     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1544   40 |    a = male
+   54 1530 |    b = female
+

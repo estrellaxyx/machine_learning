@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,8-11,13-14,16,21
+Instances:    3168
+Attributes:   9
+              IQR
+              kurt
+              sp.ent
+              sfm
+              mode
+              meanfun
+              minfun
+              meandom
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 9.170713059965173
+
+Mean vector:
+
+         8                   8
+         1  8.430937310606e-02
+         2  3.656846078472e+01
+         3  8.951270656566e-01
+         4  4.082164081439e-01
+         5  1.652818061869e-01
+         6  1.428067256944e-01
+         7  3.680183017677e-02
+         8  8.292109810606e-01
+
+Inverse of covariance matrix:
+
+  1771.24 -0.18 -532.93 -109.92  57.97 -669.00 -121.43 -2.60
+ -0.18  0.00  0.31 -0.03  0.03  0.16  0.04  0.00
+ -532.93  0.31  3423.99 -642.66 -70.85  734.27  226.35 -9.77
+ -109.92 -0.03 -642.66  198.19  47.31 -42.92  30.68  5.81
+  57.97  0.03 -70.85  47.31  301.14 -186.26 -113.74 -9.82
+ -669.00  0.16  734.27 -42.92 -186.26  4344.22 -1143.97  5.19
+ -121.43  0.04  226.35  30.68 -113.74 -1143.97  3849.05 -26.57
+ -2.60  0.00 -9.77  5.81 -9.82  5.19 -26.57  5.46
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.11
+kurt: 48.33
+sp.ent: 0.92
+sfm: 0.47
+mode: 0.15
+meanfun: 0.12
+minfun: 0.03
+meandom: 0.73
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.06
+kurt: 24.81
+sp.ent: 0.87
+sfm: 0.34
+mode: 0.18
+meanfun: 0.17
+minfun: 0.04
+meandom: 0.93
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3073               97.0013 %
+Incorrectly Classified Instances        95                2.9987 %
+Kappa statistic                          0.94  
+Mean absolute error                      0.0401
+Root mean squared error                  0.1562
+Relative absolute error                  8.0161 %
+Root relative squared error             31.2393 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.979    0.039    0.962      0.979    0.970      0.940    0.992     0.994     male
+                 0.961    0.021    0.978      0.961    0.970      0.940    0.992     0.990     female
+Weighted Avg.    0.970    0.030    0.970      0.970    0.970      0.940    0.992     0.992     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1550   34 |    a = male
+   61 1523 |    b = female
+

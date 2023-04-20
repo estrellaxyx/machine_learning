@@ -1,0 +1,260 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(4): label Q25 
+IQR(8): label sd 
+Q25(6): label IQR 
+sp.ent(3): label sd 
+sd(8): label sfm 
+sfm(3): label 
+mode(7): label sd 
+label(2): 
+LogScore Bayes: -19321.972646571237
+LogScore BDeu: -21047.337075566305
+LogScore MDL: -20947.282266677466
+LogScore ENTROPY: -19323.0198324612
+LogScore AIC: -19726.0198324612
+
+
+Weight: 3.96
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(68): label mode 
+IQR(48): label sd 
+Q25(41): label sfm 
+sp.ent(32): label sfm 
+sd(34): label sfm 
+sfm(38): label 
+mode(25): label Q25 
+label(2): 
+LogScore Bayes: -48182.1339784566
+LogScore BDeu: -187935.77608654043
+LogScore MDL: -143735.58204318245
+LogScore ENTROPY: -77261.7350766097
+LogScore AIC: -93754.73507660966
+
+
+Weight: 4.53
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(48): label Q25 
+IQR(43): label sd 
+Q25(54): label sfm 
+sp.ent(43): label 
+sd(52): label sfm 
+sfm(45): label sp.ent 
+mode(44): label Q25 
+label(2): 
+LogScore Bayes: -49562.02808220083
+LogScore BDeu: -296115.35706679436
+LogScore MDL: -211116.64671579964
+LogScore ENTROPY: -101017.44841434654
+LogScore AIC: -128334.44841434655
+
+
+Weight: 4.7
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(22): label Q25 
+IQR(75): label sd 
+Q25(72): label sfm 
+sp.ent(69): label 
+sd(36): label sfm 
+sfm(12): label sp.ent 
+mode(31): label Q25 
+label(2): 
+LogScore Bayes: -49354.01301322364
+LogScore BDeu: -194816.67080368317
+LogScore MDL: -147196.16307540683
+LogScore ENTROPY: -79198.81437152944
+LogScore AIC: -96069.81437152941
+
+
+Weight: 4.3
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(27): label Q25 
+IQR(22): label sd 
+Q25(19): label sfm 
+sp.ent(9): label sfm 
+sd(11): label sfm 
+sfm(20): label 
+mode(24): label Q25 
+label(2): 
+LogScore Bayes: -31770.42789753092
+LogScore BDeu: -57542.064801393695
+LogScore MDL: -52056.85466535264
+LogScore ENTROPY: -36729.13745114804
+LogScore AIC: -40532.13745114803
+
+
+Weight: 3.46
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(54): label Q25 
+IQR(36): label sd 
+Q25(48): label sfm 
+sp.ent(52): label sfm 
+sd(39): label sfm 
+sfm(53): label 
+mode(40): label Q25 
+label(2): 
+LogScore Bayes: -43320.02912215041
+LogScore BDeu: -277530.9186199015
+LogScore MDL: -197131.31913745977
+LogScore ENTROPY: -92005.66883556683
+LogScore AIC: -118088.66883556682
+
+
+Weight: 5.32
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(40): label Q25 
+IQR(37): label sd 
+Q25(37): label sd 
+sp.ent(38): label sfm 
+sd(31): label 
+sfm(37): label sd 
+mode(24): label Q25 
+label(2): 
+LogScore Bayes: -38070.54568627186
+LogScore BDeu: -154291.46055486304
+LogScore MDL: -118813.42509362735
+LogScore ENTROPY: -62052.9093093404
+LogScore AIC: -76135.90930934035
+
+
+Weight: 5.38
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(54): label Q25 
+IQR(23): label sd 
+Q25(34): label IQR 
+sp.ent(33): label 
+sd(29): label sfm 
+sfm(19): label sp.ent 
+mode(33): label Q25 
+label(2): 
+LogScore Bayes: -35039.05390771746
+LogScore BDeu: -122956.27888163384
+LogScore MDL: -97289.54504629131
+LogScore ENTROPY: -53394.15504368753
+LogScore AIC: -64285.15504368753
+
+
+Weight: 4.34
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(50): label Q25 
+IQR(49): label sd 
+Q25(44): label sfm 
+sp.ent(50): label 
+sd(46): label sfm 
+sfm(46): label sp.ent 
+mode(42): label Q25 
+label(2): 
+LogScore Bayes: -46203.48084647036
+LogScore BDeu: -269514.97868097137
+LogScore MDL: -193981.21563629038
+LogScore ENTROPY: -93095.57546044127
+LogScore AIC: -118126.57546044131
+
+
+Weight: 4.86
+
+Bayes Network Classifier
+not using ADTree
+#attributes=8 #classindex=7
+Network structure (nodes followed by parents)
+meanfun(39): label Q25 
+IQR(59): label sd 
+Q25(56): label sd 
+sp.ent(52): label sfm 
+sd(54): label sfm 
+sfm(60): label 
+mode(60): label Q25 
+label(2): 
+LogScore Bayes: -49794.05452752546
+LogScore BDeu: -383222.3347041089
+LogScore MDL: -263625.0455355279
+LogScore ENTROPY: -119871.77446557397
+LogScore AIC: -155538.77446557404
+
+
+Weight: 4.42
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.93 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3055               96.4331 %
+Incorrectly Classified Instances       113                3.5669 %
+Kappa statistic                          0.9287
+Mean absolute error                      0.0346
+Root mean squared error                  0.1789
+Relative absolute error                  6.9147 %
+Root relative squared error             35.7845 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.969    0.040    0.960      0.969    0.964      0.929    0.993     0.993     male
+                 0.960    0.031    0.969      0.960    0.964      0.929    0.993     0.991     female
+Weighted Avg.    0.964    0.036    0.964      0.964    0.964      0.929    0.993     0.992     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1535   49 |    a = male
+   64 1520 |    b = female
+

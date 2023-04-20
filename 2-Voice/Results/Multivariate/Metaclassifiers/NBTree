@@ -1,0 +1,237 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.NBTree 
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+NBTree
+------------------
+
+IQR <= 0.073161
+|   IQR <= 0.06188
+|   |   meanfun <= 0.131964: NB 3
+|   |   meanfun > 0.131964: NB 4
+|   IQR > 0.06188: NB 5
+IQR > 0.073161
+|   IQR <= 0.151633
+|   |   IQR <= 0.092775: NB 8
+|   |   IQR > 0.092775
+|   |   |   IQR <= 0.127485
+|   |   |   |   meanfun <= 0.14471: NB 11
+|   |   |   |   meanfun > 0.14471
+|   |   |   |   |   meanfun <= 0.151287: NB 13
+|   |   |   |   |   meanfun > 0.151287: NB 14
+|   |   |   IQR > 0.127485: NB 15
+|   IQR > 0.151633
+|   |   IQR <= 0.197719: NB 17
+|   |   IQR > 0.197719: NB 18
+
+Leaf number: 3 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.52) (0.48)
+========================================
+IQR
+  'All'                      14.0   13.0
+  [total]                    14.0   13.0
+
+meanfun
+  '(-inf-0.098886]'           1.0    5.0
+  '(0.098886-0.127881]'      14.0    3.0
+  '(0.127881-inf)'            1.0    7.0
+  [total]                    16.0   15.0
+
+
+
+Leaf number: 4 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.01) (0.99)
+=============================
+IQR
+  'All'            8.0 1189.0
+  [total]          8.0 1189.0
+
+meanfun
+  'All'            8.0 1189.0
+  [total]          8.0 1189.0
+
+
+
+Leaf number: 5 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.23) (0.77)
+====================================
+IQR
+  'All'                  26.0   86.0
+  [total]                26.0   86.0
+
+meanfun
+  '(-inf-0.134571]'      21.0    7.0
+  '(0.134571-inf)'        6.0   80.0
+  [total]                27.0   87.0
+
+
+
+Leaf number: 8 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.67) (0.33)
+========================================
+IQR
+  '(-inf-0.082589]'          50.0   48.0
+  '(0.082589-inf)'          102.0   29.0
+  [total]                   152.0   77.0
+
+meanfun
+  '(-inf-0.133915]'         128.0    5.0
+  '(0.133915-0.147085]'      19.0   18.0
+  '(0.147085-inf)'            6.0   55.0
+  [total]                   153.0   78.0
+
+
+
+Leaf number: 11 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.99) (0.01)
+====================================
+IQR
+  'All'                1181.0   13.0
+  [total]              1181.0   13.0
+
+meanfun
+  '(-inf-0.132443]'    1016.0    4.0
+  '(0.132443-inf)'      166.0   10.0
+  [total]              1182.0   14.0
+
+
+
+Leaf number: 13 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.61) (0.39)
+=============================
+IQR
+  'All'           14.0    9.0
+  [total]         14.0    9.0
+
+meanfun
+  'All'           14.0    9.0
+  [total]         14.0    9.0
+
+
+
+Leaf number: 14 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.09) (0.91)
+=============================
+IQR
+  'All'            4.0   39.0
+  [total]          4.0   39.0
+
+meanfun
+  'All'            4.0   39.0
+  [total]          4.0   39.0
+
+
+
+Leaf number: 15 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.75) (0.25)
+====================================
+IQR
+  'All'                 132.0   44.0
+  [total]               132.0   44.0
+
+meanfun
+  '(-inf-0.135806]'     126.0    1.0
+  '(0.135806-inf)'        7.0   44.0
+  [total]               133.0   45.0
+
+
+
+Leaf number: 17 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.37) (0.63)
+====================================
+IQR
+  'All'                  63.0  107.0
+  [total]                63.0  107.0
+
+meanfun
+  '(-inf-0.147197]'      63.0    2.0
+  '(0.147197-inf)'        1.0  106.0
+  [total]                64.0  108.0
+
+
+
+Leaf number: 18 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.05) (0.95)
+=============================
+IQR
+  'All'            1.0   18.0
+  [total]          1.0   18.0
+
+meanfun
+  'All'            1.0   18.0
+  [total]          1.0   18.0
+
+
+
+
+Number of Leaves  : 	10
+
+Size of the tree : 	19
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3062               96.654  %
+Incorrectly Classified Instances       106                3.346  %
+Kappa statistic                          0.9331
+Mean absolute error                      0.0459
+Root mean squared error                  0.1628
+Relative absolute error                  9.1899 %
+Root relative squared error             32.5693 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.042    0.959      0.975    0.967      0.933    0.991     0.990     male
+                 0.958    0.025    0.974      0.958    0.966      0.933    0.991     0.989     female
+Weighted Avg.    0.967    0.033    0.967      0.967    0.967      0.933    0.991     0.989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1544   40 |    a = male
+   66 1518 |    b = female
+

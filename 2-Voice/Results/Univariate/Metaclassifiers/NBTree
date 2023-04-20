@@ -1,0 +1,756 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.NBTree 
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+NBTree
+------------------
+
+sfm <= 0.322368
+|   sp.ent <= 0.522378
+|   |   meanfun <= 0.473645: NB 3
+|   |   meanfun > 0.473645: NB 4
+|   sp.ent > 0.522378
+|   |   sfm <= 0.263389
+|   |   |   sfm <= 0.146744: NB 7
+|   |   |   sfm > 0.146744
+|   |   |   |   meanfun <= 0.481157
+|   |   |   |   |   Q25 <= 0.70179: NB 10
+|   |   |   |   |   Q25 > 0.70179: NB 11
+|   |   |   |   meanfun > 0.481157: NB 12
+|   |   sfm > 0.263389
+|   |   |   meanfun <= 0.481981: NB 14
+|   |   |   meanfun > 0.481981: NB 15
+sfm > 0.322368
+|   meanfun <= 0.460581
+|   |   Q25 <= 0.565272
+|   |   |   meanfun <= 0.43149
+|   |   |   |   IQR <= 0.27784: NB 20
+|   |   |   |   IQR > 0.27784: NB 21
+|   |   |   meanfun > 0.43149
+|   |   |   |   sd <= 0.478765: NB 23
+|   |   |   |   sd > 0.478765: NB 24
+|   |   Q25 > 0.565272: NB 25
+|   meanfun > 0.460581
+|   |   meanfun <= 0.510306
+|   |   |   sfm <= 0.603654
+|   |   |   |   IQR <= 0.341106: NB 29
+|   |   |   |   IQR > 0.341106: NB 30
+|   |   |   sfm > 0.603654
+|   |   |   |   IQR <= 0.3802: NB 32
+|   |   |   |   IQR > 0.3802: NB 33
+|   |   meanfun > 0.510306: NB 34
+
+Leaf number: 3 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.86) (0.14)
+====================================
+meanfun
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+IQR
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+Q25
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+sp.ent
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+sd
+  '(-inf-0.264096]'       1.0    5.0
+  '(0.264096-inf)'       30.0    1.0
+  [total]                31.0    6.0
+
+sfm
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+mode
+  'All'                  30.0    5.0
+  [total]                30.0    5.0
+
+
+
+Leaf number: 4 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+                  (0)    (1)
+=============================
+meanfun
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+IQR
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+Q25
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+sp.ent
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+sd
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+sfm
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+mode
+  'All'            1.0  724.0
+  [total]          1.0  724.0
+
+
+
+Leaf number: 7 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.88) (0.13)
+=============================
+meanfun
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+IQR
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+Q25
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+sp.ent
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+sd
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+sfm
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+mode
+  'All'           14.0    2.0
+  [total]         14.0    2.0
+
+
+
+Leaf number: 10 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.95) (0.05)
+=============================
+meanfun
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+IQR
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+Q25
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+sp.ent
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+sd
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+sfm
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+mode
+  'All'           40.0    2.0
+  [total]         40.0    2.0
+
+
+
+Leaf number: 11 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                       (0.3)  (0.7)
+====================================
+meanfun
+  '(-inf-0.331348]'       3.0    1.0
+  '(0.331348-inf)'        1.0    7.0
+  [total]                 4.0    8.0
+
+IQR
+  'All'                   3.0    7.0
+  [total]                 3.0    7.0
+
+Q25
+  'All'                   3.0    7.0
+  [total]                 3.0    7.0
+
+sp.ent
+  'All'                   3.0    7.0
+  [total]                 3.0    7.0
+
+sd
+  '(-inf-0.327932]'       1.0    7.0
+  '(0.327932-inf)'        3.0    1.0
+  [total]                 4.0    8.0
+
+sfm
+  'All'                   3.0    7.0
+  [total]                 3.0    7.0
+
+mode
+  'All'                   3.0    7.0
+  [total]                 3.0    7.0
+
+
+
+Leaf number: 12 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.01) (0.99)
+=============================
+meanfun
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+IQR
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+Q25
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+sp.ent
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+sd
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+sfm
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+mode
+  'All'            1.0   86.0
+  [total]          1.0   86.0
+
+
+
+Leaf number: 14 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.96) (0.04)
+====================================
+meanfun
+  'All'                  97.0    4.0
+  [total]                97.0    4.0
+
+IQR
+  '(-inf-0.239351]'       1.0    4.0
+  '(0.239351-inf)'       97.0    1.0
+  [total]                98.0    5.0
+
+Q25
+  '(-inf-0.638988]'      91.0    1.0
+  '(0.638988-inf)'        7.0    4.0
+  [total]                98.0    5.0
+
+sp.ent
+  'All'                  97.0    4.0
+  [total]                97.0    4.0
+
+sd
+  '(-inf-0.297826]'       1.0    4.0
+  '(0.297826-inf)'       97.0    1.0
+  [total]                98.0    5.0
+
+sfm
+  'All'                  97.0    4.0
+  [total]                97.0    4.0
+
+mode
+  'All'                  97.0    4.0
+  [total]                97.0    4.0
+
+
+
+Leaf number: 15 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.01) (0.99)
+=============================
+meanfun
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+IQR
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+Q25
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+sp.ent
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+sd
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+sfm
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+mode
+  'All'            1.0   66.0
+  [total]          1.0   66.0
+
+
+
+Leaf number: 20 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                       (0.7)  (0.3)
+====================================
+meanfun
+  'All'                  19.0    8.0
+  [total]                19.0    8.0
+
+IQR
+  '(-inf-0.145894]'       1.0    5.0
+  '(0.145894-inf)'       19.0    4.0
+  [total]                20.0    9.0
+
+Q25
+  'All'                  19.0    8.0
+  [total]                19.0    8.0
+
+sp.ent
+  'All'                  19.0    8.0
+  [total]                19.0    8.0
+
+sd
+  'All'                  19.0    8.0
+  [total]                19.0    8.0
+
+sfm
+  '(-inf-0.593602]'      17.0    2.0
+  '(0.593602-inf)'        3.0    7.0
+  [total]                20.0    9.0
+
+mode
+  'All'                  19.0    8.0
+  [total]                19.0    8.0
+
+
+
+Leaf number: 21 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+                  (1)    (0)
+=============================
+meanfun
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+IQR
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+Q25
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+sp.ent
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+sd
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+sfm
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+mode
+  'All'         1120.0    5.0
+  [total]       1120.0    5.0
+
+
+
+Leaf number: 23 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.98) (0.02)
+=============================
+meanfun
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+IQR
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+Q25
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+sp.ent
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+sd
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+sfm
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+mode
+  'All'           45.0    1.0
+  [total]         45.0    1.0
+
+
+
+Leaf number: 24 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.59) (0.41)
+====================================
+meanfun
+  'All'                  17.0   12.0
+  [total]                17.0   12.0
+
+IQR
+  '(-inf-0.400267]'       3.0   10.0
+  '(0.400267-inf)'       15.0    3.0
+  [total]                18.0   13.0
+
+Q25
+  'All'                  17.0   12.0
+  [total]                17.0   12.0
+
+sp.ent
+  'All'                  17.0   12.0
+  [total]                17.0   12.0
+
+sd
+  'All'                  17.0   12.0
+  [total]                17.0   12.0
+
+sfm
+  'All'                  17.0   12.0
+  [total]                17.0   12.0
+
+mode
+  '(-inf-0.595562]'       9.0   12.0
+  '(0.595562-inf)'        9.0    1.0
+  [total]                18.0   13.0
+
+
+
+Leaf number: 25 Naive Bayes Classifier
+
+                           Class
+Attribute                   male female
+                          (0.81) (0.19)
+========================================
+meanfun
+  '(-inf-0.380717]'          64.0    2.0
+  '(0.380717-inf)'           71.0   30.0
+  [total]                   135.0   32.0
+
+IQR
+  '(-inf-0.195838]'           1.0   15.0
+  '(0.195838-0.247654]'       8.0    8.0
+  '(0.247654-inf)'          127.0   10.0
+  [total]                   136.0   33.0
+
+Q25
+  'All'                     134.0   31.0
+  [total]                   134.0   31.0
+
+sp.ent
+  'All'                     134.0   31.0
+  [total]                   134.0   31.0
+
+sd
+  'All'                     134.0   31.0
+  [total]                   134.0   31.0
+
+sfm
+  '(-inf-0.556652]'         123.0   10.0
+  '(0.556652-inf)'           12.0   22.0
+  [total]                   135.0   32.0
+
+mode
+  '(-inf-0.570237]'          19.0   20.0
+  '(0.570237-inf)'          116.0   12.0
+  [total]                   135.0   32.0
+
+
+
+Leaf number: 29 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.19) (0.81)
+====================================
+meanfun
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+IQR
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+Q25
+  '(-inf-0.559544]'       5.0    1.0
+  '(0.559544-inf)'        6.0   44.0
+  [total]                11.0   45.0
+
+sp.ent
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+sd
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+sfm
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+mode
+  'All'                  10.0   44.0
+  [total]                10.0   44.0
+
+
+
+Leaf number: 30 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.98) (0.02)
+=============================
+meanfun
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+IQR
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+Q25
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+sp.ent
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+sd
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+sfm
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+mode
+  'All'           41.0    1.0
+  [total]         41.0    1.0
+
+
+
+Leaf number: 32 Naive Bayes Classifier
+
+                Class
+Attribute        male female
+               (0.03) (0.97)
+=============================
+meanfun
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+IQR
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+Q25
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+sp.ent
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+sd
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+sfm
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+mode
+  'All'            1.0   28.0
+  [total]          1.0   28.0
+
+
+
+Leaf number: 33 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.37) (0.63)
+====================================
+meanfun
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+IQR
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+Q25
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+sp.ent
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+sd
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+sfm
+  '(-inf-0.714053]'       6.0    2.0
+  '(0.714053-inf)'        2.0   11.0
+  [total]                 8.0   13.0
+
+mode
+  'All'                   7.0   12.0
+  [total]                 7.0   12.0
+
+
+
+Leaf number: 34 Naive Bayes Classifier
+
+                       Class
+Attribute               male female
+                      (0.04) (0.96)
+====================================
+meanfun
+  'All'                  21.0  564.0
+  [total]                21.0  564.0
+
+IQR
+  '(-inf-0.144094]'       1.0  206.0
+  '(0.144094-inf)'       21.0  359.0
+  [total]                22.0  565.0
+
+Q25
+  'All'                  21.0  564.0
+  [total]                21.0  564.0
+
+sp.ent
+  '(-inf-0.65484]'        1.0  220.0
+  '(0.65484-inf)'        21.0  345.0
+  [total]                22.0  565.0
+
+sd
+  'All'                  21.0  564.0
+  [total]                21.0  564.0
+
+sfm
+  'All'                  21.0  564.0
+  [total]                21.0  564.0
+
+mode
+  'All'                  21.0  564.0
+  [total]                21.0  564.0
+
+
+
+
+Number of Leaves  : 	18
+
+Size of the tree : 	35
+
+
+Time taken to build model: 0.38 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3068               96.8434 %
+Incorrectly Classified Instances       100                3.1566 %
+Kappa statistic                          0.9369
+Mean absolute error                      0.0437
+Root mean squared error                  0.1661
+Relative absolute error                  8.7368 %
+Root relative squared error             33.2234 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.960    0.023    0.977      0.960    0.968      0.937    0.987     0.986     male
+                 0.977    0.040    0.960      0.977    0.969      0.937    0.987     0.983     female
+Weighted Avg.    0.968    0.032    0.969      0.968    0.968      0.937    0.987     0.985     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1520   64 |    a = male
+   36 1548 |    b = female
+

@@ -1,0 +1,205 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -6946.0341666977
+LogScore BDeu: -7168.287816230182
+LogScore MDL: -7163.010571392184
+LogScore ENTROPY: -6909.093615174753
+LogScore AIC: -6972.093615174753
+
+
+Weight: 3.56
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10139.894561647357
+LogScore BDeu: -10362.14821117984
+LogScore MDL: -10333.185294524419
+LogScore ENTROPY: -10079.268338306989
+LogScore AIC: -10142.268338306989
+
+
+Weight: 1.93
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10920.59483720388
+LogScore BDeu: -11142.848486736364
+LogScore MDL: -11106.292734539287
+LogScore ENTROPY: -10852.375778321857
+LogScore AIC: -10915.375778321857
+
+
+Weight: 0.7
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10897.115699285227
+LogScore BDeu: -11119.369348817709
+LogScore MDL: -11082.232641044058
+LogScore ENTROPY: -10828.315684826626
+LogScore AIC: -10891.315684826626
+
+
+Weight: 0.51
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10950.454092278767
+LogScore BDeu: -11172.70774181125
+LogScore MDL: -11135.433182129274
+LogScore ENTROPY: -10881.516225911844
+LogScore AIC: -10944.516225911844
+
+
+Weight: 0.22
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10936.693246624805
+LogScore BDeu: -11158.94689615729
+LogScore MDL: -11121.815501043158
+LogScore ENTROPY: -10867.898544825726
+LogScore AIC: -10930.898544825726
+
+
+Weight: 0.16
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10931.65062978641
+LogScore BDeu: -11153.904279318896
+LogScore MDL: -11116.907049201369
+LogScore ENTROPY: -10862.990092983937
+LogScore AIC: -10925.990092983937
+
+
+Weight: 0.09
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10925.710985356724
+LogScore BDeu: -11147.964634889207
+LogScore MDL: -11111.064715873343
+LogScore ENTROPY: -10857.147759655913
+LogScore AIC: -10920.147759655913
+
+
+Weight: 0.08
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10921.731060607413
+LogScore BDeu: -11143.984710139894
+LogScore MDL: -11107.170420210245
+LogScore ENTROPY: -10853.253463992816
+LogScore AIC: -10916.253463992816
+
+
+Weight: 0.07
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -10917.43212422575
+LogScore BDeu: -11139.685773758232
+LogScore MDL: -11102.948707198926
+LogScore ENTROPY: -10849.031750981496
+LogScore AIC: -10912.031750981496
+
+
+Weight: 0.06
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3065               96.7487 %
+Incorrectly Classified Instances       103                3.2513 %
+Kappa statistic                          0.935 
+Mean absolute error                      0.0448
+Root mean squared error                  0.1539
+Relative absolute error                  8.9535 %
+Root relative squared error             30.7891 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.968    0.033    0.967      0.968    0.967      0.935    0.989     0.989     male
+                 0.967    0.032    0.968      0.967    0.967      0.935    0.989     0.980     female
+Weighted Avg.    0.967    0.033    0.967      0.967    0.967      0.935    0.989     0.984     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1533   51 |    a = male
+   52 1532 |    b = female
+

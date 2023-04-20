@@ -1,0 +1,59 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.WrapperSubsetEval -B weka.classifiers.functions.LDA -F 5 -T 0.01 -R 1 -E DEFAULT -- -R 1.0E-6
+Search:       weka.attributeSelection.BestFirst -D 1 -N 5
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 182
+	Merit of best subset found:    0.97 
+
+Attribute Subset Evaluator (supervised, Class (nominal): 21 label):
+	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.functions.LDA
+	Scheme options: -R 1.0E-6 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+Selected attributes: 6,8,9,10,11,13,14,16 : 8
+                     IQR
+                     kurt
+                     sp.ent
+                     sfm
+                     mode
+                     meanfun
+                     minfun
+                     meandom
+

@@ -1,0 +1,161 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.lazy.IBk -K 20 -W 0 -X -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"" -B "weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1" -B "weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \"weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\" -calibrator \"weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4\"" -B "weka.classifiers.trees.J48 -C 0.25 -M 2" -B "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" -B "weka.classifiers.functions.LDA -R 1.0E-6" -R AVG
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.lazy.IBk -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+	weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+	weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+	weka.classifiers.trees.J48 -C 0.25 -M 2
+	weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+	weka.classifiers.functions.LDA -R 1.0E-6
+using the 'Average' combination rule 
+
+All the models:
+
+IB1 instance-based classifier
+using 11 nearest neighbour(s) for classification
+
+JRIP rules:
+===========
+
+(meanfun >= 0.142132) and (IQR <= 0.062626) => label=female (1170.0/5.0)
+(meanfun >= 0.149574) => label=female (305.0/14.0)
+(meanfun >= 0.137394) and (IQR <= 0.094235) => label=female (72.0/14.0)
+(meanfun >= 0.130561) and (IQR <= 0.068142) => label=female (19.0/2.0)
+(meanfun >= 0.132471) and (IQR >= 0.128656) => label=female (17.0/6.0)
+ => label=male (1585.0/42.0)
+
+Number of Rules : 6
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.7857 * (normalized) IQR
+ +      11.9579 * (normalized) meanfun
+ -       4.5536
+
+Number of kernel evaluations: 20984 (60.012% cached)
+
+
+J48 pruned tree
+------------------
+
+meanfun <= 0.142062
+|   IQR <= 0.07209
+|   |   meanfun <= 0.129766: male (39.0/12.0)
+|   |   meanfun > 0.129766: female (54.0/8.0)
+|   IQR > 0.07209: male (1526.0/32.0)
+meanfun > 0.142062
+|   meanfun <= 0.149406
+|   |   IQR <= 0.072775: female (92.0/3.0)
+|   |   IQR > 0.072775: male (60.0/26.0)
+|   meanfun > 0.149406: female (1397.0/18.0)
+
+Number of Leaves  : 	6
+
+Size of the tree : 	11
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                            Class
+Variable                     male
+=================================
+IQR                       36.4373
+meanfun                 -169.5078
+Intercept                 20.7174
+
+
+Odds Ratios...
+                            Class
+Variable                     male
+=================================
+IQR          6.676217771881675E15
+meanfun                         0
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 5.581387781027716
+
+Mean vector:
+
+         2                   2
+         1  8.430937310606e-02
+         2  1.428067256944e-01
+
+Inverse of covariance matrix:
+
+  886.62  70.47
+  70.47  3142.88
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.11
+meanfun: 0.12
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+IQR: 0.06
+meanfun: 0.17
+
+
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3068               96.8434 %
+Incorrectly Classified Instances       100                3.1566 %
+Kappa statistic                          0.9369
+Mean absolute error                      0.0518
+Root mean squared error                  0.1594
+Relative absolute error                 10.3669 %
+Root relative squared error             31.8765 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.978    0.041    0.960      0.978    0.969      0.937    0.993     0.994     male
+                 0.959    0.022    0.977      0.959    0.968      0.937    0.993     0.991     female
+Weighted Avg.    0.968    0.032    0.969      0.968    0.968      0.937    0.993     0.992     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1549   35 |    a = male
+   65 1519 |    b = female
+

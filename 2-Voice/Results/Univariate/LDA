@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.LDA -R 1.0E-6
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+LDA model (multivariate Gaussian for each class)
+
+Pooled estimator
+
+Natural logarithm of normalizing factor: 9.260384249823739
+
+Mean vector:
+
+         7                   7
+         1  4.791612414773e-01
+         2  2.934841695076e-01
+         3  5.674484592803e-01
+         4  6.430203967803e-01
+         5  3.999867973485e-01
+         6  4.606855410354e-01
+         7  5.902921316288e-01
+
+Inverse of covariance matrix:
+
+  130.00 -41.56 -35.89  19.90 -2.99 -7.57 -10.85
+ -41.56  343.96  185.57 -71.42 -234.45  134.67 -27.05
+ -35.89  185.57  217.70 -53.91 -58.70  102.41 -29.27
+  19.90 -71.42 -53.91  167.05  59.04 -149.20 -4.08
+ -2.99 -234.45 -58.70  59.04  346.95 -168.90  25.56
+ -7.57  134.67  102.41 -149.20 -168.90  225.40 -4.64
+ -10.85 -27.05 -29.27 -4.08  25.56 -4.64  25.33
+
+
+
+Estimates for class value male
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+meanfun: 0.33
+IQR: 0.4
+Q25: 0.47
+sp.ent: 0.73
+sd: 0.48
+sfm: 0.54
+mode: 0.54
+
+Estimates for class value female
+
+Natural logarithm of class prior probability: -0.69
+Class prior probability: 0.5
+
+Mean vector:
+
+meanfun: 0.63
+IQR: 0.18
+Q25: 0.67
+sp.ent: 0.55
+sd: 0.32
+sfm: 0.38
+mode: 0.64
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3047               96.1806 %
+Incorrectly Classified Instances       121                3.8194 %
+Kappa statistic                          0.9236
+Mean absolute error                      0.0476
+Root mean squared error                  0.1717
+Relative absolute error                  9.529  %
+Root relative squared error             34.3467 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.978    0.054    0.947      0.978    0.962      0.924    0.991     0.992     male
+                 0.946    0.022    0.977      0.946    0.961      0.924    0.991     0.990     female
+Weighted Avg.    0.962    0.038    0.962      0.962    0.962      0.924    0.991     0.991     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1549   35 |    a = male
+   86 1498 |    b = female
+

@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                    Class
+Variable             male
+=========================
+meanfun          -29.3152
+IQR               14.1977
+Q25               -0.6112
+sp.ent            11.1021
+sd                -1.0666
+sfm               -9.8514
+mode               1.7779
+Intercept           6.032
+
+
+Odds Ratios...
+                    Class
+Variable             male
+=========================
+meanfun                 0
+IQR          1465473.7669
+Q25                0.5427
+sp.ent         66309.6954
+sd                 0.3442
+sfm                0.0001
+mode               5.9172
+
+
+Time taken to build model: 0.08 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3074               97.0328 %
+Incorrectly Classified Instances        94                2.9672 %
+Kappa statistic                          0.9407
+Mean absolute error                      0.0503
+Root mean squared error                  0.1554
+Relative absolute error                 10.052  %
+Root relative squared error             31.0724 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.034    0.966      0.975    0.970      0.941    0.993     0.994     male
+                 0.966    0.025    0.975      0.966    0.970      0.941    0.993     0.992     female
+Weighted Avg.    0.970    0.030    0.970      0.970    0.970      0.941    0.993     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1544   40 |    a = male
+   54 1530 |    b = female
+

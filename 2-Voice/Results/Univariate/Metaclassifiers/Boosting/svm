@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        11.1893 * (normalized) meanfun
+ +      -4.6872 * (normalized) IQR
+ +      -0.0436 * (normalized) Q25
+ +      -2.935  * (normalized) sp.ent
+ +      -0.3367 * (normalized) sd
+ +       2.8088 * (normalized) sfm
+ +      -0.89   * (normalized) mode
+ -       2.4257
+
+Number of kernel evaluations: 130092 (69.641% cached)
+
+
+
+Weight: 3.57
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.1236 * (normalized) meanfun
+ +      -2.927  * (normalized) IQR
+ +       4.8698 * (normalized) Q25
+ +      -5.8877 * (normalized) sp.ent
+ +       3.596  * (normalized) sd
+ +       5.1595 * (normalized) sfm
+ +       0.2369 * (normalized) mode
+ -       3.0752
+
+Number of kernel evaluations: 347854 (62.97% cached)
+
+
+
+Weight: 0.71
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.9532 * (normalized) meanfun
+ +       1.6334 * (normalized) IQR
+ +       1.5428 * (normalized) Q25
+ +      -3.2413 * (normalized) sp.ent
+ +      -1.1254 * (normalized) sd
+ +       2.9666 * (normalized) sfm
+ +       0.5093 * (normalized) mode
+ -       2.0637
+
+Number of kernel evaluations: 692968 (65.741% cached)
+
+
+
+Weight: 0.32
+
+Number of performed Iterations: 3
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3080               97.2222 %
+Incorrectly Classified Instances        88                2.7778 %
+Kappa statistic                          0.9444
+Mean absolute error                      0.0399
+Root mean squared error                  0.1628
+Relative absolute error                  7.9897 %
+Root relative squared error             32.5626 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.979    0.035    0.966      0.979    0.972      0.945    0.985     0.980     male
+                 0.965    0.021    0.979      0.965    0.972      0.945    0.985     0.986     female
+Weighted Avg.    0.972    0.028    0.972      0.972    0.972      0.945    0.985     0.983     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1551   33 |    a = male
+   55 1529 |    b = female
+

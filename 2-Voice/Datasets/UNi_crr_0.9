@@ -1,0 +1,46 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.GainRatioAttributeEval 
+Search:       weka.attributeSelection.Ranker -T 0.1 -N -1
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-R3-4,8,12,19
+Instances:    3168
+Attributes:   16
+              meanfreq
+              sd
+              Q75
+              IQR
+              skew
+              sp.ent
+              sfm
+              mode
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              modindx
+              label
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+	Threshold for discarding attributes:   0.1   
+
+Attribute Evaluator (supervised, Class (nominal): 16 label):
+	Gain Ratio feature evaluator
+
+Ranked attributes:
+ 0.517   9 meanfun
+ 0.322   4 IQR
+ 0.196   6 sp.ent
+ 0.173   2 sd
+ 0.152   7 sfm
+ 0.122   8 mode
+
+Selected attributes: 9,4,6,2,7,8 : 6
+

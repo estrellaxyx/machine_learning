@@ -1,0 +1,59 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+: LM_1:7/7 (3168)
+
+Number of Leaves  : 	1
+
+Size of the Tree : 	1
+LM_1:
+Class male :
+9.78 + 
+[IQR] * 16.35 +
+[meanfun] * -79.31
+
+Class female :
+-9.78 + 
+[IQR] * -16.35 +
+[meanfun] * 79.31
+
+
+Time taken to build model: 0.48 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3063               96.6856 %
+Incorrectly Classified Instances       105                3.3144 %
+Kappa statistic                          0.9337
+Mean absolute error                      0.059 
+Root mean squared error                  0.1684
+Relative absolute error                 11.8035 %
+Root relative squared error             33.6888 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.041    0.960      0.975    0.967      0.934    0.990     0.989     male
+                 0.959    0.025    0.974      0.959    0.967      0.934    0.990     0.990     female
+Weighted Avg.    0.967    0.033    0.967      0.967    0.967      0.934    0.990     0.989     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1544   40 |    a = male
+   65 1519 |    b = female
+

@@ -1,0 +1,312 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.LMT -I -1 -M 15 -W 0.0
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic model tree 
+------------------
+
+meanfun <= 0.473689
+|   IQR <= 0.285682
+|   |   meanfun <= 0.422405: LM_1:14/56 (91)
+|   |   meanfun > 0.422405
+|   |   |   mode <= 0.713523: LM_2:14/70 (43)
+|   |   |   mode > 0.713523: LM_3:14/70 (13)
+|   IQR > 0.285682
+|   |   meanfun <= 0.422343: LM_4:14/56 (1282)
+|   |   meanfun > 0.422343
+|   |   |   sfm <= 0.621065: LM_5:14/70 (147)
+|   |   |   sfm > 0.621065
+|   |   |   |   sfm <= 0.868032: LM_6:14/84 (34)
+|   |   |   |   sfm > 0.868032: LM_7:14/84 (6)
+meanfun > 0.473689
+|   meanfun <= 0.515406
+|   |   IQR <= 0.244951: LM_8:14/56 (94)
+|   |   IQR > 0.244951
+|   |   |   sfm <= 0.638426: LM_9:14/70 (36)
+|   |   |   sfm > 0.638426: LM_10:14/70 (25)
+|   meanfun > 0.515406: LM_11:14/42 (1397)
+
+Number of Leaves  : 	11
+
+Size of the Tree : 	21
+
+
+
+LM_1:
+Class male :
+3.06 + 
+[meanfun] * -3.26 +
+[IQR] * 7.85 +
+[Q25] * -3.03 +
+[sp.ent] * 1.49 +
+[sd] * 1.74 +
+[sfm] * -6.89 +
+[mode] * 0.47
+
+Class female :
+-3.06 + 
+[meanfun] * 3.26 +
+[IQR] * -7.85 +
+[Q25] * 3.03 +
+[sp.ent] * -1.49 +
+[sd] * -1.74 +
+[sfm] * 6.89 +
+[mode] * -0.47
+
+
+LM_2:
+Class male :
+7.77 + 
+[meanfun] * -4.6 +
+[IQR] * 8.33 +
+[Q25] * -8.5 +
+[sp.ent] * 1.49 +
+[sd] * -1.25 +
+[sfm] * -7.07 +
+[mode] * -1.07
+
+Class female :
+-7.77 + 
+[meanfun] * 4.6  +
+[IQR] * -8.33 +
+[Q25] * 8.5  +
+[sp.ent] * -1.49 +
+[sd] * 1.25 +
+[sfm] * 7.07 +
+[mode] * 1.07
+
+LM_3:
+Class male :
+-8.57 + 
+[meanfun] * 19.46 +
+[IQR] * 11.44 +
+[Q25] * -4.31 +
+[sp.ent] * 1.49 +
+[sd] * 21.15 +
+[sfm] * -14.13 +
+[mode] * -2.69
+
+Class female :
+8.57 + 
+[meanfun] * -19.46 +
+[IQR] * -11.44 +
+[Q25] * 4.31 +
+[sp.ent] * -1.49 +
+[sd] * -21.15 +
+[sfm] * 14.13 +
+[mode] * 2.69
+
+
+LM_4:
+Class male :
+4.31 + 
+[meanfun] * -14.64 +
+[IQR] * 4.64 +
+[Q25] * 0.36 +
+[sp.ent] * 7.23 +
+[sd] * -1.59 +
+[sfm] * -5.93 +
+[mode] * 1.43
+
+Class female :
+-4.31 + 
+[meanfun] * 14.64 +
+[IQR] * -4.64 +
+[Q25] * -0.36 +
+[sp.ent] * -7.23 +
+[sd] * 1.59 +
+[sfm] * 5.93 +
+[mode] * -1.43
+
+
+LM_5:
+Class male :
+38.2 + 
+[meanfun] * -74.55 +
+[IQR] * 21.44 +
+[Q25] * -26.2 +
+[sp.ent] * 12.78 +
+[sd] * -3.88 +
+[sfm] * -7.52 +
+[mode] * 2.32
+
+Class female :
+-38.2 + 
+[meanfun] * 74.55 +
+[IQR] * -21.44 +
+[Q25] * 26.2 +
+[sp.ent] * -12.78 +
+[sd] * 3.88 +
+[sfm] * 7.52 +
+[mode] * -2.32
+
+
+LM_6:
+Class male :
+-31.2 + 
+[meanfun] * -23.2 +
+[IQR] * 24.56 +
+[Q25] * -4.43 +
+[sp.ent] * 33.96 +
+[sd] * 8.69 +
+[sfm] * 1.43 +
+[mode] * 3.62
+
+Class female :
+31.2 + 
+[meanfun] * 23.2 +
+[IQR] * -24.56 +
+[Q25] * 4.43 +
+[sp.ent] * -33.96 +
+[sd] * -8.69 +
+[sfm] * -1.43 +
+[mode] * -3.62
+
+LM_7:
+Class male :
+-12.93 + 
+[meanfun] * -5.89 +
+[IQR] * 4.88 +
+[Q25] * 6.1  +
+[sp.ent] * 12.19 +
+[sd] * 1.67 +
+[sfm] * -10.37 +
+[mode] * 2.06
+
+Class female :
+12.93 + 
+[meanfun] * 5.89 +
+[IQR] * -4.88 +
+[Q25] * -6.1 +
+[sp.ent] * -12.19 +
+[sd] * -1.67 +
+[sfm] * 10.37 +
+[mode] * -2.06
+
+
+
+LM_8:
+Class male :
+-5.75 + 
+[meanfun] * 19.79 +
+[IQR] * 10.09 +
+[Q25] * -10.58 +
+[sp.ent] * 0.85 +
+[sd] * -0.43 +
+[sfm] * -2.42 +
+[mode] * -0.38
+
+Class female :
+5.75 + 
+[meanfun] * -19.79 +
+[IQR] * -10.09 +
+[Q25] * 10.58 +
+[sp.ent] * -0.85 +
+[sd] * 0.43 +
+[sfm] * 2.42 +
+[mode] * 0.38
+
+
+LM_9:
+Class male :
+5.08 + 
+[meanfun] * -24.88 +
+[IQR] * 7.42 +
+[Q25] * -13.04 +
+[sp.ent] * 8.27 +
+[sd] * 14.16 +
+[sfm] * -6.37 +
+[mode] * 8.21
+
+Class female :
+-5.08 + 
+[meanfun] * 24.88 +
+[IQR] * -7.42 +
+[Q25] * 13.04 +
+[sp.ent] * -8.27 +
+[sd] * -14.16 +
+[sfm] * 6.37 +
+[mode] * -8.21
+
+LM_10:
+Class male :
+-1.23 + 
+[meanfun] * -14.58 +
+[IQR] * 2.91 +
+[Q25] * -9.01 +
+[sp.ent] * -0.86 +
+[sd] * 18.81 +
+[sfm] * -3.28 +
+[mode] * -0.33
+
+Class female :
+1.23 + 
+[meanfun] * 14.58 +
+[IQR] * -2.91 +
+[Q25] * 9.01 +
+[sp.ent] * 0.86 +
+[sd] * -18.81 +
+[sfm] * 3.28 +
+[mode] * 0.33
+
+LM_11:
+Class male :
+-1.7 + 
+[meanfun] * -5.24 +
+[IQR] * 0.78 +
+[Q25] * -0.19 +
+[sp.ent] * 5.8  +
+[sfm] * -2.25 +
+[mode] * -0.13
+
+Class female :
+1.7  + 
+[meanfun] * 5.24 +
+[IQR] * -0.78 +
+[Q25] * 0.19 +
+[sp.ent] * -5.8 +
+[sfm] * 2.25 +
+[mode] * 0.13
+
+
+Time taken to build model: 0.67 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3080               97.2222 %
+Incorrectly Classified Instances        88                2.7778 %
+Kappa statistic                          0.9444
+Mean absolute error                      0.0458
+Root mean squared error                  0.1578
+Relative absolute error                  9.1688 %
+Root relative squared error             31.5567 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.971    0.027    0.973      0.971    0.972      0.944    0.986     0.984     male
+                 0.973    0.029    0.971      0.973    0.972      0.944    0.986     0.967     female
+Weighted Avg.    0.972    0.028    0.972      0.972    0.972      0.944    0.986     0.976     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1538   46 |    a = male
+   42 1542 |    b = female
+

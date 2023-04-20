@@ -1,0 +1,281 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+
+RandomTree
+==========
+
+sd < 0.05
+|   sp.ent < 0.9
+|   |   sd < 0.04
+|   |   |   dfrange < 3.63
+|   |   |   |   mindom < 0.22 : female (112/0)
+|   |   |   |   mindom >= 0.22 : male (1/0)
+|   |   |   dfrange >= 3.63 : female (764/0)
+|   |   sd >= 0.04
+|   |   |   sfm < 0.19
+|   |   |   |   median < 0.24 : male (5/0)
+|   |   |   |   median >= 0.24 : female (1/0)
+|   |   |   sfm >= 0.19
+|   |   |   |   meanfreq < 0.17 : male (2/0)
+|   |   |   |   meanfreq >= 0.17 : female (77/0)
+|   sp.ent >= 0.9
+|   |   dfrange < 6.46
+|   |   |   sfm < 0.25 : male (8/0)
+|   |   |   sfm >= 0.25 : female (5/0)
+|   |   dfrange >= 6.46 : female (15/0)
+sd >= 0.05
+|   Q25 < 0.15
+|   |   Q25 < 0.07
+|   |   |   meanfreq < 0.14
+|   |   |   |   meanfun < 0.14
+|   |   |   |   |   median < 0.16
+|   |   |   |   |   |   sd < 0.07
+|   |   |   |   |   |   |   meanfun < 0.12 : male (6/0)
+|   |   |   |   |   |   |   meanfun >= 0.12 : female (1/0)
+|   |   |   |   |   |   sd >= 0.07 : male (125/0)
+|   |   |   |   |   median >= 0.16 : female (1/0)
+|   |   |   |   meanfun >= 0.14
+|   |   |   |   |   maxdom < 5.62
+|   |   |   |   |   |   meanfun < 0.14
+|   |   |   |   |   |   |   skew < 1.77 : male (1/0)
+|   |   |   |   |   |   |   skew >= 1.77
+|   |   |   |   |   |   |   |   meanfreq < 0.14 : female (2/0)
+|   |   |   |   |   |   |   |   meanfreq >= 0.14 : male (1/0)
+|   |   |   |   |   |   meanfun >= 0.14
+|   |   |   |   |   |   |   meanfreq < 0.08 : male (1/0)
+|   |   |   |   |   |   |   meanfreq >= 0.08 : female (91/0)
+|   |   |   |   |   maxdom >= 5.62
+|   |   |   |   |   |   IQR < 0.15
+|   |   |   |   |   |   |   Q25 < 0.06 : male (4/0)
+|   |   |   |   |   |   |   Q25 >= 0.06 : female (3/0)
+|   |   |   |   |   |   IQR >= 0.15 : female (3/0)
+|   |   |   meanfreq >= 0.14
+|   |   |   |   maxdom < 5.09
+|   |   |   |   |   maxfun < 0.23 : male (1/0)
+|   |   |   |   |   maxfun >= 0.23
+|   |   |   |   |   |   meanfun < 0.12 : male (1/0)
+|   |   |   |   |   |   meanfun >= 0.12 : female (55/0)
+|   |   |   |   maxdom >= 5.09
+|   |   |   |   |   sd < 0.09 : female (3/0)
+|   |   |   |   |   sd >= 0.09 : male (2/0)
+|   |   Q25 >= 0.07
+|   |   |   sfm < 0.51
+|   |   |   |   IQR < 0.06 : female (7/0)
+|   |   |   |   IQR >= 0.06
+|   |   |   |   |   sfm < 0.45 : male (628/0)
+|   |   |   |   |   sfm >= 0.45
+|   |   |   |   |   |   minfun < 0.03
+|   |   |   |   |   |   |   sfm < 0.45
+|   |   |   |   |   |   |   |   sd < 0.07 : male (2/0)
+|   |   |   |   |   |   |   |   sd >= 0.07 : female (3/0)
+|   |   |   |   |   |   |   sfm >= 0.45
+|   |   |   |   |   |   |   |   IQR < 0.16
+|   |   |   |   |   |   |   |   |   meanfun < 0.14 : male (97/0)
+|   |   |   |   |   |   |   |   |   meanfun >= 0.14
+|   |   |   |   |   |   |   |   |   |   Q75 < 0.22 : male (1/0)
+|   |   |   |   |   |   |   |   |   |   Q75 >= 0.22 : female (1/0)
+|   |   |   |   |   |   |   |   IQR >= 0.16 : female (1/0)
+|   |   |   |   |   |   minfun >= 0.03 : male (138/0)
+|   |   |   sfm >= 0.51
+|   |   |   |   modindx < 0.23
+|   |   |   |   |   Q25 < 0.14
+|   |   |   |   |   |   skew < 2.05
+|   |   |   |   |   |   |   mode < 0.19 : male (112/0)
+|   |   |   |   |   |   |   mode >= 0.19
+|   |   |   |   |   |   |   |   maxdom < 9.33
+|   |   |   |   |   |   |   |   |   median < 0.21
+|   |   |   |   |   |   |   |   |   |   sp.ent < 0.97 : male (77/0)
+|   |   |   |   |   |   |   |   |   |   sp.ent >= 0.97
+|   |   |   |   |   |   |   |   |   |   |   sfm < 0.75 : female (1/0)
+|   |   |   |   |   |   |   |   |   |   |   sfm >= 0.75 : male (3/0)
+|   |   |   |   |   |   |   |   |   median >= 0.21
+|   |   |   |   |   |   |   |   |   |   Q75 < 0.26 : female (1/0)
+|   |   |   |   |   |   |   |   |   |   Q75 >= 0.26 : male (3/0)
+|   |   |   |   |   |   |   |   maxdom >= 9.33 : female (2/0)
+|   |   |   |   |   |   skew >= 2.05
+|   |   |   |   |   |   |   median < 0.14
+|   |   |   |   |   |   |   |   meanfreq < 0.13
+|   |   |   |   |   |   |   |   |   meanfreq < 0.13 : male (1/0)
+|   |   |   |   |   |   |   |   |   meanfreq >= 0.13 : female (1/0)
+|   |   |   |   |   |   |   |   meanfreq >= 0.13 : male (44/0)
+|   |   |   |   |   |   |   median >= 0.14
+|   |   |   |   |   |   |   |   meanfun < 0.13
+|   |   |   |   |   |   |   |   |   IQR < 0.08 : female (4/0)
+|   |   |   |   |   |   |   |   |   IQR >= 0.08 : male (79/0)
+|   |   |   |   |   |   |   |   meanfun >= 0.13
+|   |   |   |   |   |   |   |   |   IQR < 0.08 : female (10/0)
+|   |   |   |   |   |   |   |   |   IQR >= 0.08
+|   |   |   |   |   |   |   |   |   |   skew < 2.94
+|   |   |   |   |   |   |   |   |   |   |   minfun < 0.05
+|   |   |   |   |   |   |   |   |   |   |   |   sp.ent < 0.92 : female (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sp.ent >= 0.92
+|   |   |   |   |   |   |   |   |   |   |   |   |   IQR < 0.13 : male (6/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   IQR >= 0.13
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   sp.ent < 0.95 : male (1/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   sp.ent >= 0.95 : female (2/0)
+|   |   |   |   |   |   |   |   |   |   |   minfun >= 0.05 : female (5/0)
+|   |   |   |   |   |   |   |   |   |   skew >= 2.94 : female (8/0)
+|   |   |   |   |   Q25 >= 0.14 : female (15/0)
+|   |   |   |   modindx >= 0.23
+|   |   |   |   |   maxdom < 4.02
+|   |   |   |   |   |   meanfreq < 0.16
+|   |   |   |   |   |   |   mode < 0.12
+|   |   |   |   |   |   |   |   median < 0.17 : male (47/0)
+|   |   |   |   |   |   |   |   median >= 0.17
+|   |   |   |   |   |   |   |   |   sd < 0.07 : male (1/0)
+|   |   |   |   |   |   |   |   |   sd >= 0.07 : female (1/0)
+|   |   |   |   |   |   |   mode >= 0.12
+|   |   |   |   |   |   |   |   kurt < 12.77
+|   |   |   |   |   |   |   |   |   median < 0.18 : male (13/0)
+|   |   |   |   |   |   |   |   |   median >= 0.18 : female (1/0)
+|   |   |   |   |   |   |   |   kurt >= 12.77 : female (4/0)
+|   |   |   |   |   |   meanfreq >= 0.16
+|   |   |   |   |   |   |   Q25 < 0.13
+|   |   |   |   |   |   |   |   sd < 0.07
+|   |   |   |   |   |   |   |   |   maxfun < 0.27 : male (13/0)
+|   |   |   |   |   |   |   |   |   maxfun >= 0.27
+|   |   |   |   |   |   |   |   |   |   Q75 < 0.22 : female (1/0)
+|   |   |   |   |   |   |   |   |   |   Q75 >= 0.22 : male (1/0)
+|   |   |   |   |   |   |   |   sd >= 0.07
+|   |   |   |   |   |   |   |   |   meandom < 0.21
+|   |   |   |   |   |   |   |   |   |   mode < 0.03 : male (1/0)
+|   |   |   |   |   |   |   |   |   |   mode >= 0.03 : female (11/0)
+|   |   |   |   |   |   |   |   |   meandom >= 0.21
+|   |   |   |   |   |   |   |   |   |   maxdom < 0.73 : male (9/0)
+|   |   |   |   |   |   |   |   |   |   maxdom >= 0.73
+|   |   |   |   |   |   |   |   |   |   |   sp.ent < 0.96
+|   |   |   |   |   |   |   |   |   |   |   |   sp.ent < 0.94
+|   |   |   |   |   |   |   |   |   |   |   |   |   mode < 0.21 : female (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   mode >= 0.21 : male (2/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sp.ent >= 0.94 : female (8/0)
+|   |   |   |   |   |   |   |   |   |   |   sp.ent >= 0.96
+|   |   |   |   |   |   |   |   |   |   |   |   sfm < 0.76 : male (3/0)
+|   |   |   |   |   |   |   |   |   |   |   |   sfm >= 0.76 : female (1/0)
+|   |   |   |   |   |   |   Q25 >= 0.13
+|   |   |   |   |   |   |   |   mode < 0.28 : female (34/0)
+|   |   |   |   |   |   |   |   mode >= 0.28 : male (1/0)
+|   |   |   |   |   maxdom >= 4.02
+|   |   |   |   |   |   sd < 0.08 : male (28/0)
+|   |   |   |   |   |   sd >= 0.08
+|   |   |   |   |   |   |   meanfun < 0.15 : male (7/0)
+|   |   |   |   |   |   |   meanfun >= 0.15 : female (3/0)
+|   Q25 >= 0.15
+|   |   IQR < 0.08
+|   |   |   sfm < 0.18 : male (7/0)
+|   |   |   sfm >= 0.18
+|   |   |   |   IQR < 0.05 : female (160/0)
+|   |   |   |   IQR >= 0.05
+|   |   |   |   |   meanfun < 0.14
+|   |   |   |   |   |   meandom < 0.14 : female (1/0)
+|   |   |   |   |   |   meandom >= 0.14
+|   |   |   |   |   |   |   dfrange < 6.41 : male (8/0)
+|   |   |   |   |   |   |   dfrange >= 6.41
+|   |   |   |   |   |   |   |   IQR < 0.07 : female (1/0)
+|   |   |   |   |   |   |   |   IQR >= 0.07 : male (1/0)
+|   |   |   |   |   meanfun >= 0.14
+|   |   |   |   |   |   dfrange < 5.5
+|   |   |   |   |   |   |   Q75 < 0.21
+|   |   |   |   |   |   |   |   Q75 < 0.21 : female (19/0)
+|   |   |   |   |   |   |   |   Q75 >= 0.21 : male (1/0)
+|   |   |   |   |   |   |   Q75 >= 0.21 : female (80/0)
+|   |   |   |   |   |   dfrange >= 5.5
+|   |   |   |   |   |   |   modindx < 0.15 : female (24/0)
+|   |   |   |   |   |   |   modindx >= 0.15
+|   |   |   |   |   |   |   |   Q75 < 0.24
+|   |   |   |   |   |   |   |   |   Q25 < 0.16 : male (6/0)
+|   |   |   |   |   |   |   |   |   Q25 >= 0.16
+|   |   |   |   |   |   |   |   |   |   sp.ent < 0.91 : male (1/0)
+|   |   |   |   |   |   |   |   |   |   sp.ent >= 0.91 : female (2/0)
+|   |   |   |   |   |   |   |   Q75 >= 0.24 : female (8/0)
+|   |   IQR >= 0.08
+|   |   |   sfm < 0.53
+|   |   |   |   minfun < 0.05
+|   |   |   |   |   sd < 0.05
+|   |   |   |   |   |   Q75 < 0.25 : female (3/0)
+|   |   |   |   |   |   Q75 >= 0.25 : male (6/0)
+|   |   |   |   |   sd >= 0.05
+|   |   |   |   |   |   sd < 0.06 : male (49/0)
+|   |   |   |   |   |   sd >= 0.06
+|   |   |   |   |   |   |   kurt < 10.06 : male (6/0)
+|   |   |   |   |   |   |   kurt >= 10.06 : female (1/0)
+|   |   |   |   minfun >= 0.05
+|   |   |   |   |   meandom < 1.24
+|   |   |   |   |   |   dfrange < 8.39
+|   |   |   |   |   |   |   minfun < 0.05 : male (13/0)
+|   |   |   |   |   |   |   minfun >= 0.05
+|   |   |   |   |   |   |   |   sp.ent < 0.89 : female (2/0)
+|   |   |   |   |   |   |   |   sp.ent >= 0.89 : male (4/0)
+|   |   |   |   |   |   dfrange >= 8.39 : female (1/0)
+|   |   |   |   |   meandom >= 1.24
+|   |   |   |   |   |   maxdom < 6.66
+|   |   |   |   |   |   |   meanfreq < 0.19 : female (1/0)
+|   |   |   |   |   |   |   meanfreq >= 0.19 : male (2/0)
+|   |   |   |   |   |   maxdom >= 6.66
+|   |   |   |   |   |   |   sd < 0.06 : female (8/0)
+|   |   |   |   |   |   |   sd >= 0.06
+|   |   |   |   |   |   |   |   sd < 0.06 : male (1/0)
+|   |   |   |   |   |   |   |   sd >= 0.06 : female (1/0)
+|   |   |   sfm >= 0.53
+|   |   |   |   mindom < 0.15
+|   |   |   |   |   IQR < 0.1 : female (10/0)
+|   |   |   |   |   IQR >= 0.1 : male (1/0)
+|   |   |   |   mindom >= 0.15 : male (2/0)
+
+Size of the tree : 217
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3053               96.3699 %
+Incorrectly Classified Instances       115                3.6301 %
+Kappa statistic                          0.9274
+Mean absolute error                      0.0363
+Root mean squared error                  0.1905
+Relative absolute error                  7.2601 %
+Root relative squared error             38.1053 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.963    0.036    0.964      0.963    0.964      0.927    0.964     0.947     male
+                 0.964    0.037    0.963      0.964    0.964      0.927    0.964     0.947     female
+Weighted Avg.    0.964    0.036    0.964      0.964    0.964      0.927    0.964     0.947     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1526   58 |    a = male
+   57 1527 |    b = female
+

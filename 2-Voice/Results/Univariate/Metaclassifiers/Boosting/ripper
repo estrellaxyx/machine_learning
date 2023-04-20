@@ -1,0 +1,203 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(meanfun >= 0.47934) and (IQR <= 0.261589) => label=female (1247.0/8.0)
+(meanfun >= 0.516592) => label=female (240.0/13.0)
+(meanfun >= 0.43804) and (IQR <= 0.200718) => label=female (30.0/2.0)
+(meanfun >= 0.461009) and (sfm >= 0.591663) => label=female (38.0/10.0)
+(meanfun >= 0.400081) and (IQR <= 0.199324) => label=female (12.0/0.0)
+(IQR <= 0.331192) and (sfm >= 0.590483) and (sp.ent <= 0.811575) and (Q25 >= 0.488762) => label=female (20.0/1.0)
+(IQR <= 0.347642) and (meanfun >= 0.432178) and (mode <= 0.567244) => label=female (17.0/6.0)
+ => label=male (1564.0/20.0)
+
+Number of Rules : 8
+
+
+Weight: 3.95
+
+JRIP rules:
+===========
+
+(Q25 >= 0.632575) and (sd <= 0.301565) and (meanfun >= 0.408169) => label=female (594.8664092663947/27.9289575289575)
+(sfm >= 0.444827) and (sfm <= 0.589446) and (IQR <= 0.232119) and (meanfun >= 0.419286) => label=female (189.69266409266422/26.909652509652485)
+(sp.ent >= 0.832799) and (mode >= 0.05597) and (Q25 <= 0.287401) and (meanfun >= 0.380958) => label=female (150.95907335907336/3.057915057915055)
+(Q25 >= 0.554451) and (sd >= 0.469335) and (mode <= 0.892798) and (IQR <= 0.400236) => label=female (138.72741312741312/0.0)
+(Q25 <= 0.284366) and (mode >= 0.048868) and (meanfun >= 0.380958) and (mode <= 0.214592) => label=female (32.00617760617757/0.0)
+(sp.ent <= 0.57448) and (sfm >= 0.36991) and (sfm <= 0.5101) => label=female (68.08957528957527/7.135135135135131)
+(IQR <= 0.348607) and (mode >= 0.900156) and (sd <= 0.360049) => label=female (57.38687258687253/1.0193050193050184)
+(meanfun >= 0.678794) => label=female (38.22393822393818/0.0)
+(IQR <= 0.348107) and (sd >= 0.568394) => label=female (30.98687258687256/0.5096525096525092)
+ => label=male (1867.0610038610776/90.71814671814684)
+
+Number of Rules : 10
+
+
+Weight: 2.95
+
+JRIP rules:
+===========
+
+(sfm >= 0.55052) and (Q25 >= 0.551078) => label=female (553.3169559995291/61.72542912279583)
+(meanfun >= 0.496337) => label=female (1290.753877091815/537.0616948006174)
+(Q25 >= 0.653858) => label=female (137.23264385095982/41.392589467462564)
+(sfm >= 0.719933) and (meanfun >= 0.422394) and (Q25 >= 0.243962) => label=female (99.73895509111325/6.47354940498728)
+ => label=male (1086.9575679665647/128.690450289498)
+
+Number of Rules : 5
+
+
+Weight: 1.13
+
+JRIP rules:
+===========
+
+(sfm >= 0.11712) and (IQR <= 0.144503) => label=female (317.3948207584124/12.111747225103334)
+(sp.ent >= 0.757563) and (IQR <= 0.298545) and (sfm >= 0.602502) and (sp.ent <= 0.874014) => label=female (219.11799440868978/28.553402726517046)
+(sp.ent >= 0.746558) and (Q25 >= 0.526456) and (sfm >= 0.613898) and (mode <= 0.737768) and (IQR <= 0.379488) => label=female (69.5770574246702/0.35502885864512407)
+(sfm >= 0.08824) and (sd <= 0.35807) => label=female (331.27650661233554/136.77783092313342)
+(sd >= 0.509882) and (sd <= 0.529996) and (meanfun >= 0.419286) and (IQR <= 0.400236) => label=female (58.75103342060141/0.5477970713744107)
+ => label=male (2171.882587375361/394.74099042674493)
+
+Number of Rules : 6
+
+
+Weight: 1.51
+
+JRIP rules:
+===========
+
+(sd <= 0.39379) and (sp.ent >= 0.62132) and (sfm <= 0.329923) => label=male (602.8905866835069/20.807982248477945)
+(sd <= 0.507696) and (Q25 <= 0.598338) and (IQR >= 0.129139) and (sfm <= 0.559111) => label=male (276.64152441007144/12.980609051536149)
+(sd <= 0.38753) and (sfm <= 0.125051) and (sd >= 0.265662) => label=male (87.62332325380397/0.0)
+(mode <= 0.041625) and (IQR <= 0.597069) and (sp.ent <= 0.810766) => label=male (232.57466075678937/27.39442540473724)
+(Q25 <= 0.550592) and (sd <= 0.507696) and (Q25 >= 0.413028) and (IQR >= 0.288916) => label=male (141.31755167917086/0.0)
+(IQR >= 0.418183) and (sd <= 0.606449) and (Q25 <= 0.22871) and (sd >= 0.585055) => label=male (53.92058405583864/0.9812923885361816)
+(sp.ent >= 0.844687) and (sp.ent <= 0.853335) and (IQR >= 0.38661) => label=male (44.229227586679166/1.4719385828042724)
+(mode >= 0.214022) and (sd >= 0.438897) and (sp.ent <= 0.757345) and (sfm >= 0.638025) and (sfm <= 0.654314) => label=male (36.590242328891556/1.5140997231986657)
+(meanfun <= 0.475069) and (Q25 >= 0.105198) and (sd >= 0.510321) and (sfm <= 0.879902) and (IQR >= 0.342181) => label=male (85.67300352446696/17.32135279700436)
+ => label=female (1606.539295720755/98.76683369051973)
+
+Number of Rules : 10
+
+
+Weight: 2.8
+
+JRIP rules:
+===========
+
+(mode <= 0.567244) => label=female (1425.3930862658037/420.0701783409731)
+(sfm >= 0.229969) and (Q25 >= 0.618126) and (meanfun >= 0.419286) and (IQR <= 0.260104) => label=female (275.8300333956062/10.13325665266839)
+ => label=male (1466.7768803386143/249.4042102196823)
+
+Number of Rules : 3
+
+
+Weight: 1.3
+
+JRIP rules:
+===========
+
+(Q25 >= 0.513346) and (sfm >= 0.55052) => label=female (781.406242694382/239.2186075684723)
+(sp.ent <= 0.712957) and (sfm >= 0.128976) and (meanfun >= 0.474479) => label=female (402.07188104837417/95.10305368823083)
+(mode >= 0.566017) and (sd >= 0.545144) and (meanfun >= 0.456484) => label=female (164.346954857175/13.589970066287682)
+(mode >= 0.041303) and (mode <= 0.179389) and (sp.ent <= 0.880267) and (meanfun >= 0.380958) => label=female (69.30841297909778/0.0)
+(sp.ent <= 0.302048) => label=female (41.186289176962006/2.341273738723706)
+(IQR <= 0.071603) and (IQR >= 0.057799) => label=female (22.080534463662215/0.0)
+(sd <= 0.288364) and (sfm >= 0.231249) => label=female (67.03208220304225/0.0)
+(meanfun >= 0.413371) and (sd >= 0.619179) => label=female (142.2123741113957/58.875948835789494)
+(IQR <= 0.229429) and (sfm <= 0.648573) and (sfm >= 0.495672) => label=female (22.232883193152762/0.0)
+ => label=male (1456.1223452726647/87.62635937310642)
+
+Number of Rules : 10
+
+
+Weight: 1.68
+
+JRIP rules:
+===========
+
+(meanfun >= 0.530074) and (IQR >= 0.305736) and (sd <= 0.557223) => label=female (185.5462673936748/16.163714492738738)
+ => label=male (2982.4537326063964/882.5375808435823)
+
+Number of Rules : 2
+
+
+Weight: 0.93
+
+JRIP rules:
+===========
+
+(Q25 >= 0.597894) and (Q25 <= 0.604) and (meanfun <= 0.515301) => label=male (349.4761114707152/1.9804688578373735)
+(meanfun <= 0.314445) and (IQR >= 0.149293) => label=male (172.83462975709867/0.0)
+(Q25 >= 0.615472) and (sp.ent >= 0.691383) and (meanfun >= 0.50412) and (sfm <= 0.46652) and (sd >= 0.311605) => label=male (217.8410059809564/0.0)
+(IQR >= 0.357161) and (meanfun <= 0.524488) and (meanfun >= 0.455527) and (sfm <= 0.668038) => label=male (186.70954743781624/2.2585242623491384)
+(IQR <= 0.144668) and (IQR >= 0.141391) and (Q25 >= 0.667628) and (sp.ent >= 0.622007) => label=male (93.98682460823868/0.0)
+ => label=female (2147.1518807453217/477.64889736306884)
+
+Number of Rules : 6
+
+
+Weight: 1.72
+
+JRIP rules:
+===========
+
+(Q25 >= 0.600338) and (sd <= 0.443812) and (sfm >= 0.127712) and (IQR <= 0.249242) => label=female (448.5801916844237/142.66708333192597)
+(mode <= 0.561252) and (Q25 >= 0.53095) and (sd >= 0.45397) and (sp.ent >= 0.689906) => label=female (152.07870354226483/3.877278893246112)
+ => label=male (2567.3411047735913/544.3250569190292)
+
+Number of Rules : 3
+
+
+Weight: 1.28
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 0.97 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3093               97.6326 %
+Incorrectly Classified Instances        75                2.3674 %
+Kappa statistic                          0.9527
+Mean absolute error                      0.0245
+Root mean squared error                  0.148 
+Relative absolute error                  4.8964 %
+Root relative squared error             29.5969 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.972    0.019    0.981      0.972    0.976      0.953    0.996     0.996     male
+                 0.981    0.028    0.972      0.981    0.976      0.953    0.996     0.995     female
+Weighted Avg.    0.976    0.024    0.976      0.976    0.976      0.953    0.996     0.995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1539   45 |    a = male
+   30 1554 |    b = female
+

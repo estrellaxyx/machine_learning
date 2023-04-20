@@ -1,0 +1,403 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.bayes.BayesNet -- -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     voice-weka.filters.supervised.attribute.NominalToBinary
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(4): label dfrange 
+sd(8): label IQR 
+median(6): label meanfreq 
+Q25(6): label meanfreq 
+Q75(2): label meanfreq 
+IQR(8): label Q25 
+skew(5): label kurt 
+kurt(4): label maxdom 
+sp.ent(3): label sd 
+sfm(3): label sd 
+mode(7): label meanfreq 
+centroid(4): label meanfreq 
+meanfun(4): label Q25 
+minfun(3): label maxdom 
+maxfun(3): label meanfreq 
+meandom(6): label maxdom 
+mindom(7): label mode 
+maxdom(5): label dfrange 
+dfrange(7): label 
+modindx(1): label meanfreq 
+label(2): 
+LogScore Bayes: -44682.9190051431
+LogScore BDeu: -47813.18932017535
+LogScore MDL: -47852.743391728094
+LogScore ENTROPY: -44632.43151843084
+LogScore AIC: -45431.43151843084
+
+
+Weight: 3.71
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(17): label mindom 
+sd(52): label sfm 
+median(12): label meanfreq 
+Q25(38): label meanfreq 
+Q75(14): label median 
+IQR(49): label sd 
+skew(50): label kurt 
+kurt(13): label mode 
+sp.ent(47): label sfm 
+sfm(25): label Q25 
+mode(23): label median 
+centroid(17): label meanfreq 
+meanfun(51): label maxfun 
+minfun(18): label mindom 
+maxfun(3): label mindom 
+meandom(25): label dfrange 
+mindom(11): label maxdom 
+maxdom(22): label dfrange 
+dfrange(23): label 
+modindx(26): label maxdom 
+label(2): 
+LogScore Bayes: -108326.90117191641
+LogScore BDeu: -276044.0931306069
+LogScore MDL: -227874.4514067679
+LogScore ENTROPY: -142296.3763057407
+LogScore AIC: -163529.37630574068
+
+
+Weight: 4.73
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(30): label median 
+sd(47): label sfm 
+median(46): label 
+Q25(50): label meanfreq 
+Q75(50): label meanfreq 
+IQR(59): label sd 
+skew(11): label kurt 
+kurt(40): label mindom 
+sp.ent(25): label sfm 
+sfm(38): label meanfreq 
+mode(58): label Q25 
+centroid(30): label meanfreq 
+meanfun(64): label maxfun 
+minfun(29): label mindom 
+maxfun(2): label modindx 
+meandom(50): label maxdom 
+mindom(6): label meanfreq 
+maxdom(32): label minfun 
+dfrange(34): label maxdom 
+modindx(22): label maxdom 
+label(2): 
+LogScore Bayes: -115546.47344272393
+LogScore BDeu: -452811.8549938011
+LogScore MDL: -345674.3602561278
+LogScore ENTROPY: -185823.56024756408
+LogScore AIC: -225484.56024756422
+
+
+Weight: 5.25
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(41): label median 
+sd(43): label sfm 
+median(36): label 
+Q25(42): label meanfreq 
+Q75(44): label median 
+IQR(64): label sd 
+skew(41): label kurt 
+kurt(67): label mindom 
+sp.ent(41): label sfm 
+sfm(41): label Q25 
+mode(45): label median 
+centroid(41): label meanfreq 
+meanfun(26): label Q25 
+minfun(51): label mindom 
+maxfun(10): label minfun 
+meandom(50): label mindom 
+mindom(4): label meanfreq 
+maxdom(40): label meandom 
+dfrange(44): label maxdom 
+modindx(62): label maxdom 
+label(2): 
+LogScore Bayes: -120850.05752319349
+LogScore BDeu: -587285.8250977169
+LogScore MDL: -434298.9418393715
+LogScore ENTROPY: -218578.3506072203
+LogScore AIC: -272101.3506072204
+
+
+Weight: 4.78
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(42): label Q25 
+sd(5): label mindom 
+median(55): label meanfreq 
+Q25(60): label sd 
+Q75(25): label meanfreq 
+IQR(16): label sd 
+skew(11): label meandom 
+kurt(11): label skew 
+sp.ent(12): label sfm 
+sfm(15): label sd 
+mode(28): label mindom 
+centroid(42): label meanfreq 
+meanfun(23): label Q25 
+minfun(11): label meandom 
+maxfun(6): label minfun 
+meandom(9): label maxdom 
+mindom(14): label minfun 
+maxdom(24): label 
+dfrange(26): label maxdom 
+modindx(10): label maxdom 
+label(2): 
+LogScore Bayes: -83307.12513494153
+LogScore BDeu: -269747.9739876386
+LogScore MDL: -212827.76140181316
+LogScore ENTROPY: -121445.87015867302
+LogScore AIC: -144118.87015867291
+
+
+Weight: 4.44
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(16): label median 
+sd(35): label sfm 
+median(24): label 
+Q25(31): label meanfreq 
+Q75(33): label meanfreq 
+IQR(33): label sd 
+skew(30): label kurt 
+kurt(29): label mindom 
+sp.ent(28): label sfm 
+sfm(28): label meanfreq 
+mode(24): label median 
+centroid(16): label meanfreq 
+meanfun(24): label mode 
+minfun(21): label mindom 
+maxfun(16): label mindom 
+meandom(29): label dfrange 
+mindom(8): label meanfreq 
+maxdom(28): label dfrange 
+dfrange(23): label mindom 
+modindx(40): label mindom 
+label(2): 
+LogScore Bayes: -99511.11089307639
+LogScore BDeu: -236263.08755320898
+LogScore MDL: -201295.74777154665
+LogScore ENTROPY: -127220.51382995649
+LogScore AIC: -145599.5138299565
+
+
+Weight: 4.92
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(37): label median 
+sd(42): label sfm 
+median(44): label 
+Q25(33): label meanfreq 
+Q75(34): label meanfreq 
+IQR(36): label sd 
+skew(43): label kurt 
+kurt(36): label mindom 
+sp.ent(37): label sfm 
+sfm(26): label meanfreq 
+mode(35): label median 
+centroid(37): label meanfreq 
+meanfun(29): label Q25 
+minfun(31): label mindom 
+maxfun(11): label mindom 
+meandom(31): label maxdom 
+mindom(7): label meanfreq 
+maxdom(35): label mindom 
+dfrange(33): label maxdom 
+modindx(29): label dfrange 
+label(2): 
+LogScore Bayes: -100316.60017735176
+LogScore BDeu: -390738.4611206086
+LogScore MDL: -303230.8533130712
+LogScore ENTROPY: -159969.2944440461
+LogScore AIC: -195514.29444404587
+
+
+Weight: 5.05
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(33): label Q75 
+sd(36): label sfm 
+median(31): label meanfreq 
+Q25(36): label meanfreq 
+Q75(31): label 
+IQR(42): label sd 
+skew(46): label kurt 
+kurt(39): label mindom 
+sp.ent(39): label sfm 
+sfm(25): label meanfreq 
+mode(25): label Q25 
+centroid(33): label meanfreq 
+meanfun(32): label Q25 
+minfun(30): label mindom 
+maxfun(12): label mindom 
+meandom(36): label maxdom 
+mindom(9): label meanfreq 
+maxdom(26): label mindom 
+dfrange(27): label maxdom 
+modindx(28): label mindom 
+label(2): 
+LogScore Bayes: -95724.11998750287
+LogScore BDeu: -337026.14726741094
+LogScore MDL: -267215.62548758654
+LogScore ENTROPY: -145726.43800723692
+LogScore AIC: -175869.43800723692
+
+
+Weight: 4.37
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(25): label median 
+sd(9): label Q25 
+median(24): label 
+Q25(30): label meanfreq 
+Q75(20): label meanfreq 
+IQR(29): label sd 
+skew(24): label kurt 
+kurt(26): label mode 
+sp.ent(27): label sd 
+sfm(6): label sp.ent 
+mode(25): label median 
+centroid(25): label meanfreq 
+meanfun(22): label Q25 
+minfun(11): label meandom 
+maxfun(11): label mindom 
+meandom(13): label meanfreq 
+mindom(7): label mode 
+maxdom(14): label meandom 
+dfrange(14): label maxdom 
+modindx(20): label maxdom 
+label(2): 
+LogScore Bayes: -78924.77093134816
+LogScore BDeu: -177179.96048729055
+LogScore MDL: -154451.68280408878
+LogScore ENTROPY: -98376.33975880129
+LogScore AIC: -112289.3397588013
+
+
+Weight: 4.3
+
+Bayes Network Classifier
+not using ADTree
+#attributes=21 #classindex=20
+Network structure (nodes followed by parents)
+meanfreq(42): label median 
+sd(57): label mindom 
+median(81): label 
+Q25(66): label meanfreq 
+Q75(52): label meanfreq 
+IQR(74): label sp.ent 
+skew(42): label kurt 
+kurt(72): label mindom 
+sp.ent(52): label sfm 
+sfm(57): label sd 
+mode(56): label mindom 
+centroid(42): label meanfreq 
+meanfun(54): label maxfun 
+minfun(41): label mindom 
+maxfun(4): label minfun 
+meandom(46): label maxdom 
+mindom(11): label Q25 
+maxdom(39): label mindom 
+dfrange(38): label maxdom 
+modindx(69): label mindom 
+label(2): 
+LogScore Bayes: -133517.75532378856
+LogScore BDeu: -684815.8716127505
+LogScore MDL: -497829.7116762247
+LogScore ENTROPY: -250816.87841118226
+LogScore AIC: -312103.8784111824
+
+
+Weight: 5.04
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 2.63 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3075               97.0644 %
+Incorrectly Classified Instances        93                2.9356 %
+Kappa statistic                          0.9413
+Mean absolute error                      0.0289
+Root mean squared error                  0.1627
+Relative absolute error                  5.7889 %
+Root relative squared error             32.5378 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.974    0.033    0.967      0.974    0.971      0.941    0.995     0.994     male
+                 0.967    0.026    0.974      0.967    0.971      0.941    0.995     0.993     female
+Weighted Avg.    0.971    0.029    0.971      0.971    0.971      0.941    0.995     0.994     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1543   41 |    a = male
+   52 1532 |    b = female
+

@@ -1,0 +1,137 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.LDA -- -R 1.0E-6
+Relation:     voice-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6-weka.filters.supervised.attribute.NominalToBinary
+Instances:    3168
+Attributes:   96
+              meanfreq='(-inf-0.171857]'
+              meanfreq='(0.171857-0.208753]'
+              meanfreq='(0.208753-0.225625]'
+              meanfreq='(0.225625-inf)'
+              sd='(-inf-0.041738]'
+              sd='(0.041738-0.047596]'
+              sd='(0.047596-0.054543]'
+              sd='(0.054543-0.058055]'
+              sd='(0.058055-0.063845]'
+              sd='(0.063845-0.082008]'
+              sd='(0.082008-0.096046]'
+              sd='(0.096046-inf)'
+              median='(-inf-0.044817]'
+              median='(0.044817-0.095271]'
+              median='(0.095271-0.164708]'
+              median='(0.164708-0.182671]'
+              median='(0.182671-0.240328]'
+              median='(0.240328-inf)'
+              Q25='(-inf-0.070513]'
+              Q25='(0.070513-0.140255]'
+              Q25='(0.140255-0.147346]'
+              Q25='(0.147346-0.156979]'
+              Q25='(0.156979-0.168221]'
+              Q25='(0.168221-inf)'
+              Q75='(0.213792-inf)'
+              IQR='(-inf-0.06188]'
+              IQR='(0.06188-0.073161]'
+              IQR='(0.073161-0.082589]'
+              IQR='(0.082589-0.092775]'
+              IQR='(0.092775-0.127485]'
+              IQR='(0.127485-0.151633]'
+              IQR='(0.151633-0.197719]'
+              IQR='(0.197719-inf)'
+              skew='(-inf-1.579854]'
+              skew='(1.579854-1.855273]'
+              skew='(1.855273-2.070386]'
+              skew='(2.070386-8.504995]'
+              skew='(8.504995-inf)'
+              kurt='(-inf-5.037776]'
+              kurt='(5.037776-6.904322]'
+              kurt='(6.904322-151.773201]'
+              kurt='(151.773201-inf)'
+              sp.ent='(-inf-0.852818]'
+              sp.ent='(0.852818-0.882605]'
+              sp.ent='(0.882605-inf)'
+              sfm='(-inf-0.249183]'
+              sfm='(0.249183-0.296725]'
+              sfm='(0.296725-inf)'
+              mode='(-inf-0.017573]'
+              mode='(0.017573-0.059526]'
+              mode='(0.059526-0.120218]'
+              mode='(0.120218-0.120563]'
+              mode='(0.120563-0.144088]'
+              mode='(0.144088-0.232631]'
+              mode='(0.232631-inf)'
+              centroid='(-inf-0.171857]'
+              centroid='(0.171857-0.208753]'
+              centroid='(0.208753-0.225625]'
+              centroid='(0.225625-inf)'
+              meanfun='(-inf-0.132466]'
+              meanfun='(0.132466-0.141815]'
+              meanfun='(0.141815-0.14949]'
+              meanfun='(0.14949-inf)'
+              minfun='(-inf-0.048314]'
+              minfun='(0.048314-0.054639]'
+              minfun='(0.054639-inf)'
+              maxfun='(-inf-0.172229]'
+              maxfun='(0.172229-0.274956]'
+              maxfun='(0.274956-inf)'
+              meandom='(-inf-0.125427]'
+              meandom='(0.125427-0.170705]'
+              meandom='(0.170705-0.237475]'
+              meandom='(0.237475-1.224039]'
+              meandom='(1.224039-1.924684]'
+              meandom='(1.924684-inf)'
+              mindom='(-inf-0.054199]'
+              mindom='(0.054199-0.069336]'
+              mindom='(0.069336-0.141114]'
+              mindom='(0.141114-0.149902]'
+              mindom='(0.149902-0.238281]'
+              mindom='(0.238281-0.245605]'
+              mindom='(0.245605-inf)'
+              maxdom='(-inf-0.175781]'
+              maxdom='(0.175781-2.089844]'
+              maxdom='(2.089844-6.433594]'
+              maxdom='(6.433594-9.011719]'
+              maxdom='(9.011719-inf)'
+              dfrange='(-inf-0.811524]'
+              dfrange='(0.811524-1.613282]'
+              dfrange='(1.613282-4.160156]'
+              dfrange='(4.160156-5.394531]'
+              dfrange='(5.394531-6.449219]'
+              dfrange='(6.449219-8.988281]'
+              dfrange='(8.988281-inf)'
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.LDA -R 1.0E-6
+
+Time taken to build model: 0.15 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3083               97.3169 %
+Incorrectly Classified Instances        85                2.6831 %
+Kappa statistic                          0.9463
+Mean absolute error                      0.0288
+Root mean squared error                  0.1531
+Relative absolute error                  5.77   %
+Root relative squared error             30.6169 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.033    0.967      0.980    0.973      0.946    0.996     0.996     male
+                 0.967    0.020    0.980      0.967    0.973      0.946    0.996     0.993     female
+Weighted Avg.    0.973    0.027    0.973      0.973    0.973      0.946    0.996     0.995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1552   32 |    a = male
+   53 1531 |    b = female
+

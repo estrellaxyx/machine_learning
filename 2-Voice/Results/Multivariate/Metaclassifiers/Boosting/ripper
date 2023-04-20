@@ -1,0 +1,116 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.rules.JRip -- -F 3 -N 2.0 -O 2 -S 1
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+JRIP rules:
+===========
+
+(meanfun = '(0.14949-inf)') => label=female (1397.0/18.0)
+(IQR = '(-inf-0.06188]') and (meanfun = '(0.141815-0.14949]') => label=female (79.0/1.0)
+(IQR = '(-inf-0.06188]') and (meanfun = '(0.132466-0.141815]') => label=female (28.0/2.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.06188-0.073161]') => label=female (15.0/2.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.082589-0.092775]') => label=female (8.0/1.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.127485-0.151633]') => label=female (7.0/1.0)
+(meanfun = '(0.132466-0.141815]') and (IQR = '(0.06188-0.073161]') => label=female (15.0/3.0)
+ => label=male (1619.0/63.0)
+
+Number of Rules : 8
+
+
+Weight: 3.52
+
+JRIP rules:
+===========
+
+(IQR = '(0.092775-0.127485]') and (meanfun = '(-inf-0.132466]') => label=male (574.7287174963441/52.219780219780226)
+(IQR = '(0.127485-0.151633]') => label=male (224.707410886156/72.8112654326498)
+(IQR = '(0.082589-0.092775]') and (meanfun = '(0.14949-inf)') => label=male (77.34818058119967/7.72180695482613)
+(IQR = '(0.06188-0.073161]') and (meanfun = '(0.132466-0.141815]') => label=male (58.39722578364114/6.177445563860904)
+(IQR = '(0.092775-0.127485]') and (meanfun = '(0.14949-inf)') => label=male (89.70307170892133/20.076698082547956)
+ => label=female (2143.115393543764/422.51577996264126)
+
+Number of Rules : 6
+
+
+Weight: 1.49
+
+JRIP rules:
+===========
+
+(IQR = '(-inf-0.06188]') => label=female (852.5779131845441/350.1235250055881)
+(meanfun = '(0.132466-0.141815]') and (IQR = '(0.127485-0.151633]') => label=female (143.1863628273175/0.9457916044241899)
+(IQR = '(0.073161-0.082589]') => label=female (274.36485199319344/114.72007937974658)
+(meanfun = '(0.14949-inf)') and (IQR = '(0.151633-0.197719]') => label=female (32.78744228670526/0.0)
+(IQR = '(0.092775-0.127485]') and (meanfun = '(0.141815-0.14949]') => label=female (125.94498591640107/40.66437736509754)
+(meanfun = '(0.132466-0.141815]') and (IQR = '(0.082589-0.092775]') => label=female (86.39597495973835/22.435518546260713)
+(IQR = '(0.06188-0.073161]') and (meanfun = '(-inf-0.132466]') => label=female (90.60263468716224/26.642178273684596)
+ => label=male (1562.1398341449676/436.5104664826398)
+
+Number of Rules : 8
+
+
+Weight: 0.79
+
+JRIP rules:
+===========
+
+(IQR = '(0.092775-0.127485]') and (meanfun = '(0.14949-inf)') => label=female (118.3586541235221/31.04023147802809)
+(IQR = '(0.127485-0.151633]') => label=female (261.6408128089864/68.53869193958695)
+ => label=male (2788.0005330675936/1181.1508817955228)
+
+Number of Rules : 3
+
+
+Weight: 0.39
+
+JRIP rules:
+===========
+
+ => label=female (3167.999999999807/1471.7996365110428)
+
+Number of Rules : 1
+
+
+Weight: 0.14
+
+Number of performed Iterations: 5
+
+
+Time taken to build model: 0.07 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3070               96.9066 %
+Incorrectly Classified Instances        98                3.0934 %
+Kappa statistic                          0.9381
+Mean absolute error                      0.046 
+Root mean squared error                  0.1615
+Relative absolute error                  9.1937 %
+Root relative squared error             32.3081 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.972    0.033    0.967      0.972    0.969      0.938    0.992     0.991     male
+                 0.967    0.028    0.971      0.967    0.969      0.938    0.992     0.990     female
+Weighted Avg.    0.969    0.031    0.969      0.969    0.969      0.938    0.992     0.990     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1539   45 |    a = male
+   53 1531 |    b = female
+

@@ -1,0 +1,176 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.lazy.IBk -K 20 -W 0 -X -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"" -B "weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1" -B "weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K \"weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007\" -calibrator \"weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4\"" -B "weka.classifiers.trees.J48 -C 0.25 -M 2" -B "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" -B "weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5" -R AVG
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R6,13,21-weka.filters.supervised.attribute.Discretize-Rfirst-last-precision6
+Instances:    3168
+Attributes:   3
+              IQR
+              meanfun
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.lazy.IBk -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+	weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+	weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+	weka.classifiers.trees.J48 -C 0.25 -M 2
+	weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+	weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.TAN -- -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+using the 'Average' combination rule 
+
+All the models:
+
+IB1 instance-based classifier
+using 6 nearest neighbour(s) for classification
+
+JRIP rules:
+===========
+
+(meanfun = '(0.14949-inf)') => label=female (1397.0/18.0)
+(IQR = '(-inf-0.06188]') and (meanfun = '(0.141815-0.14949]') => label=female (79.0/1.0)
+(IQR = '(-inf-0.06188]') and (meanfun = '(0.132466-0.141815]') => label=female (28.0/2.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.06188-0.073161]') => label=female (15.0/2.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.082589-0.092775]') => label=female (8.0/1.0)
+(meanfun = '(0.141815-0.14949]') and (IQR = '(0.127485-0.151633]') => label=female (7.0/1.0)
+(meanfun = '(0.132466-0.141815]') and (IQR = '(0.06188-0.073161]') => label=female (15.0/3.0)
+ => label=male (1619.0/63.0)
+
+Number of Rules : 8
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: male, female
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.6672 * (normalized) IQR='(-inf-0.06188]'
+ +       0.6668 * (normalized) IQR='(0.06188-0.073161]'
+ +       0.6663 * (normalized) IQR='(0.073161-0.082589]'
+ +      -1.3325 * (normalized) IQR='(0.082589-0.092775]'
+ +      -1.3328 * (normalized) IQR='(0.092775-0.127485]'
+ +       0.6651 * (normalized) IQR='(0.127485-0.151633]'
+ +      -1      * (normalized) IQR='(0.151633-0.197719]'
+ +       1      * (normalized) IQR='(0.197719-inf)'
+ +      -1.9992 * (normalized) meanfun='(-inf-0.132466]'
+ +      -0.0001 * (normalized) meanfun='(0.132466-0.141815]'
+ +       0.0002 * (normalized) meanfun='(0.141815-0.14949]'
+ +       1.9991 * (normalized) meanfun='(0.14949-inf)'
+ +       0.3333
+
+Number of kernel evaluations: 399831 (71.263% cached)
+
+
+J48 pruned tree
+------------------
+
+meanfun = '(-inf-0.132466]': male (1373.0/25.0)
+meanfun = '(0.132466-0.141815]'
+|   IQR = '(-inf-0.06188]': female (28.0/2.0)
+|   IQR = '(0.06188-0.073161]': female (15.0/3.0)
+|   IQR = '(0.073161-0.082589]': female (13.0/6.0)
+|   IQR = '(0.082589-0.092775]': male (22.0/6.0)
+|   IQR = '(0.092775-0.127485]': male (156.0/8.0)
+|   IQR = '(0.127485-0.151633]': male (6.0/3.0)
+|   IQR = '(0.151633-0.197719]': male (3.0/1.0)
+|   IQR = '(0.197719-inf)': male (0.0)
+meanfun = '(0.141815-0.14949]'
+|   IQR = '(-inf-0.06188]': female (79.0/1.0)
+|   IQR = '(0.06188-0.073161]': female (15.0/2.0)
+|   IQR = '(0.073161-0.082589]': female (7.0/3.0)
+|   IQR = '(0.082589-0.092775]': female (8.0/1.0)
+|   IQR = '(0.092775-0.127485]': male (37.0/8.0)
+|   IQR = '(0.127485-0.151633]': female (7.0/1.0)
+|   IQR = '(0.151633-0.197719]': male (2.0/1.0)
+|   IQR = '(0.197719-inf)': female (0.0)
+meanfun = '(0.14949-inf)': female (1397.0/18.0)
+
+Number of Leaves  : 	18
+
+Size of the tree : 	21
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                     Class
+Variable                              male
+==========================================
+IQR='(-inf-0.06188]'                0.7413
+IQR='(0.06188-0.073161]'            1.9544
+IQR='(0.073161-0.082589]'           3.4216
+IQR='(0.082589-0.092775]'           4.6326
+IQR='(0.092775-0.127485]'           5.9336
+IQR='(0.127485-0.151633]'           4.5166
+IQR='(0.151633-0.197719]'           3.6632
+IQR='(0.197719-inf)'             -442.1574
+meanfun='(-inf-0.132466]'           3.5173
+meanfun='(0.132466-0.141815]'       0.4583
+meanfun='(0.141815-0.14949]'       -1.0338
+meanfun='(0.14949-inf)'            -3.4403
+Intercept                          -3.8174
+
+
+Odds Ratios...
+                                     Class
+Variable                              male
+==========================================
+IQR='(-inf-0.06188]'                2.0987
+IQR='(0.06188-0.073161]'            7.0598
+IQR='(0.073161-0.082589]'          30.6193
+IQR='(0.082589-0.092775]'         102.7782
+IQR='(0.092775-0.127485]'         377.4939
+IQR='(0.127485-0.151633]'          91.5274
+IQR='(0.151633-0.197719]'          38.9861
+IQR='(0.197719-inf)'                     0
+meanfun='(-inf-0.132466]'          33.6941
+meanfun='(0.132466-0.141815]'       1.5814
+meanfun='(0.141815-0.14949]'        0.3556
+meanfun='(0.14949-inf)'             0.0321
+
+Bayes Network Classifier
+not using ADTree
+#attributes=3 #classindex=2
+Network structure (nodes followed by parents)
+IQR(8): label 
+meanfun(4): label IQR 
+label(2): 
+LogScore Bayes: -6946.0341666977
+LogScore BDeu: -7168.287816230182
+LogScore MDL: -7163.010571392184
+LogScore ENTROPY: -6909.093615174753
+LogScore AIC: -6972.093615174753
+
+
+
+Time taken to build model: 0.14 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3069               96.875  %
+Incorrectly Classified Instances        99                3.125  %
+Kappa statistic                          0.9375
+Mean absolute error                      0.0462
+Root mean squared error                  0.1558
+Relative absolute error                  9.2494 %
+Root relative squared error             31.1527 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.973    0.035    0.965      0.973    0.969      0.938    0.993     0.992     male
+                 0.965    0.027    0.973      0.965    0.969      0.938    0.993     0.991     female
+Weighted Avg.    0.969    0.031    0.969      0.969    0.969      0.938    0.993     0.992     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1541   43 |    a = male
+   56 1528 |    b = female
+

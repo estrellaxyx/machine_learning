@@ -1,0 +1,175 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.functions.Logistic -- -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                      male
+==================================
+meanfreq                     3.678
+sd                          28.631
+median                     -8.4765
+Q25                       -20.9992
+Q75                        18.9092
+IQR                        32.9556
+skew                        0.1274
+kurt                       -0.0073
+sp.ent                     41.4255
+sfm                       -12.0302
+mode                        3.2437
+centroid                     3.678
+meanfun                  -166.1935
+minfun                     37.5739
+maxfun                     -1.3221
+meandom                     0.0701
+mindom                     -0.5341
+maxdom                     -0.0024
+dfrange                    -0.0022
+modindx                    -3.2592
+Intercept                 -16.0721
+
+
+Odds Ratios...
+                             Class
+Variable                      male
+==================================
+meanfreq                   39.5685
+sd           2.7181731405084683E12
+median                      0.0002
+Q25                              0
+Q75                 162994826.9954
+IQR          2.0532777437111922E14
+skew                        1.1358
+kurt                        0.9928
+sp.ent       9.7921056284587738E17
+sfm                              0
+mode                       25.6284
+centroid                   39.5685
+meanfun                          0
+minfun        2.080400183474358E16
+maxfun                      0.2666
+meandom                     1.0726
+mindom                      0.5862
+maxdom                      0.9976
+dfrange                     0.9978
+modindx                     0.0384
+
+
+Weight: 3.64
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                      male
+==================================
+meanfreq                     9.717
+sd                          2.7309
+median                      0.0579
+Q25                   -117910.4535
+Q75                    117889.2683
+IQR                   -117893.1515
+skew                        0.3002
+kurt                       -0.0079
+sp.ent                     32.4087
+sfm                        -5.7769
+mode                        -1.187
+centroid                    9.7168
+meanfun                   -25.2438
+minfun                     -2.4694
+maxfun                     -7.5834
+meandom                     0.3964
+mindom                     73.2028
+maxdom                    -74.1419
+dfrange                    74.1658
+modindx                     1.1413
+Intercept                 -22.8159
+
+
+Odds Ratios...
+                             Class
+Variable                      male
+==================================
+meanfreq                16597.7151
+sd                         15.3466
+median                      1.0596
+Q25                              0
+Q75                       Infinity
+IQR                              0
+skew                        1.3502
+kurt                        0.9922
+sp.ent        1.188278434776506E14
+sfm                         0.0031
+mode                        0.3051
+centroid                16594.0789
+meanfun                          0
+minfun                      0.0846
+maxfun                      0.0005
+meandom                     1.4865
+mindom        6.188609010402071E31
+maxdom                           0
+dfrange      1.6211042832991686E32
+modindx                     3.1308
+
+
+Weight: 0.5
+
+Number of performed Iterations: 2
+
+
+Time taken to build model: 0.3 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3076               97.096  %
+Incorrectly Classified Instances        92                2.904  %
+Kappa statistic                          0.9419
+Mean absolute error                      0.0452
+Root mean squared error                  0.168 
+Relative absolute error                  9.0406 %
+Root relative squared error             33.5993 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.035    0.966      0.977    0.971      0.942    0.973     0.963     male
+                 0.965    0.023    0.976      0.965    0.971      0.942    0.973     0.965     female
+Weighted Avg.    0.971    0.029    0.971      0.971    0.971      0.942    0.973     0.964     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1547   37 |    a = male
+   55 1529 |    b = female
+

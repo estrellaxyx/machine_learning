@@ -1,0 +1,85 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     voice-weka.filters.unsupervised.attribute.Remove-V-R2-3,6,8-11,13-14,17,20-21
+Instances:    3168
+Attributes:   12
+              sd
+              median
+              IQR
+              kurt
+              sp.ent
+              sfm
+              mode
+              meanfun
+              minfun
+              mindom
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                             Class
+Variable                      male
+==================================
+sd                         29.2995
+median                     -5.5751
+IQR                        52.1173
+kurt                       -0.0039
+sp.ent                     38.2678
+sfm                       -11.8108
+mode                         2.978
+meanfun                  -166.4702
+minfun                     37.0013
+mindom                     -0.1822
+modindx                    -3.1219
+Intercept                 -12.8512
+
+
+Odds Ratios...
+                             Class
+Variable                      male
+==================================
+sd            5.303907102283092E12
+median                      0.0038
+IQR          4.3076739204030885E22
+kurt                        0.9961
+sp.ent       4.1639915070903952E16
+sfm                              0
+mode                       19.6478
+meanfun                          0
+minfun       1.1734477439126516E16
+mindom                      0.8335
+modindx                     0.0441
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3082               97.2854 %
+Incorrectly Classified Instances        86                2.7146 %
+Kappa statistic                          0.9457
+Mean absolute error                      0.0456
+Root mean squared error                  0.1472
+Relative absolute error                  9.1226 %
+Root relative squared error             29.4379 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.976    0.030    0.970      0.976    0.973      0.946    0.993     0.994     male
+                 0.970    0.024    0.976      0.970    0.973      0.946    0.993     0.992     female
+Weighted Avg.    0.973    0.027    0.973      0.973    0.973      0.946    0.993     0.993     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1546   38 |    a = male
+   48 1536 |    b = female
+

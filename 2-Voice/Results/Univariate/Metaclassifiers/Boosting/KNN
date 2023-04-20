@@ -1,0 +1,51 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.AdaBoostM1 -P 100 -S 1 -I 10 -W weka.classifiers.lazy.IBk -- -K 20 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     voice_norm-weka.filters.unsupervised.attribute.Remove-V-R13,6,4,9,2,10-11,21
+Instances:    3168
+Attributes:   8
+              meanfun
+              IQR
+              Q25
+              sp.ent
+              sd
+              sfm
+              mode
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: No boosting possible, one classifier used!
+IB1 instance-based classifier
+using 5 nearest neighbour(s) for classification
+
+
+
+Time taken to build model: 1.37 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3114               98.2955 %
+Incorrectly Classified Instances        54                1.7045 %
+Kappa statistic                          0.9659
+Mean absolute error                      0.0248
+Root mean squared error                  0.119 
+Relative absolute error                  4.9595 %
+Root relative squared error             23.8077 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.981    0.015    0.985      0.981    0.983      0.966    0.995     0.994     male
+                 0.985    0.019    0.981      0.985    0.983      0.966    0.995     0.993     female
+Weighted Avg.    0.983    0.017    0.983      0.983    0.983      0.966    0.995     0.994     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1554   30 |    a = male
+   24 1560 |    b = female
+

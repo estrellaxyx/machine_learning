@@ -1,0 +1,62 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Bagging -P 100 -S 1 -num-slots 1 -I 10 -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     voice
+Instances:    3168
+Attributes:   21
+              meanfreq
+              sd
+              median
+              Q25
+              Q75
+              IQR
+              skew
+              kurt
+              sp.ent
+              sfm
+              mode
+              centroid
+              meanfun
+              minfun
+              maxfun
+              meandom
+              mindom
+              maxdom
+              dfrange
+              modindx
+              label
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bagging with 10 iterations and base learner
+
+weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+
+Time taken to build model: 59.54 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3105               98.0114 %
+Incorrectly Classified Instances        63                1.9886 %
+Kappa statistic                          0.9602
+Mean absolute error                      0.0274
+Root mean squared error                  0.1281
+Relative absolute error                  5.4726 %
+Root relative squared error             25.6219 %
+Total Number of Instances             3168     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.017    0.983      0.977    0.980      0.960    0.997     0.997     male
+                 0.983    0.023    0.977      0.983    0.980      0.960    0.997     0.995     female
+Weighted Avg.    0.980    0.020    0.980      0.980    0.980      0.960    0.997     0.996     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1548   36 |    a = male
+   27 1557 |    b = female
+
