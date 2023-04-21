@@ -1,4 +1,4 @@
-# Machine Learning subject of Msc. in Data Science
+# Machine Learning subject of Msc. in Data Science UPM
 
 ## Practical assignments
 
